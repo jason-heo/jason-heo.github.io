@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{% if page.language == nil %}en{% else %}{{ page.language }}{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{ page.title }}
+    {% if page.category == 'blog' and page.url != '/blog/index.html' %}
+    - @n0lb00's Blog
+    {% endif %}
+  </title>
+<!--   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400"> -->
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+  <script src="/js/instantclick.min.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();</script>
+<!--   {% if page.url == '/index.html' %}
+    <link rel="alternate" hreflang="fr" href="/fr/" />
+  {% elsif page.url == '/fr/index.html' %}
+    <link rel="alternate" hreflang="en" href="/" />
+  {% endif %} -->
+
+  {{ page.extra_head }}
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="{% if page.category == '/' %} selected {% endif %}" href="/">홈</a>
+          <a class="{% if page.category == 'archive' %} selected {% endif %}" href="/archive/">전체글</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">InoS Heo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">Learn to do. Learn by doing.</a>
+              </em>
+            </small>
+          </div>
+          <a href="/feed.xml"><img class="avatar" src="/images/rss.jpg" alt="RSS" /></a>
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      {{ content }}
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    {% include footer.md %}
+  </footer>
+
+  <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- tag, category search -->
+  <script defer src="/js/alexpearce.js"></script>
+  <!-- Google Analytics -->
+</body>
+</html>
