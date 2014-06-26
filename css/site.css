@@ -70,12 +70,16 @@ table tr:nth-child(2n) {
 
 /* Common */
 a, a:active {
-  text-decoration: none;
+  text-decoration: underline;
   color: #3073b3;
 }
 
 a:visited {
-  color: #3073b3;
+  color: #99209b;
+}
+
+a:link {
+  color: #12c;
 }
 
 a:hover {

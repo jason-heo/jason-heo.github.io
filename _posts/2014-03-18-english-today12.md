@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 (make a reservation, How many people come)"
+title: "오늘 배운 영어 12 (make a reservation, How many people come)"
 categories: English
 ---
 
