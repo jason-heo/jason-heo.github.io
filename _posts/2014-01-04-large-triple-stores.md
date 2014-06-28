@@ -2,7 +2,7 @@
 layout: post
 title: "Large Triple Stores"
 date: 2014-04-28 21:34:00
-categories: computer
+categories: programming
 ---
 
 Semantic Web은 여러 구성 요소가 조합된 개념인데, 그 중 RDF 저장을 위한 RDF 저장소의 (혹은 Triple 저장소) 비중이 가장 크다고 생각된다. 여러 종류의 Triple Store가 있는데 어떤 Store가 얼마나 많은 Triple을 저장했는지 보여주는 자료가 있어서 공유한다.

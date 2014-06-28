@@ -2,7 +2,7 @@
 layout: post
 title: "Literature Survey of Graph Databases (그래프 데이터베이스에 대한 선행 조사)"
 date: 2014-05-01 21:34:00
-categories: computer
+categories: programming
 ---
 
 Triple Store 중 SYSTAP사에서 만든 BigData(R)이라는 것이 있다. SYSTAP사에서 2013년 초에 "Literature Survey of Graph Databases"라는 pdf 문서를 발표했는데 2013년 초까지 나온 Graph Database에 대한 특징, 장단점을 조사한 문서라고 생각하면 된다.

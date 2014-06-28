@@ -2,7 +2,7 @@
 layout: post
 title: "Redis 위키피디아 번역"
 date: 2011-05-10 21:34:00
-categories: computer
+categories: programming
 ---
 
 원문 : http://en.wikipedia.org/wiki/Redis

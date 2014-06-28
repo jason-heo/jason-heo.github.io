@@ -2,7 +2,7 @@
 layout: post
 title: "github에 블로그 운영하기 1"
 date: 2014-05-28 21:34:00
-categories: computer
+categories: programming
 ---
 
 블로그를 운영하면서 항상 불편한 것이 에디팅이 어렵다는 점이다. atlassian confluence wiki 처럼 글을 쉽게 적었으면 좋겠는데 WYSIWYG 에디터는 아무래도 좀 불편한다. (그래도 날 HTML 코딩을 하지 않는 것 만으로 tistory를 고맙게 잘 쓰고 있다.)

@@ -2,7 +2,7 @@
 layout: post
 title: "gdb에서 Object의 내용을 이쁘게 print하기"
 date: 2014-04-08 21:34:00
-categories: computer
+categories: programming
 ---
 
 ## 예제 소스 코드

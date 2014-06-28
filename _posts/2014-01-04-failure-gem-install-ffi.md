@@ -2,7 +2,7 @@
 layout: post
 title: "cygwin 64bit에서 gem install ffi 실패 시 조치 사항"
 date: 2014-06-03 21:34:00
-categories: computer
+categories: programming
 ---
 
 cygwin에서 jekyll을 돌려보려는데 ruby도 모르고, gem이란 것도 모르고 bundle이 뭔지도 모르겠고..

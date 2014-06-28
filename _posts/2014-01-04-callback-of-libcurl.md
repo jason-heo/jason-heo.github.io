@@ -2,7 +2,7 @@
 layout: post
 title: "C++에서 libcurl의 callback 사용 시 주의사항"
 date: 2014-03-21 21:34:00
-categories: computer
+categories: programming
 ---
 
 [cURL](http://curl.haxx.se/libcurl/)은 C 언에서 HTTP, HTTPs, FTP를 사용하게 해 주는 대표적인 라이브러리이다. cURL이란 이름에서 알 수 있듯이 C API이며 C++용 API는 따로 제공하지 않는다.

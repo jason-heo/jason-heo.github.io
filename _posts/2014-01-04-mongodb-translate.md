@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB 위키피디아 번역"
 date: 2011-04-16 21:34:00
-categories: computer
+categories: programming
 ---
 
 MongoDB(humongous - '거대한'에서 유래)는 C++ 언어로 작성된 오픈 소스 데이터베이스로서, 고성능을 발휘하고 고정된 스키마로부터자유로운 문서 지향 데이터베이스이다. 복잡한 계층으로 구성된 BSON 문서의 컬렉션을 관리하며 질의 및 인덱스하기 쉽기 때문에 많은 응용에서 자기 자신의 타입과 구조에 맞고 자연스럽게 데이터를 저장하기 쉽다.

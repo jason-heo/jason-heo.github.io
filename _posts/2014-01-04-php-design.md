@@ -2,7 +2,7 @@
 layout: post
 title: "PHP 언어의 잘못된 설계"
 date: 2014-05-21 21:34:00
-categories: computer
+categories: programming
 ---
 
 지금 이 순간도 서버 운영 스크립트를 PHP로 코딩 중이지만, 언어의 태생 자체가 잘못 설계된 점들이 있는 듯 하다.

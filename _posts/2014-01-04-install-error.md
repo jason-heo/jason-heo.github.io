@@ -2,7 +2,7 @@
 layout: post
 title: "virtualbox 설치 시 에러. (Win7 64bit host). (Installation failed! Error: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다.)"
 date: 2014-03-06 21:34:00
-categories: computer
+categories: programming
 ---
 
 virtualbox 좀 설치해서 간만에 (근 10년만) 리눅스를 데스크탑 용도로 좀 써 볼까 했는데...

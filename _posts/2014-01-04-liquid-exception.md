@@ -2,7 +2,7 @@
 layout: post
 title: "Liquid Exception: No such file or directory - C:\\Windows\\system32\\cmd.exe"
 date: 2014-06-04 21:34:00
-categories: computer
+categories: programming
 ---
 
 블로그를 github로 전환하기 위해 이것 저것 테스트 중이다. 우선 cygwin에 Jekyll 설치는 완료했고, markdown으로 이것 저것 테스트 중이다. Pygments로 Syntax Highlight가 되는지 다음 처럼 만들어봤는데...

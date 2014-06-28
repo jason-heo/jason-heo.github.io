@@ -2,7 +2,7 @@
 layout: post
 title: "Levenshtein distance"
 date: 2011-05-11 21:34:00
-categories: computer
+categories: programming
 ---
 
 "Levenshtein distance" 한국 말로하면 "리벤슈타인 거리"가 되겠습니다. 이런 것이 존재하는지 지난 주에 업무 상, 처음 알게 되었습니다. 오늘 해당 글에 대한 wikipedia의 내용을 번역하고 있었는데, 반쯤 번역하다보니 점점 어려운 내용이 나오고 한국어로 번역하기도 어렵군요.... ㅎㅎ; 아.. 알고리즘 분야는 번역하기가 너무 어려워요.

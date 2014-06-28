@@ -2,7 +2,7 @@
 layout: post
 title: "괜찮은 텍스트 디버거 - cgdb 사용법"
 date: 2014-04-08 21:34:00
-categories: computer
+categories: programming
 ---
 
 gdb를 쓸 때 불편한 점은 소스 코드를 보기 어렵다는 점이었다. cgdb는 이런 점을 말끔히 해결해 준다.
