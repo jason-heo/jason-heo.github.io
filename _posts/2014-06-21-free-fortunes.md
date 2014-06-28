@@ -2,7 +2,7 @@
 layout: post
 title: "무료 사주 사이트"
 date: 2014-06-21 21:34:00
-categories: "It's my life"
+categories: life
 ---
 
 사주에 관심 많은 분들을 위해 모아봤습니다.
