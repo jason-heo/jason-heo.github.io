@@ -16,11 +16,13 @@ description: MySQL, C++로 즐기는 인생
           <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
           <span class="description">{{ post.description }}</span>
         </p>
+        <!--
         <ul class="tags cf">
           {% for tag in post.categories %}
           <li><a href="/search/?tags={{ tag }}">{{ tag | downcase }}</a></li>
           {% endfor %}
         </ul>
+        -->
       </li>
     {% endfor %}
   </ul>

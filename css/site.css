@@ -70,7 +70,7 @@ table tr:nth-child(2n) {
 
 /* Common */
 a, a:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: #3073b3;
 }
 
@@ -83,6 +83,14 @@ a:link {
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article a:active {
   text-decoration: underline;
 }
 
