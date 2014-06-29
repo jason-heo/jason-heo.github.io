@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "신용등급 무료 조회하기. (진짜 무료임. 국가에서 운영하는 무료 사이트)"
-date: 2014-05-14 21:34:00
+date: 2014-05-14 
 categories: finance
 ---
 

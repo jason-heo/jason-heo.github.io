@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "이전, 이후 레코드 찾기 (MySQL HANDLER)"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

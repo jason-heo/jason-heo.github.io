@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Liquid Exception: No such file or directory - C:\\Windows\\system32\\cmd.exe"
-date: 2014-06-04 21:34:00
+date: 2014-06-04 
 categories: programming
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "30개의 값을 가진 user_id 조회하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

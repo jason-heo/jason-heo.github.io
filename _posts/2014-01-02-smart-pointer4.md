@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Modern C++] 스마트 포인터 4 - boost::shared_ptr의 구현"
-date: 2014-03-16 21:34:00
+date: 2014-03-16 
 categories: cpp
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "github에 블로그 운영하기 1"
-date: 2014-05-28 21:34:00
+date: 2014-05-28 
 categories: programming
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PHP 언어의 잘못된 설계"
-date: 2014-05-21 21:34:00
+date: 2014-05-21 
 categories: programming
 ---
 

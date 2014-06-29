@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL GROUP BY를 이용하여 최대 값을 가진 레코드 가져오기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

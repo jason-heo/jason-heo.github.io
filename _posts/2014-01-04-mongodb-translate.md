@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MongoDB 위키피디아 번역"
-date: 2011-04-16 21:34:00
+date: 2011-04-16 
 categories: programming
 ---
 

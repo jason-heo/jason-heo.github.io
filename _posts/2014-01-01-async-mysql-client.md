@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asynchronous MySQL Client (비동기 MySQL 클라이언트)"
-date: 2014-04-18 21:34:00
+date: 2014-04-18 
 categories: mysql
 ---
 

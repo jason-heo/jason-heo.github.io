@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Modern C++] Smart Pointer 1 : Tutorials, Examples, Q&A"
-date: 2014-03-11 21:34:00
+date: 2014-03-11 
 categories: cpp
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL MAX 값을 동일 테이블에 INSERT하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

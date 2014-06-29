@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 집계함수에서 NULL의 의미"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

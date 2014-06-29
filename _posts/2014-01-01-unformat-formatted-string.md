@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "포맷팅된 숫자 문자열을 숫자형으로 변경하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL GROUP BY 사용 시 주의점"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

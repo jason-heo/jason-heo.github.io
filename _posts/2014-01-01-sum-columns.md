@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 임의 컬럼 개수 합산"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

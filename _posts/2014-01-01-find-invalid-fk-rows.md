@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FOREIGN KEY 제약 조건을 위배하는 레코드 찾기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

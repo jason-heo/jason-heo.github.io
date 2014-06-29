@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "팁 2 - MySQL에서 전문 검색 (MySQL FullText Search)"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

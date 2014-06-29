@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "복수 개의 값을 가진 id 찾기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

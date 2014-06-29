@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL random 값 생성"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

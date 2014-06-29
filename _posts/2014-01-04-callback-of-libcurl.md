@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C++에서 libcurl의 callback 사용 시 주의사항"
-date: 2014-03-21 21:34:00
+date: 2014-03-21 
 categories: programming
 ---
 

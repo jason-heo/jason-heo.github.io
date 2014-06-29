@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "InnoDB filesize를 줄이는 방법. MySQL Barracuda format"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

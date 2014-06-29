@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "LEFT OUTER JOIN과 RIGHT OUTER JOIN을 헷갈리는 문제"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Modern C++] RAII 2 : 위키북스 번역 문서"
-date: 2014-03-08 21:34:00
+date: 2014-03-08 
 categories: cpp
 ---
 

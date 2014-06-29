@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Query Cache hit ratio, Qcache_lowmem_prunes의 의미"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

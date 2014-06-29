@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "virtualbox 설치 시 에러. (Win7 64bit host). (Installation failed! Error: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다.)"
-date: 2014-03-06 21:34:00
+date: 2014-03-06 
 categories: programming
 ---
 

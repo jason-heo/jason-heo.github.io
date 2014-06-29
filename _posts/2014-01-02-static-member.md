@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "static member 변수의 definition이 없을 때 optimization level에 따라서 컴파일이 되었다가 안 되었다가..."
-date: 2014-06-22 21:34:00
+date: 2014-06-22 
 categories: cpp
 ---
 

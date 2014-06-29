@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ibdata1 내용 확인하기 - innodb_file_per_table을 사용함에도 ibdata1의 파일 크기가 증가하는 문제"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

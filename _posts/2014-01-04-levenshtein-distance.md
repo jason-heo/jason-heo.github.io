@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Levenshtein distance"
-date: 2011-05-11 21:34:00
+date: 2011-05-11 
 categories: programming
 ---
 

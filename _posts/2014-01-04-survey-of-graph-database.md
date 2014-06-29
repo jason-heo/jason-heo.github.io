@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Literature Survey of Graph Databases (그래프 데이터베이스에 대한 선행 조사)"
-date: 2014-05-01 21:34:00
+date: 2014-05-01 
 categories: programming
 ---
 

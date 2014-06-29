@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "서로 다른 MySQL 서버의 UPDATE 속도를 향상 시키는 방법"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

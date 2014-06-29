@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL COUNT의 값이 예상과 다른 문제"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

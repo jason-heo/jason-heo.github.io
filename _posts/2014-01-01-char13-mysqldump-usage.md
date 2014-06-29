@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "mysqldump 사용법"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

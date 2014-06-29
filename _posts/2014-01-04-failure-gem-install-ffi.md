@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "cygwin 64bit에서 gem install ffi 실패 시 조치 사항"
-date: 2014-06-03 21:34:00
+date: 2014-06-03 
 categories: programming
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "호식이두마리치킨 정자점 (간장치킨, 양념치킨)"
-date: 2014-04-13 21:34:00
+date: 2014-04-13 
 categories: life
 ---
 

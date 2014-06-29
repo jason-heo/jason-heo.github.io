@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "You can't specify target table 'table_name' for update in FROM clause"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

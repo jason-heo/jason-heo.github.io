@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Natural sort (제목으로 정렬하기)"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

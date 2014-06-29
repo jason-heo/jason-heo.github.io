@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "mysql.sock 파일 위치 찾기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

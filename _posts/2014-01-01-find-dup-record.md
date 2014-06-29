@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "1:n JOIN에서 중복된 레코드 제거하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

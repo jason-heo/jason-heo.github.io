@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL correlated sub-query 성능 향상 방법"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL용 TPC-H Data 생성하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

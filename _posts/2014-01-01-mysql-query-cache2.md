@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Query Cache는 동시성에 약하다. (Query Cache의 올바른 이해)"
-date: 2014-05-20 21:34:00
+date: 2014-05-20 
 categories: mysql
 ---
 

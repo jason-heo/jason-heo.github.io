@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "조회할 값을 2개 컬럼에서 비교하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

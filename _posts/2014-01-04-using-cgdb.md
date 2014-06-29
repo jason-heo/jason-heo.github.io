@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "괜찮은 텍스트 디버거 - cgdb 사용법"
-date: 2014-04-08 21:34:00
+date: 2014-04-08 
 categories: programming
 ---
 

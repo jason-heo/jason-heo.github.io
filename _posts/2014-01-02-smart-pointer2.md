@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Modern C++] Smart Pointer 2 - 스마트 포인터란 무엇이며, 왜 사용해야 하는가"
-date: 2014-03-15 21:34:00
+date: 2014-03-15 
 categories: cpp
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL SELECT 성능 향상을 위한 INDEX 설계"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

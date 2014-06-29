@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 문자열 검색에서 검색 적합도 순으로 정렬하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

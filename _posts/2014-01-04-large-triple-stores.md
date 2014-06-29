@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Large Triple Stores"
-date: 2014-04-28 21:34:00
+date: 2014-04-28 
 categories: programming
 ---
 

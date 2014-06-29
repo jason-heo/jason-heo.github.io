@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "무료 사주 사이트"
-date: 2014-06-21 21:34:00
+date: 2014-06-21 
 categories: life
 ---
 

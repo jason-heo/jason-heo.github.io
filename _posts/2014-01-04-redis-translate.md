@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Redis 위키피디아 번역"
-date: 2011-05-10 21:34:00
+date: 2011-05-10 
 categories: programming
 ---
 

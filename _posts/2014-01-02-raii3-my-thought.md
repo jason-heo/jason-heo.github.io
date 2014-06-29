@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Modern C++] RAII 3 : 나의 생각..."
-date: 2014-03-09 21:34:00
+date: 2014-03-09 
 categories: cpp
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "특정 DB 내에 존재하는 모든 컬럼 목록을 한번에 조회하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "리눅스에서 여러 파일 이름 변경하기 (rename)"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: programming
 ---
 

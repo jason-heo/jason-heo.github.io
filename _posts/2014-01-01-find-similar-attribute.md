@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "같은 테이블에서 비슷한 속성을 가진 레코드 찾기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

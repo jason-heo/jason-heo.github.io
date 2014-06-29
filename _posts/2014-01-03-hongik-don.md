@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "홍익돈까스 용인기흥점을 가다."
-date: 2014-03-15 21:34:00
+date: 2014-03-15 
 categories: life
 ---
 

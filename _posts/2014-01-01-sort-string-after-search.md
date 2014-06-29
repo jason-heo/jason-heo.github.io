@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 문자열 검색 후 검색 문자열 위치에 따른 정렬"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

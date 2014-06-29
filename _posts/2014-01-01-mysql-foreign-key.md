@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Foreign key 사용 시 주의 사항 (Can't create table (errno: 150))"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

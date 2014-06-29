@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "중복 설정된 친구 관계 찾기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

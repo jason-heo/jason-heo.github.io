@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "INSERT INTO SELECT 사용 시 AUTO_INCREMENT 컬럼 값 지정하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

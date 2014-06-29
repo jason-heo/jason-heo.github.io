@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL INNER JOIN v.s EXISTS 성능 비교"
-date: 2014-05-30 21:34:00
+date: 2014-05-30 
 categories: mysql
 ---
 

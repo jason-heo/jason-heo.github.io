@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hadoop 고려 사항"
-date: 2014-03-06 21:34:00
+date: 2014-03-06 
 categories: programming
 ---
 

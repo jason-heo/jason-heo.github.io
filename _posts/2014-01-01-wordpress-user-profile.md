@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wordpress 사용자 프로필 테이블 조회하기"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

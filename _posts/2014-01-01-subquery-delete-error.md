@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL sub-query를 이용한 DELETE 오류 시 수정 방법"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

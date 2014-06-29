@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modern C++에 관련된 자료들 (c++11, template, generic programming)"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: cpp
 ---
 

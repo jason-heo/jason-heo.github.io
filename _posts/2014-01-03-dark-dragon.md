@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "닭을 이용해 공룡 복원..."
-date: 2014-03-06 21:34:00
+date: 2014-03-06 
 categories: life
 ---
 

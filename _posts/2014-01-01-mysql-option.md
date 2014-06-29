@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "팁 3 - mysql 옵션"
-date: 2014-03-05 21:34:00
+date: 2014-03-05 
 categories: mysql
 ---
 

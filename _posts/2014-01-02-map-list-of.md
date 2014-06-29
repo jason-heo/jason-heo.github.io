@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "boost::assign::map_list_of 사용법 (C++에서 하드 코딩을 쉽게 제거하기)"
-date: 2014-03-21 21:34:00
+date: 2014-03-21 
 categories: cpp
 ---
 

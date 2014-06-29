@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NoSQL 위키피디어 번역"
-date: 2011-11-06 21:34:00
+date: 2011-11-06 
 categories: programming
 ---
 
