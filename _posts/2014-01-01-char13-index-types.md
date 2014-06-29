@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MySQL DELETE 성능 (IN sub-query를 JOIN으로 변경하기)"
+title: "MySQL INDEX 종류"
 date: 2014-03-05 21:34:00
 categories: mysql
 ---
