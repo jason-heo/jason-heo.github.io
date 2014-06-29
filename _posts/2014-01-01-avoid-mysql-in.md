@@ -15,7 +15,7 @@ categories: mysql
 
 다른 RDBMS는 모르겠지만 MySQL에서 IN subquery의 성능은 별로 좋지를 못하다. 본 글에서는 IN Subquery의 작동 방식을 살펴볼 것이다.
 
-Data는 TPC-H 벤치마크 데이터를 이용하여 실험하였다. TPC-H 데이터를 MySQL에 Loading하는 것은 [필자가 작성한 글](/mysql/2014/03/06/mysql-tpc-h.html)을 보기 바란다.
+Data는 TPC-H 벤치마크 데이터를 이용하여 실험하였다. TPC-H 데이터를 MySQL에 Loading하는 것은 [필자가 작성한 글](/mysql/2014/03/05/mysql-tpc-h.html)을 보기 바란다.
 
 본 글은 MySQL 5.5를 기준으로 작성되었다. MySQL 5.6에서는 [subquery materialization](https://dev.mysql.com/doc/refman/5.6/en/subquery-optimization.html#subquery-materialization)을 이용하여 IN subquery의 성능이 향상되었다. MySQL 5.6의 IN () 성능 측정 결과는 다른 포스트에 정리할 예정이다.
 

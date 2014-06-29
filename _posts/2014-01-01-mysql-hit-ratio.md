@@ -5,7 +5,7 @@ date: 2014-03-05
 categories: mysql
 ---
 
-[이전 포스트](/mysql/2014/03/06/mysql-query-cache-prune.html)에서 MySQL Query Cache에 대한 자세한 설명을 했지만, 내용이 길다보니 Query Cache hit ratio을 구하는 방법은 눈에 들어오지 않아서 Query Cache hit ratio 구하는 방법만 따로 정리했다. 더불어 InnoDB buffer pool hit ratio 구하는 방법도 정리했다.
+[이전 포스트](/mysql/2014/03/05/mysql-query-cache-prune.html)에서 MySQL Query Cache에 대한 자세한 설명을 했지만, 내용이 길다보니 Query Cache hit ratio을 구하는 방법은 눈에 들어오지 않아서 Query Cache hit ratio 구하는 방법만 따로 정리했다. 더불어 InnoDB buffer pool hit ratio 구하는 방법도 정리했다.
 
 ## Query Cache hit ratio
 

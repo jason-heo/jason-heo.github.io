@@ -5,7 +5,7 @@ date: 2014-03-16
 categories: cpp
 ---
 
-역자 주 : [앞선 문서](/cpp/2014/03/17/smart-pointer3.html) 를 보면 `boost::shared_ptr`은 일반 포인터에 대비하여 크기가 약간 크다는 단점이 나와 있다. 이번 문서에서는 `boost::shared_ptr`의 구현을 살펴 볼 것인데 그 원인도 알 수 있다. 참고로 `boost::shared_ptr`의 크기가 일반 포인터 보다 큰 것이 싫다면 싫다면 `boost::intrusive_ptr`을 사용하면 된다.
+역자 주 : [앞선 문서](/cpp/2014/03/16/smart-pointer3.html) 를 보면 `boost::shared_ptr`은 일반 포인터에 대비하여 크기가 약간 크다는 단점이 나와 있다. 이번 문서에서는 `boost::shared_ptr`의 구현을 살펴 볼 것인데 그 원인도 알 수 있다. 참고로 `boost::shared_ptr`의 크기가 일반 포인터 보다 큰 것이 싫다면 싫다면 `boost::intrusive_ptr`을 사용하면 된다.
 
 ---
 
