@@ -13,6 +13,9 @@ categories: cpp
 - http://kevinaboos.wordpress.com/2013/07/23/clang-tutorial-part-ii-libtooling-example/
  - 이것도 괜찮은 자료. Part I, II, III까지 있는데 I, II 정도까지 읽어보면 좋을 듯 하다.
 - http://amnoid.de/tmp/clangtut/tut.html
- - 카이스트 수업 자료에 있는 reference. 총 9개의 예제 프로그램이 있다.
+ - 카이스트 수업 자료에 있는 reference
+ - 2008년 자료라서 여기 나온 함수명 및 변수명은 하나도 맞지 않다.
+ - 개념 잡는데는 도움될 것이라...
+ - 총 9개의 예제 프로그램이 있다
 
 [1]: https://area51.stackexchange.com/proposals/68765/stack-overflow-in-korean
