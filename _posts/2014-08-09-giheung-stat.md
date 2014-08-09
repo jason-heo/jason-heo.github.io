@@ -33,8 +33,6 @@ categories: life
 
 위의 출처는 [다음 부동산][4]이니 관심있는 분은 직접 방문해서 보세요.
 
-{% include adsense-bottom.md %}
-
 ## 2블럭 - AK플라자, 건설사는 미확인
 
 - 면적 : 28,845제곱미터
