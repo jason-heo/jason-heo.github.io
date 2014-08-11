@@ -25,6 +25,7 @@ categories: life
 ![1블럭 조감도](/images/posts/life/giheung-stat/1block-jogamdo.jpg)
 <출처 : [다음 부동산][4]>
 
+- 분양 홈페이지 : [http://www.lotte-raycity.com/](http://www.lotte-raycity.com/)
 - 면적 : 7,698제곱미터
 - 가구수 : 아파트 260가구, 오피스텔 403가구
 - 총 38층
