@@ -40,6 +40,7 @@ Query OK, 0 rows affected (1 min 30.55 sec)
 이는 `DELETE TABLE` 보다 `TRUNCATE TABLE`이 빠른 것과 비슷한 원리이다.
 
 우선 다음 결과를 보자. 총 1GB 중에서 약 170MB를 사용 중이다.
+
 ```sql
 mysql> SHOW GLOBAL STATUS LIKE 'Qc%';
 +-------------------------+-----------+
