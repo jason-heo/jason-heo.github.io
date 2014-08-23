@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기흥역세권 개발 자료"
+title: "기흥역세권 개발 자료 (기흥역 롯데캐슬 레이시티 및 기타)"
 categories: life
 ---
 
