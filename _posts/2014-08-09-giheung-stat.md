@@ -8,12 +8,14 @@ categories: life
 
 기흥역세권은 기흥구 구갈동 234번지 일원을 개발하여 총 247,765km^2의 면적에 5,100세대를 아파트와 상업 시설을 만드는 사업입니다. (참고 자료 : [용인도시공사 홈페이지][1])
 
-2013년 10월 [매일경제 뉴스][2]에 따르면 다음과 같은 분양 계획에 있다고 합니다.
+- 2013년 10월 [매일경제 뉴스][2]에 따르면 다음과 같은 분양 계획에 있다고 합니다.
 
 ![분양 계획](/images/posts/life/giheung-stat/bunyang-plan.jpg)
 <출처 : [매일경제 뉴스][2]>
 
 작년 뉴스에 따르면 2014년 8월 현재 웬만큰 분양이 1,2블럭 정도는 분양이 되었어야 했는데 진행이 좀 늦어지고 있나 봅니다;;
+
+- [2014-08-18 뉴스][7]에 기흥역세권의 현재와 미래가 정리되어 있습니다.
 
 ## 부지 계획
 
@@ -55,12 +57,18 @@ categories: life
 <출처 : [건원건설 홈페이지][5]
 
 
-## 3~4블럭
+## 3블럭
 
 이 부분은 자료가 검색되는데로 포스팅하겠습니다.
+
+## 4블럭
+
+[2014-08-19 뉴스][6]에 따르면 대성산업이 4블럭을 652억원에 (주)신영에게 매각했다고 합니다.
 
 [1]: https://www.yonginlc.or.kr/business/city.do?sub=4_1
 [2]: http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=009&aid=0003045281
 [3]: http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=009&aid=0003266209&sid1=001
 [4]: http://bunyang.realestate.daum.net/detail.php?viewType=Detail&build_dtl_cd=6005333&supp_cd=9006015
 [5]: http://kunwon.com/board/perform.read.php?BBS_GUBUN=1&kind=2&SC_field1=&SC_field2=&SC_word=&page=1&BBS_IDX=395
+[6]: http://www.nspna.com/news/?mode=view&newsid=97774
+[7]: http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=015&aid=0003140443
