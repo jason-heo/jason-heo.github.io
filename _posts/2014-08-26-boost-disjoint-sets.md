@@ -87,10 +87,15 @@ int main(int argc, char* argv[])
 
 위에서 사용된 기본 예제는 아쉽게도 `int` 형 밖에 처리를 못 한다. primitive data type 중 `long` 형도 처리할 수 없고, 당연히 좀 더 복잡한 자료 구조, 즉, struct나 Class는 사용할 수 없다.
 
-[이를 극복하기 위한 방법][4]도 있는 듯 하다. Class 멤버 변수에 저장하고자 하는 변수를 만들고, Class에는 몇 가지 Operator를 overloading하는 듯 한데 관심있는 분은 직접 테스트하고 그 결과를 알려주면 고맙겠다.
+이를 극복하기 위한 방법도 있는 듯 하다.
+
+[이 방법][4]은 `std::map`을 사용하여 data type을 매핑시켜주는 듯 하다. data type이 `long` 처럼 primitive한 경우 사용 가능한 듯...
+
+[다른 방법][5]으로는 Class 멤버 변수에 저장하고자 하는 변수를 만들고, Class에는 몇 가지 Operator를 overloading하는 듯 한데 관심있는 분은 직접 테스트하고 그 결과를 알려주면 고맙겠다.
 
 
 [1]: http://en.wikipedia.org/wiki/Disjoint-set_data_structure
 [2]: http://stackoverflow.com/questions/3738537/implementing-equivalence-relations-in-c-using-boostdisjoint-sets
 [3]: http://www.boost.org/doc/libs/1_56_0/libs/disjoint_sets/disjoint_sets.html
-[4]: http://janoma.cl/post/using-disjoint-sets-with-a-vector/
+[4]: http://stackoverflow.com/questions/4134703/understanding-boostdisjoint-sets
+[5]: http://janoma.cl/post/using-disjoint-sets-with-a-vector/
