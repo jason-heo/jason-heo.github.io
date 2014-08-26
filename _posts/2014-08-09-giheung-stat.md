@@ -42,9 +42,7 @@ categories: life
 
 위의 출처는 [다음 부동산][4]이니 관심있는 분은 직접 방문해서 보세요.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- tistory 본문 광고 -->
-<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7500017475798377" data-ad-slot="4703989831"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+{% include adsense-content.md %}
 
 ## 2블럭 - AK플라자, 건설사는 미확인
 
