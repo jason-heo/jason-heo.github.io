@@ -14,7 +14,7 @@ Log4cxx의 MDC(Mapped Diagnostic Context) 기능을 활용하면 원하는 값�
 log4cxx::MDC::put("PID", boost::lexical_cast<string>(getpid()));
 ```
 
-`%X{}`를 활용하여 MDC에서 설정한 이름에 접급할 수 있다.
+log4cxx.properties 파일에서는 `%X{}`를 활용하여 MDC에서 설정한 이름에 접급할 수 있다.
 
 ```
 log4j.appender.C.layout.ConversionPattern=%X{PID} %m%n
