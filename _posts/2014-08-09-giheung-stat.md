@@ -39,7 +39,7 @@ categories: life
 
 3블럭이 젤 넓지만, 3-1,2,3로 쪼개져있습니다. 다음 그림을 보면 3블럭이 어떻게 쪼개졌는지 보실 수 있습니다.
 
-![부지 계획2](/images/posts/life/giheung-stat/land-block2.png)
+![부지 계획2](/images/posts/life/giheung-stat/land-block2.jpg)
 
 ## 1블럭 - 롯데캐슬 레이시티
 
