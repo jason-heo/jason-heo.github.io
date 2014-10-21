@@ -6,7 +6,7 @@ categories: life
 
 ## 2014-10-10 내용 추가
 
-2014년 7월 4일자 [AK홀딩스 투자설명서][12]에 따르면, AK플라자를 운영할 예정이라고 합니다.
+2014년 8월 8일자 [AK홀딩스 투자설명서][12]에 따르면, AK플라자를 운영할 예정이라고 합니다.
 
 ![ak플라자](/images/posts/life/giheung-stat/ak-holdings.png)
 
