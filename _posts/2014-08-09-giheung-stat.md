@@ -4,6 +4,12 @@ title: "기흥역세권 개발 자료 (기흥역 롯데캐슬 레이시티 및 �
 categories: life
 ---
 
+## 2014-10-10 내용 추가
+
+2014년 7월 4일자 [AK홀딩스 투자설명서][12]에 따르면, AK플라자를 운영할 예정이라고 합니다.
+
+![ak플라자](/images/posts/life/giheung-stat/ak-holdings.png)
+
 ## 2014-09-22 내용 추가
 
 [2014-09-22, 아주뉴스][11]에 따르면, AK플라자는 무산되었다고 합니다.
@@ -100,3 +106,4 @@ categories: life
 [9]: http://mayor.yongin.go.kr/down/%EB%AF%BC%EC%84%A05%EA%B8%B0_%EA%B3%B5%EC%95%BD%EC%82%AC%ED%95%AD_%EC%B6%94%EC%A7%84%ED%98%84%ED%99%A9(2014.1%EC%9B%94).pdf
 [10]: http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=009&aid=0003299396
 [11]: http://www.ajunews.com/view/20140922152939327
+[12]: http://englishdart.fss.or.kr/dsaf001/main.do?rcpNo=20140704000054
