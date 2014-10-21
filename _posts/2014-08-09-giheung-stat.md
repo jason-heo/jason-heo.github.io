@@ -106,4 +106,4 @@ categories: life
 [9]: http://mayor.yongin.go.kr/down/%EB%AF%BC%EC%84%A05%EA%B8%B0_%EA%B3%B5%EC%95%BD%EC%82%AC%ED%95%AD_%EC%B6%94%EC%A7%84%ED%98%84%ED%99%A9(2014.1%EC%9B%94).pdf
 [10]: http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=009&aid=0003299396
 [11]: http://www.ajunews.com/view/20140922152939327
-[12]: http://englishdart.fss.or.kr/dsaf001/main.do?rcpNo=20140704000054
+[12]: http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20140808000079
