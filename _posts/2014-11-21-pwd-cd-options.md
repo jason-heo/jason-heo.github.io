@@ -43,6 +43,7 @@ $ pwd -P
 $ cd -P ..
 $ pwd
 /home/foo  <= cd에서 -P 옵션이 없었다면 /home/foor/bar로 이동했을 것이다.
+```
 
 ## cd -
 
