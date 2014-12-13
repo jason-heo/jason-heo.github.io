@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "boost::disjoint_sets 사용방법"
+title: "BOOST_FOREACH 의 간단한 사용 방법과 구현 문서 링크"
 categories: cpp
 ---
 
