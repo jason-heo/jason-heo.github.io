@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Query Rewrite에 대한 간략한 소개"
-categories: programming
+categories: MySQL
 ---
 
 MySQL 5.7부터 Query Rewrite 기능을 사용할 수 있는 듯 하다. 아직은 자료 조사 중이며 앞으로 1주일 동안은 Query Rewrite 기능을 주로 찾아볼 계획이다. 물론 다음 주 오픈할 서비스가 있어서 시간이 날진 모르지만 틈틈히 조사해볼 계획이다.
