@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MySQL Query Rewrite에 대한 간략한 소개"
+title: "MySQL Plugin에 대한 간단한 소개"
 categories: MySQL
 ---
 
