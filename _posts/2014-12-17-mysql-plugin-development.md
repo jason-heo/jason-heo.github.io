@@ -47,6 +47,12 @@ Plugin 종류별로 할 수 있는 일이 다른데, 이들의 특성을 파악�
 - fulltext에서 사용할 term extractor 지정
 - MySQL FTS에서 한글 같은 경우 n-gram 방식으로 term들을 저장한다. 따라서 저장 용량도 늘어나고 어휘 분석도 제대로 안 될 수 있다.
 - 요즘 오픈소스 형태소 분석기가 있으므로 이것과 fulltext parse plugin을 연동하면 좋을 듯 하다.
+- 할 수 있는 일
+-- 다음과 같은 일을 할 수 있으며 다음에 나온 명칭은 책의 저자가 만든 기능을 분류하기 이한 이름일 뿐이다.
+-- "extractor" : url을 저장하는 컬럼을 `FULLTEXT INDEX`를 걸어 놓고 indexing되는 값은 웹 페이지 문서일 수 있다. 혹은 pdf 파일의 path를 저장하는 컬럼이 있다면 실제 pdf 파일의 내용을 indexing할 수도 있다.
+-- "tokenizer" : 이것이 우리가 일반적으로 생각하는 full text parser이다. 형태소 분석을 통하여 정확한 단어 단위로 indexing을 하게 한다. 예를 들어 "동해물과백두산이마르고닳도록" 처럼 띄어쓰기가 되지 않았더라도 좋은 형태소 분석기가 있다면 "동해", "백두산" 같은 단어를 추출하여 MySQL에 넘기면 향후 "백두산"이라는 질의어가 입력될 때 위의 문자열이 검색될 것이다.
+-- "post-processor" : 형태소 분석은 MySQL의 parser가 담당하되, tokenize된 값을 한번 더 가공해 주는 역할을 한다. 예를 들어 "Linux"라는 단어가 있다면 여기에 "Ubuntu", "Gentoo"도 같이 indexing되도록 하는 것이다.
+-- 위의 것들은 FullTtext parser plugin이 할 수 있는 기능들이며 plugin 1개에서 위의 일을 모두 담당할 수도 있다.
 
 ## Storage Engine Plugin
 
