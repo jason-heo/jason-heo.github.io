@@ -61,7 +61,7 @@ typedef struct st_mysql_ftparser_param
 |mode            |파서의 동작 모드. 아래에서 설명됨|
 
 * `MYSQL_FTFLAGS_NEED_COPY`
-** `mysql_add_word()`에 전달된 word를 MySQL이 복사해야 하는지 여부를 저장한다. 다음과 같은 예를 보자. `buf`의 값은 `while ()` 문을 돌 때마다 값이 변경되므로 word들은 copy가 되어야 한다.
+ * `mysql_add_word()`에 전달된 word를 MySQL이 복사해야 하는지 여부를 저장한다. 다음과 같은 예를 보자. `buf`의 값은 `while ()` 문을 돌 때마다 값이 변경되므로 word들은 copy가 되어야 한다.
 ```
     char buf[1024];
     FILE *f = fopen(param->doc, "r");
@@ -71,13 +71,13 @@ typedef struct st_mysql_ftparser_param
 
     fclose(f);
 ```
-** copy를 하는 경우 속도가 느려지게 된다. copy가 필요한 경우와 필요하지 않은 경우를 잘 이해하고 활용하도록 하자.
+ * copy를 하는 경우 속도가 느려지게 된다. copy가 필요한 경우와 필요하지 않은 경우를 잘 이해하고 활용하도록 하자.
 
 * `mode`
-** 약간 이해가 안 되는 내용임
-** `MYSQL_FTPARSER_SIMPLE_MODE` : index할 word들을 반환하는 mode
-** `MYSQL_FTPARSER_WITH_STOPWORDS` : Phrase match를 위한 Boolean Search에 사용된다.
-** `MYSQL_FTPARSER_FULL_BOOLEAN_INFO` : Boolean Search에 사용된다. `MYSQL_FTPARSE_BOOLEAN_INFO`에 Boolean 연산을 위한 정보가 저장되어 있다.
+ * 약간 이해가 안 되는 내용임
+ * `MYSQL_FTPARSER_SIMPLE_MODE` : index할 word들을 반환하는 mode
+ * `MYSQL_FTPARSER_WITH_STOPWORDS` : Phrase match를 위한 Boolean Search에 사용된다.
+ * `MYSQL_FTPARSER_FULL_BOOLEAN_INFO` : Boolean Search에 사용된다. `MYSQL_FTPARSE_BOOLEAN_INFO`에 Boolean 연산을 위한 정보가 저장되어 있다.
 
 ### `MYSQL_FTPARSER_BOOLEAN_INFO`
 
