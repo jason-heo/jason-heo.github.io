@@ -62,6 +62,7 @@ typedef struct st_mysql_ftparser_param
 
 * `MYSQL_FTFLAGS_NEED_COPY`
  * `mysql_add_word()`에 전달된 word를 MySQL이 복사해야 하는지 여부를 저장한다. 다음과 같은 예를 보자. `buf`의 값은 `while ()` 문을 돌 때마다 값이 변경되므로 word들은 copy가 되어야 한다.
+
 ```
     char buf[1024];
     FILE *f = fopen(param->doc, "r");
@@ -71,6 +72,7 @@ typedef struct st_mysql_ftparser_param
 
     fclose(f);
 ```
+
  * copy를 하는 경우 속도가 느려지게 된다. copy가 필요한 경우와 필요하지 않은 경우를 잘 이해하고 활용하도록 하자.
 
 * `mode`
@@ -112,6 +114,7 @@ param->mysql_add_word(param, word, len, &boolean_info);
 PHP 코드 중에서 변수만 발라내는 plugin을 제작한다. PHP의 변수는 dollor sign ($)으로 시작하며, 영문자/숫자/underscore/127~255의 byte를 포함하는데 PHP 코드 중에서 이런 문자만 추려내서 index할 수 있도록 하는 parser이다. 변수 부분만 발라래는 것은 생략하고 대략 큰 구조만 적으면...
 
 * 파싱 함수
+
 ```
 static int parse_php(MYSQL_FTPARSER_PARAM *param)
 {
@@ -131,6 +134,7 @@ static int parse_php(MYSQL_FTPARSER_PARAM *param)
 ```
 
 * plugin 정보 등록
+
 ```
 static struct st_mysql_ftparser ft_php=
 {
@@ -158,12 +162,14 @@ mysql_declare_plugin_end;
 ```
 
 * plugin 등록
+
 ```
 mysql> CREATE TABLE ft_demo (php TEXT, FULLTEXT(php) WITH PARSER php_code) ENGINE=MyISAM;
 Query OK, 0 rows affected (0.01 sec)
 ```
 
 * 사용하기
+
 ```
 mysql> INSERT ft_demo VALUES ('$a=15; echo $this->var;'), ('echo $classname::CONST_VALUE;'), ('echo "$foo$bar";'), ('echo AnotherClass::$varvar;'), ('echo MyClass::CONST_VALUE;');
 Query OK, 5 rows affected (0.00 sec)
