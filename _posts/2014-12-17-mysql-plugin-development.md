@@ -42,7 +42,7 @@ Plugin 종류별로 할 수 있는 일이 다른데, 이들의 특성을 파악�
  - condition은 `Item` 객체의 tree인데, 기본 class도 복잡하고, `Item class`의 계층도 수백개나 된다.
  - 하지만 MySQL의 core 중 하나이다. 그도 그럴 것이 WHERE 절을 표현하는 것이기 때문에 엄청 복잡할 듯 하다.
 
-# fulltext parser plugin
+## fulltext parser plugin
 
 - fulltext에서 사용할 term extractor 지정
 - MySQL FTS에서 한글 같은 경우 n-gram 방식으로 term들을 저장한다. 따라서 저장 용량도 늘어나고 어휘 분석도 제대로 안 될 수 있다.
