@@ -16,7 +16,7 @@ categories: programming
 1. 변수의 data type을 알 수 있다.
  * 즉, `== false`를 보면 `is_late`가 boolean type인 것을 알 수 있다.
 1. 어순상 `!`이 변수보다 뒤에 오는 것이 맞을 듯 하다.
- * 즉, "andrew가 지각하지 *않은* 경우"로 읽힐 수 있다.
+ * 즉, "andrew가 지각하지 **않은** 경우"로 읽힐 수 있다.
 
 와 같은 이유에서였다.
 
