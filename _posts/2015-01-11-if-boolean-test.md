@@ -4,7 +4,7 @@ title: "if (boolean_variable == false) vs if (!boolean_variable)"
 categories: programming
 ---
 
-## Boolean Test 방식
+## 당신의 Boolean Test 방식은?
 
 프로그램 분기를 위하여 boolean test를 많이 사용한다. 코드 가독성 측면에서 다음 code 중 어떤 것을 선호하는가? 변수의 type은 boolean이라 가정한다.
 
@@ -15,8 +15,8 @@ categories: programming
 
 1. 변수의 data type을 알 수 있다.
  * 즉, `== false`를 보면 `is_late`가 boolean type인 것을 알 수 있다.
-1. 어순상 !이 변수보다 뒤에 오는 것이 맞을 듯 하다.
- * 즉, `andrew가 지각하지 *않은* 경우`로 읽힐 수 있다.
+1. 어순상 `!`이 변수보다 뒤에 오는 것이 맞을 듯 하다.
+ * 즉, "andrew가 지각하지 *않은* 경우"로 읽힐 수 있다.
 
 와 같은 이유에서였다.
 
