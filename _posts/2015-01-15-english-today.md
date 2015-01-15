@@ -35,6 +35,10 @@ challenging하다는 뜻
 
 * "ball rolling"은 미국 사람들이 좋아하는 레포츠라고 하는데 (뭐하는 레포츠지?) *"get the ball rolling"* 이라고 하면 "뭔가를 시작하자"라는 의미라고 한다. "킥-오프"과 비슷하려나?
 
+## Thank you for the heads up
+
+* *"알려줘서 고마워~"*
+* 나에게 뭔가 information이나 warning을 해 준 것에 대해 고마움을 전할 때 사용
 
 ## traditional portal
 
