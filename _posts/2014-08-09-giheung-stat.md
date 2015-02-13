@@ -8,7 +8,7 @@ categories: life
 
 * 저는 "기흥역"을 검색해서 새로운 글이 올라오는지 모니터링하고 있습니다. 오늘 (2/13)부터 알바들이 풀렸는지 지웰 푸르지오 글이 많이 올라왔네요. 그 중 단지배치도를 올린 사람도 있었습니다. (아직 공식 홈페이지에서도 볼 수 없는 사진이죠)
 
-![4블럭 단지배치도](/images/posts/life/giheung-stat/4bl-layout.PNG)
+![4블럭 단지배치도](/images/posts/life/giheung-stat/4bl-layout.jpg)
 
 * 참고
 ** 84C 타입은 5Bay라고 광고하고 있습니다. (그런데 평면도 보면 5Bay라고 하기엔 살짝 부족해보입니다.)
@@ -16,13 +16,18 @@ categories: life
 ** 나머지는 아파트로서 38층입니다.
 
 * 아파트 타입별 안내  (면적 단위:제곱미터)
+
 |타입|세대수|전용 면적|공급면적|
 |----|------|---------|--------|
 |84A|210|84.75|117.82|
 |84B|210|84.97|118.23|
 |84C|141|84.85|120.30|
 
-![4블럭 조감도](/images/posts/life/giheung-stat/4bl-jogamdo.PNG)
+아래 사진은 홈페이지에서 찾을 수 있는 사진입니다.
+![4블럭 조감도](/images/posts/life/giheung-stat/4bl-jogamdo.jpg)
+
+아래 사진은 블로그에서 찾은 사진
+![4블럭 조감도](/images/posts/life/giheung-stat/4bl-jogamdo2.jpg)
 
 ## 2015-01-29 뉴스
 
