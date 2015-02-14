@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "`delete` 시에는 `NULL` 검사를 할 필요가 없다"
+title: "delete 시에는 NULL 검사를 할 필요가 없다"
 categories: programming
 ---
 
