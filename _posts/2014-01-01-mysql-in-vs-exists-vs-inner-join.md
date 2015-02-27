@@ -7,9 +7,9 @@ categories: mysql
 
 ## 연재 시리즈
 
-- MySQL IN subquery 성능. IN sub query는 가급적 사용을 피하자
+- [MySQL IN subquery 성능. IN sub query는 가급적 사용을 피하자][1]
 - IN() v.s. EXISTS v.s INNER JOIN <= 현재 글
-- INNER JOIN v.s. EXISTS 어떤 것이 언제 더 빠른가
+- [INNER JOIN v.s. EXISTS 어떤 것이 언제 더 빠른가][2]
 
 ## 일러두기
 
@@ -121,3 +121,6 @@ WHERE NOT EXISTS (
 - http://explainextended.com/2009/09/15/not-in-vs-not-exists-vs-left-join-is-null-sql-server/
 - http://explainextended.com/2009/09/18/not-in-vs-not-exists-vs-left-join-is-null-mysql/
 - http://explainextended.com/2010/05/27/left-join-is-null-vs-not-in-vs-not-exists-nullable-columns/
+
+[1]: http://mysqlguru.github.io/mysql/2014/05/22/avoid-mysql-in.html
+[2]: http://mysqlguru.github.io/mysql/2014/05/30/mysql-inner-join-vs-exists.html

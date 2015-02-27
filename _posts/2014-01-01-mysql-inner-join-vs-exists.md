@@ -7,8 +7,8 @@ categories: mysql
 
 ## 연재 순서
 
-- MySQL IN subquery 성능. IN sub query는 가급적 사용을 피하자
-- IN() v.s. EXISTS v.s INNER JOIN
+- [MySQL IN subquery 성능. IN sub query는 가급적 사용을 피하자][1]
+- [IN() v.s. EXISTS v.s INNER JOIN][2]
 - INNER JOIN v.s. EXISTS 성능 비교 <= 현재 글
 
 ## 1:n 관계 테이블에서 INNER JOIN과 EXISTS 비교
@@ -121,3 +121,6 @@ FROM customer WHERE EXISTS (
           BETWEEN '1991-01-01' AND '1999-12-31'
 );
 ```
+
+[1]: http://mysqlguru.github.io/mysql/2014/05/22/avoid-mysql-in.html
+[2]: http://mysqlguru.github.io/mysql/2014/05/28/mysql-in-vs-exists-vs-inner-join.html

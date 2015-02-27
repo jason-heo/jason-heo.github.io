@@ -8,8 +8,8 @@ categories: mysql
 ## 연재 시리즈
 
 - MySQL IN subquery 성능. IN sub query는 가급적 사용을 피하자 <= 현재 글
-- IN() v.s. EXISTS v.s INNER JOIN
-- INNER JOIN v.s. EXISTS 어떤 것이 언제 더 빠른가
+- [IN() v.s. EXISTS v.s INNER JOIN][1]
+- [INNER JOIN v.s. EXISTS 어떤 것이 언제 더 빠른가][2]
 
 ## 들어가며
 
@@ -147,3 +147,6 @@ IN 안에 사용된 subquery가 "DEPENDENT SUBQUERY"로 출력되었다. MySQL�
 ## MySQL 5.6에서 IN subquery 최적화 방법
 
 이건 다음 기회에 정리...
+
+[1]: http://mysqlguru.github.io/mysql/2014/05/28/mysql-in-vs-exists-vs-inner-join.html
+[2]: http://mysqlguru.github.io/mysql/2014/05/30/mysql-inner-join-vs-exists.html
