@@ -75,7 +75,19 @@ MySQL 데몬을 최초 start 한 뒤 Query를 수행하면 시간이 유난히 �
  - 아직까진 10%로 MySQL 소스 코드에 하드 코딩되어 있다.
  - [MySQL 개발자 블로그][3]에서 10%가 적당한지에 대한 투표가 진행 중이다.
 
+## Plan Stability를 향하여.... (MySQL 5.6의 관련 설정)
+
+Plan Stablitity는 동일한 Query에 대해 동일한 Execution Plan이 생성되는 것을 의미한다. MySQL에서는 이를 바람직한 목표로 하고 있다.
+
+본인이 사용 중인 MySQL 5.5에서는 random sampling되는 상황에 따라서 동일 Query의 Plan이 서로 다르게 생성된다. 때로는 너무 말도 안 되는 Plan이 생성되는 바람에 동일한 Query임에도 불구하고 속도 차이가 심하게 난다. 평소엔 0.1초 걸리는 Query가 간혹 5초 이상 걸리기도 하는데 이런 경우 MySQL이 밉기 까지하다. 
+
+MySQL 5.6에서는 INDEX 통계를 persistent하게 유지할 수 있는 옵션을 제공한다. `innodb_stats_persistent`가 그 옵션이며 기본으로 enabled된 옵션이다. 본인도 아직 사용해보진 않았지만 MySQL이 restart되더라도 한번 sampling된 통계는 계속 유지되는 듯 하다.
+
+물론 `innodb_stats_auto_recalc`는 기본 값이 `ON`이므로 10%의 변화가 있을 때는 자동으로 재계산된다.
+
+이에 대한 자세한 내용은 [MySQL 5.6 메뉴얼][4]에서 볼 수 있다.
 
 [1]: https://dev.mysql.com/doc/refman/5.5/en/innodb-statistics-estimation.html
 [2]: http://dev.mysql.com/doc/refman/5.6/en/innodb-parameters.html#sysvar_innodb_stats_auto_recalc
 [3]: http://mysqlserverteam.com/some-bits-about-index-statistics-in-innodb/
+[4]: http://dev.mysql.com/doc/refman/5.6/en/innodb-persistent-stats.html
