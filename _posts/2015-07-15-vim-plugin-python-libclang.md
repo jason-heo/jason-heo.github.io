@@ -144,28 +144,28 @@ int main()
 
 * python script: `parse.py`
 
-```python
-#!/usr/bin/env python
+        ```python
+        #!/usr/bin/env python
 
-import clang.cindex, asciitree, sys
+        import clang.cindex, asciitree, sys
 
-# Library 경로는 본인 환경마다 다릅니다.
-clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
+        # Library 경로는 본인 환경마다 다릅니다.
+        clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
 
-def print_decl(node):
-    if (node.kind.is_declaration()):
-        if (node.spelling == "Person"):
-            print node.spelling
-            print node.location
+        def print_decl(node):
+            if (node.kind.is_declaration()):
+                if (node.spelling == "Person"):
+                    print node.spelling
+                    print node.location
 
-    for child in node.get_children():
-        print_decl(child)
+            for child in node.get_children():
+                print_decl(child)
 
-index = clang.cindex.Index.create(False)
+        index = clang.cindex.Index.create(False)
 
-tu = index.parse("./test.cc")
-print_decl(tu.cursor)
-```
+        tu = index.parse("./test.cc")
+        print_decl(tu.cursor)
+        ```
 
 * 실행해보기: `Person`이 정의된 File과 Line을 출력한다.
 
