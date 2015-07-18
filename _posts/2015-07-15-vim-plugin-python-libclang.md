@@ -96,16 +96,21 @@ Python Clang Module 설치
 -----------------------
 
 * `pip`로 clang을 설치할 수 있다.
+
 ```
 $ sudo pip install clang
 ```
+
 * `pip` 명령이 없는 경우 다음과 같은 명령으로 `pip`부터 설치하자
 * 다음 명령 실행
+
 ```
 $ sudo easy_install pip
 ```
+
 * Python Clang Module이 제대로 설치되었는지 확인 방법
  * python 실행 후 `import clang.cindex` 입력 시 아무 오류가 없어야 한다.
+
 ```
 $ python
 Python 2.7.6 (default, Sep  9 2014, 15:04:36) 
@@ -119,6 +124,7 @@ Parsing Test
 ------------
 
 * 입력 프로그램: `test.cc`
+
 ```cpp
 #include <iostream>
 
@@ -135,7 +141,9 @@ int main()
     kim.age_ = 10;
 }
 ```
+
 * python script: `parse.py`
+
 ```python
 #!/usr/bin/env python
 
@@ -158,8 +166,10 @@ index = clang.cindex.Index.create(False)
 tu = index.parse("./test.cc")
 print_decl(tu.cursor)
 ```
+
 * 실행해보기: `Person`이 정의된 File과 Line을 출력한다.
-```sh
+
+```
 $ ./parse.py
 Person
 <SourceLocation file './test.cc', line 3, column 7
