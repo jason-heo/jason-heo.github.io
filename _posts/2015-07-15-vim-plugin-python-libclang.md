@@ -126,25 +126,24 @@ Parsing Test
 * 입력 프로그램: `test.cc`
 
 ```cpp
-#include <iostream>
+        #include <iostream>
 
-class Person
-{
-public:
-    int get_age(){return age_;}
-    int age_;
-};
+        class Person
+        {
+        public:
+            int get_age(){return age_;}
+            int age_;
+        };
 
-int main()
-{
-    Person kim;
-    kim.age_ = 10;
-}
+        int main()
+        {
+            Person kim;
+            kim.age_ = 10;
+        }
 ```
 
 * python script: `parse.py`
 
-        ```python
         #!/usr/bin/env python
 
         import clang.cindex, asciitree, sys
@@ -165,7 +164,6 @@ int main()
 
         tu = index.parse("./test.cc")
         print_decl(tu.cursor)
-        ```
 
 * 실행해보기: `Person`이 정의된 File과 Line을 출력한다.
 
