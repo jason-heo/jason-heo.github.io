@@ -107,12 +107,12 @@ Python Clang Module 설치
 * Python Clang Module이 제대로 설치되었는지 확인 방법
  * python 실행 후 `import clang.cindex` 입력 시 아무 오류가 없어야 한다.
 
-        $ python
-        Python 2.7.6 (default, Sep  9 2014, 15:04:36) 
-        [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
-        Type "help", "copyright", "credits" or "license" for more information.
-        >>> import clang.cindex
-        >>> 
+                $ python
+                Python 2.7.6 (default, Sep  9 2014, 15:04:36) 
+                [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
+                Type "help", "copyright", "credits" or "license" for more information.
+                >>> import clang.cindex
+                >>> 
 
 Parsing Test
 ------------
