@@ -96,17 +96,17 @@ Python Clang Module 설치
 -----------------------
 
 * `pip`로 clang을 설치할 수 있다.
-```sh
+```
 $ sudo pip install clang
 ```
 * `pip` 명령이 없는 경우 다음과 같은 명령으로 `pip`부터 설치하자
 * 다음 명령 실행
-```sh
+```
 $ sudo easy_install pip
 ```
 * Python Clang Module이 제대로 설치되었는지 확인 방법
-** python 실행 후 `import clang.cindex` 입력 시 아무 오류가 없어야 한다.
-```sh
+ * python 실행 후 `import clang.cindex` 입력 시 아무 오류가 없어야 한다.
+```
 $ python
 Python 2.7.6 (default, Sep  9 2014, 15:04:36) 
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
