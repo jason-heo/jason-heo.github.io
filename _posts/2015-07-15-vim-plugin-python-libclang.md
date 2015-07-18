@@ -168,9 +168,6 @@ print_decl(tu.cursor)
 ```
 
 * 실행해보기: `Person`이 정의된 File과 Line을 출력한다.
-
-```
-$ ./parse.py
-Person
-<SourceLocation file './test.cc', line 3, column 7
-```
+        $ ./parse.py
+        Person
+        <SourceLocation file './test.cc', line 3, column 7
