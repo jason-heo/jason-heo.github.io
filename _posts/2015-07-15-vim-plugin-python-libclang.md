@@ -79,3 +79,88 @@ VIM Plugin
 
 - Your First Vim Plugin
  - https://www.youtube.com/watch?v=lwD8G1P52Sk
+
+개발 환경 셋팅하기
+==================
+
+Mac 기준에서 설명
+
+Clang 설치하기
+-------------
+
+* 본인의 경우 Xcode 설치할 때 자동으로 설치된 듯 하다.
+* LLVM 3.6이 설치되었는데, 더 최신 버전을 설치하고 싶은 경우 다음의 URL을 참고하면 된다.
+* http://llvm.org/docs/GettingStarted.html
+
+Python Clang Module 설치
+-----------------------
+
+* `pip`로 clang을 설치할 수 있다.
+```sh
+$ sudo pip install clang
+```
+* `pip` 명령이 없는 경우 다음과 같은 명령으로 `pip`부터 설치하자
+* 다음 명령 실행
+```sh
+$ sudo easy_install pip
+```
+* Python Clang Module이 제대로 설치되었는지 확인 방법
+** python 실행 후 `import clang.cindex` 입력 시 아무 오류가 없어야 한다.
+```sh
+$ python
+Python 2.7.6 (default, Sep  9 2014, 15:04:36) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import clang.cindex
+>>> 
+```
+
+Parsing Test
+------------
+
+* 입력 프로그램: `test.cc`
+```cpp
+#include <iostream>
+
+class Person
+{
+public:
+    int get_age(){return age_;}
+    int age_;
+};
+
+int main()
+{
+    Person kim;
+    kim.age_ = 10;
+}
+```
+* python script: `parse.py`
+```python
+#!/usr/bin/env python
+
+import clang.cindex, asciitree, sys
+
+# Library 경로는 본인 환경마다 다릅니다.
+clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
+
+def print_decl(node):
+    if (node.kind.is_declaration()):
+        if (node.spelling == "Person"):
+            print node.spelling
+            print node.location
+
+    for child in node.get_children():
+        print_decl(child)
+
+index = clang.cindex.Index.create(False)
+
+tu = index.parse("./test.cc")
+print_decl(tu.cursor)
+```
+* 실행해보기: `Person`이 정의된 File과 Line을 출력한다.
+```sh
+$ ./parse.py
+Person
+<SourceLocation file './test.cc', line 3, column 7
+```
