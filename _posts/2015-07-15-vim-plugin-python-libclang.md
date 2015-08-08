@@ -162,3 +162,18 @@ Parsing Test
         $ ./parse.py
         Person
         <SourceLocation file './test.cc', line 3, column 7
+
+Vim 7.4 설치
+-----------
+
+확실한 건 아니지만, Python/LibClang으로 Vim Plugin을 만들려면 Vim 7.4 이상이 필요한 듯 하다. 다음과 같이 설치할 수 있다. (참고 URL: http://kiboard.tistory.com/102)
+
+```sh
+$ wget ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
+$ bunzip2 vim-7.4.tar.bz2
+$ tar xvf vim-7.4.tar
+$ cd vim74
+$ ./configure --enable-gui=no, --without-x --enable-pythoninterp
+$ make
+$ make install
+```
