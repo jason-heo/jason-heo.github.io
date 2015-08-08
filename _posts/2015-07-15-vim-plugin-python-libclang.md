@@ -138,7 +138,7 @@ Parsing Test
 
         #!/usr/bin/env python
 
-        import clang.cindex, asciitree, sys
+        import clang.cindex, sys
 
         # Library 경로는 본인 환경마다 다릅니다.
         clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
