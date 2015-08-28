@@ -30,9 +30,16 @@ $ cmake ./ -DWITH_BOOST=./boost/ -DDOWNLOAD_BOOST=1 -DCMAKE_INSTALL_PREFIX=path_
 
 현재 경로의 `boost/` 디렉터리에 Boost 소스 코드가 다운로드 된다.
 
+## MySQL 설치의 변경된 점
+
+캬... 근데 MySQL 설치 방법이 많이 바뀌었네.
+
+- 5.7.6부터는 `mysql_install_db`도 없어졌다. `bin/mysqld --initalize` 명령을 이용하여 초기화를 해야 한다.
+- root 암호가 랜덤하게 생성된다. 이거 까먹으면 좀 귀찮지...
+- my.cnf의 기본 파일이 사라졌다!!!! 이거 일일히 만들어야 하나?
 
 ## 컴파일이 귀찮다면 Docker를 사용해 보자.
 
-컴파일이 귀찮다면 MySQL Binary 버전을 구해서 사용해도 된다. 그런데 말입니다. Docker를 사용해 보는 것은 어떨까요?
+컴파일이 귀찮다면 MySQL Binary 버전을 구해서 사용해도 된다. 그런데 말입니다. Docker를 사용해 보는 것은 어떨까요? 이것 저것 설정하기가 엄청 귀찮네...
 
 [Deview 2013의 Docker 소개](http://deview.kr/2013/detail.nhn?topicSeq=45)
