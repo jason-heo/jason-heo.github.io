@@ -4,10 +4,10 @@ title: "기흥역세권 개발 자료"
 categories: life
 ---
 
-## 기흥역세권 분양 총 정리 (2015년 8월 8일 UPDATE)
+## 기흥역세권 분양 총 정리 (2015년 8월 29일 UPDATE)
 
-![청약 테이블](/images/posts/life/giheung-stat/gh-table1.PNG)
-![주](/images/posts/life/giheung-stat/gh-table2.PNG)
+![청약 테이블](/images/posts/life/giheung-stat/gh-table1.png)
+![주](/images/posts/life/giheung-stat/gh-table2.png)
 
 ## 블로그 방치 (2015년 3월 ~ 7월)
 
