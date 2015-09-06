@@ -6,8 +6,10 @@ categories: life
 
 ## 기흥역세권 분양 총 정리 (2015년 8월 29일 UPDATE)
 
-![청약 테이블](/images/posts/life/giheung-stat/gh-table1.png)
-![주](/images/posts/life/giheung-stat/gh-table2.png)
+![청약 테이블](/images/posts/life/giheung-stat/gh-table1.PNG)
+![청약 테이블](/images/posts/life/giheung-stat/gh-table2.PNG)
+
+{% include adsense-content.md %}
 
 ## 블로그 방치 (2015년 3월 ~ 7월)
 
@@ -25,7 +27,6 @@ categories: life
 |3-4블럭|                           |녹십자          |미정          |미정           |314  |0  | |  
 |4블럭  |[기흥역 지웰 푸르지오][20] |신영            |대우건설      |2015년 3월 예정|561  |162|5Bay|
 
-{% include adsense-content.md %}
 
 ## 4블럭 지웰 푸르지오 단지 배치도 (2015-02-13 추가)
 
