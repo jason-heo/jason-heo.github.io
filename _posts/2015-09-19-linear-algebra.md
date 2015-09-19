@@ -13,7 +13,7 @@ Caution
  
 - Algebra = 대수학 != 大수학
 - Algebra = 代수학
--- 대수학이라는 말보단, 표현? Representative? 이라는 말이 어울리지 않을까 싶다.
+    - 대수학이라는 말보단, 표현? Representative? 이라는 말이 어울리지 않을까 싶다.
  
 네이버 지식백과
 ===============
@@ -35,7 +35,7 @@ Caution
  
 - 비교적 최근까지 분수를 소수로 표현하는 방법이 없었음
 - 있더라도 소수간 연산이 어려움
--- 스테빈: 5.912 = 5ⓞ9①1②2③
+    - 스테빈: 5.912 = 5ⓞ9①1②2③
 - 현대의 소수표현은 1619년 네이피어가 최초 사용
  
 쉬어가는 코너
@@ -54,17 +54,17 @@ Caution
 ----------------------
  
 - 망원경이 없던 시절 매눈으로 천문현상 관찰
--- 시력이 5.0이라는 썰이 있음
--- 티코가 관찰한 천문현상은 케플러에 의해 지동설을 지지하는 증거가 됨
--- 티코는 파티에서 오줌을 오래 참다가 병 걸려서 죽음 (파티에 맘에 드는 여자가 있었는데, 그 여자 앞에서 오줌 싸러 가는 것이 x팔리다고 참다가...)
+    - 시력이 5.0이라는 썰이 있음
+    - 티코가 관찰한 천문현상은 케플러에 의해 지동설을 지지하는 증거가 됨
+    - 티코는 파티에서 오줌을 오래 참다가 병 걸려서 죽음 (파티에 맘에 드는 여자가 있었는데, 그 여자 앞에서 오줌 싸러 가는 것이 x팔리다고 참다가...)
  
 오일러
 -----
  
 - "대수학 원론" written by 오일러, 1765
--- 당시까지만해도 혼란스러웠던 수학표기법을 현대적으로 정립함
--- 함수의 기호 f(x) (현대에서는 함수 이름조차 사라지고 body만 남게 되어 람다 함수라 불림)
--- http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788952215406
+    - 당시까지만해도 혼란스러웠던 수학표기법을 현대적으로 정립함
+    - 함수의 기호 f(x) (현대에서는 함수 이름조차 사라지고 body만 남게 되어 람다 함수라 불림)
+    - http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788952215406
  
 결론
 ===
@@ -81,14 +81,14 @@ Caution
  
 - 연산이 독립적이라서 병렬 처리가 쉽다.
 - "HAMA: An Efficient Maxtrix Computation with the MapReduce Framework"
--- http://csl.skku.edu/papers/CS-TR-2010-330.pdf
+    - http://csl.skku.edu/papers/CS-TR-2010-330.pdf
 - "Matrix Multiplication with CUDA"
--- http://www.shodor.org/media/content/petascale/materials/UPModules/matrixMultiplication/moduleDocument.pdf
+    - http://www.shodor.org/media/content/petascale/materials/UPModules/matrixMultiplication/moduleDocument.pdf
  
 가우스 소거법
 -------------
  
 - 행렬을 이용하여 연립 방정식 풀기
--- http://blog.naver.com/mykepzzang/220146344544
+    - http://blog.naver.com/mykepzzang/220146344544
 
 
