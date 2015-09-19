@@ -19,8 +19,8 @@ Machine Learing 공부에 필요한 자료들 Link
 1. "딥하이퍼넷 모델"
     - http://bi.snu.ac.kr/Publications/Journals/Domestic/KIISEC33_8_BTZhang.pdf
     - 서울대 장병탁 교수님의 정보과학학회 특별 원고
-1. Deep Learning Summer Shool, 2015, Montreal
-    - http://yobi.navercorp.com/wertyu/jsheo/post/7
+1. Deep Learning Summer Shcool, 2015, Montreal
+    - http://videolectures.net/deeplearning2015_montreal/
     - 오~ 훌륭한 강의가 매우 많다. (많은 것 같다 ^^; 아직 안 봤다.)
 1. GPU Technology Conference 2015, Keynote, Andrew Ng
     - http://www.ustream.tv/recorded/60113824
