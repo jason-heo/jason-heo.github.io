@@ -25,3 +25,6 @@ Machine Learing 공부에 필요한 자료들 Link
 1. GPU Technology Conference 2015, Keynote, Andrew Ng
     - http://www.ustream.tv/recorded/60113824
     - 코세라 강의에서 많이 봐서 친숙한 응교수님의 편안한 목소리
+1. Deep Learning Tutorial. Release 0.1, LISA lab, University of Montreal
+    - http://deeplearning.net/tutorial/deeplearning.pdf
+    - 자료만 찾았고 읽어보진 못했음
