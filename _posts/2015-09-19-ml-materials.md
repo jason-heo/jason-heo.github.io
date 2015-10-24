@@ -31,3 +31,6 @@ Machine Learing 공부에 필요한 자료들 Link
 1. Neural Networks and deep learing
     - http://neuralnetworksanddeeplearning.com/
     - Free online book인데 내용이 쉬우면서도 알찬 것 같다. (아직 chapter 1 일부만 읽어서 정확한 깊이나 내용은 모름 ^^;)
+1. Convolutional Network
+    - http://www.slideshare.net/perone/deep-learning-convolutional-neural-networks
+    - 대충은 알겠지만, 아직은 잘 이해가 안 된다
