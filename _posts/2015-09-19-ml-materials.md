@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기계학습(Machine Learning) 관련 자료들"
+title: "Machine Learning, Deep Learning에 관련 자료들"
 categories: programming
 ---
 
@@ -30,7 +30,18 @@ Machine Learing 공부에 필요한 자료들 Link
     - 자료만 찾았고 읽어보진 못했음
 1. Neural Networks and deep learing
     - http://neuralnetworksanddeeplearning.com/
-    - Free online book인데 내용이 쉬우면서도 알찬 것 같다. (아직 chapter 1 일부만 읽어서 정확한 깊이나 내용은 모름 ^^;)
+    - Free online book인데 내용이 쉬우면서도 알찬 것 같다.
+    - Coursera ML 수업보다 쉬운 것 같음
+    - BackPropagation 부분에서 막혔음
 1. Convolutional Network
     - http://www.slideshare.net/perone/deep-learning-convolutional-neural-networks
     - 대충은 알겠지만, 아직은 잘 이해가 안 된다
+1. MIT의 Neural Network, BackPropagation 강의
+    - https://www.youtube.com/watch?v=q0pm3BrIUFo
+    - 40분 가량의 수업인데, 나름 쉽게 설명하고 있다
+1. ImageNet 만든 교수님의 TED 강의
+    - https://www.youtube.com/watch?v=40riCqvRoMs
+    - 기술적인 내용이 많지는 않지만, 감동적이다
+1. Google Tech Talk - Brain, Sex, and Machine Learning
+    - https://www.youtube.com/watch?v=DleXA5ADG78
+    - 아직 보진 않아서 코멘트할 것이 없음
