@@ -44,4 +44,5 @@ Machine Learing 공부에 필요한 자료들 Link
     - 기술적인 내용이 많지는 않지만, 감동적이다
 1. Google Tech Talk - Brain, Sex, and Machine Learning
     - https://www.youtube.com/watch?v=DleXA5ADG78
-    - 아직 보진 않아서 코멘트할 것이 없음
+    - Jeff. Hinton 교수의 Talk인데 뭔 소리인지 하나도 모르겠다;
+    - 15분 정도 보다가 포기
