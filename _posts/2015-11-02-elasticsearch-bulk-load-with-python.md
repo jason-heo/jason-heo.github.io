@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ElasticSearch의 Bulk Loading with Python"
-categories: programming
+categories: elasticsearch
 ---
 
 ElasticSearch를 사용하기에 이른다...
