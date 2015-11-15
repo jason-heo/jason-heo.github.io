@@ -50,6 +50,6 @@ MySQL과 Elasticsearch 둘다 내가 아는 선에서 튜닝한 상태였는데,
 
 ### 주의 사항
 
-- 여기서 말한 "Elasticsearch의 완승"이라는 표현은 Data 분석 측면이다.
+- 여기서 말한 "Elasticsearch의 완승"이라는 표현은 Data 분석 측면이다. 나는 여전히 MySQL을 사랑하고, MySQL도 여전히 좋은 RDBMS이다. 다만, 일부 영역에서는 Elasticsearch가 훨씬 좋다.
 - Test 결과는 각자의 Data 특성 및 시스템 환경에 따라 다르므로 본인의 실험 결과는 신뢰하지 말것.
 
