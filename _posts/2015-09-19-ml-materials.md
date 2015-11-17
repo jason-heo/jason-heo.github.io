@@ -46,3 +46,9 @@ Machine Learing 공부에 필요한 자료들 Link
     - https://www.youtube.com/watch?v=DleXA5ADG78
     - Jeoff. Hinton 교수의 Talk인데 뭔 소리인지 하나도 모르겠다;
     - 15분 정도 보다가 포기
+1. MIT Opencourses - SVM (Support Vector Machine)
+    - https://www.youtube.com/watch?v=_PwhiWxHK8o
+    - 위의 "MIT NN" 강의와 동일한 과목의 강의이다
+    - 개인적인 생각으론 앤드류 응 교수님보다 이 분의 강의가 더 쉬운 것도 같다
+    - 수학을 잘 몰라서 어차피 두 강의 모두 어렵지만, 식을 적어가면서 마지막에 마술처럼 결론이 도출되는 그런 드라마틱함은 MIT Opencourse가 더 재미있다.
+    - 중간 중간 시연되는 프로그램은 [여기](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/demonstrations/)에서 다운받아 볼 수 있다
