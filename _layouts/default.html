@@ -20,6 +20,7 @@
 
   {{ page.extra_head }}
 
+<!-- Naver Analystics  -->
 <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
 <script type="text/javascript">
 if(!wcs_add) var wcs_add = {};
@@ -31,7 +32,6 @@ wcs_do();
 <meta name="google-site-verification" content="W_nJr8SZbH5i9qLYtNsCshZ-5c0lM8cDiP3kdewe1QQ" />
 
 <!-- Google Analytics -->
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,6 +41,15 @@ wcs_do();
   ga('create', 'UA-45794660-4', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<!- Loggly -->
+<script type="text/javascript" src="http://cloudfront.loggly.com/js/loggly.tracker-2.1.min.js" async></script>
+<script>
+    var _LTracker = _LTracker || [];
+    _LTracker.push({'logglyKey': '707ae90a-8a6a-43ef-bf8b-394d9337d9cc',
+    'sendConsoleErrors' : true,
+    'tag' : 'loggly-jslogger'  });
 </script>
 
 </head>
