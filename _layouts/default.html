@@ -42,6 +42,17 @@ wcs_do();
   ga('create', 'UA-45794660-4', 'auto');
   ga('send', 'pageview');
 
+  var evt_cat = ["video", "image"];
+  var evt_act = ["play", "stop", "pause"];
+  var evt_lab = ["A", "B", "C", "D", "E", "F"];
+  var evt_val = Math.floor(Math.random() * 1000);
+
+  var cat_idx = Math.floor(Math.random() * 10) % evt_cat.length;
+  var act_idx = Math.floor(Math.random() * 10) % evt_act.length;
+  var lab_idx = Math.floor(Math.random() * 10) % evt_lab.length;
+
+  ga('send', 'event', evt_cat[cat_idx], evt_act[act_idx], evt_lab[lab_idx], evt_val);
+
 </script>
 
 <!-- Loggly -->
