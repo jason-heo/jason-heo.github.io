@@ -7,7 +7,7 @@ categories: programming
 계획적인 삶을 살기 위해 주말 계획을 세우고 생활하는데, 문제는 주말 계획을 종이에 쓰다보니 시간이 좀만 지나도 내가 뭘 했는지 까먹게 된다. 그래서 이번 2016년 설 이후부터는 주말 계획을 온라인으로 정리해보려고 한다.
 
 1. [The Clean Code Talks](https://www.youtube.com/watch?v=4F72VULWFvc) 시청하기
-    - 이제 스파게티 코드는 그만 짜고 싶다 ㅎㅎ;
+    - 올해부턴 좀 더 깔끔한 코드를 작성하자고!
 1. C++ pimpl idiom 복습
     - 다른 idiom은 다 잊어도 pimpl만은 기억하라던데... 자료 좀 읽고 써 먹질 않으니 맨날 까먹는다;;
     - Safari online에서 Modern Effective C++도 볼 수 있으니 읽어보자
