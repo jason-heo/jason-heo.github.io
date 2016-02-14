@@ -12,7 +12,7 @@ categories: programming
     - 다른 idiom은 다 잊어도 pimpl만은 기억하라던데... 자료 좀 읽고 써 먹질 않으니 맨날 까먹는다;;
     - Safari online에서 Modern Effective C++도 볼 수 있으니 읽어보자
 1. C++ Unit Test
-    - Functional Test는 잘 도입해서 쓰는 데, 새해 부터는 Unit Test도 좀 적용해야 겠다.
+    - Functional Test만 쓰다보니 Unit Test를 잘 모른다; 새해 부터는 Unit Test도 좀 적용해야 겠다.
 1. C++ Generic Programming
     - 역시 다형성하면 Compile Time 다형성을 제공하는 C++ Template이 최고지..
     - http://mysqlguru.github.io/cpp/2014/03/05/modern-cpp.html
