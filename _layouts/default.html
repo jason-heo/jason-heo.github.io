@@ -55,6 +55,21 @@ wcs_do();
 
 </script>
 
+<!-- Nil Log -->
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+<script  src="http://nil.naver.com/nil.js"></script>
+<script>
+nil.init('personal_blog', 'jsheo');  
+nil.send('cv'); 
+ 
+// onunload 
+$(window).unload(function () {
+  nil.send('leave'); 
+});
+ 
+</script>
+<!-- End of Nil Log -->
+
 </head>
 <body>
   <div class="top-bar"></div>
