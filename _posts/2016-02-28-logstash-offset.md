@@ -129,6 +129,6 @@ file이 1개일 때 log는 sequential하게 시간 순으로 처리되지만, fi
 t1, t2, ..., t5을 의미한다(즉, t1이 t5보다 빠르다). 이때 Logstash를 실행시켜서 stdout으로 출력하면 어떤 순으로 출력될까?
 
 1. `t1-A` => `t1-B` => `t2-A` => `t2-B` ... => `t5-A` => `t5-B`
-1. `t1-A` => `t2-A` => `t3-A` => `t2-B` ... => `t4-B` => `t5-B`
+1. `t1-A` => `t2-A` => `t3-A` ... => `t3-B` => `t4-B` => `t5-B`
 
 정답은 2번이다. 즉, Logstash output이 Cassandra인 경우 Cassandra 입장에서는 로그가 시간 순으로 입력되지 않는다. Time series log를 column에 저장하는 경우 순서가 뒤죽박죽 될 수 있다.
