@@ -1,6 +1,6 @@
 title: Jason Heo's Blog
 name: Your New Jekyll Site
-pygments: true
+highlighter: rouge
 
 redcarpet:
     extensions:
