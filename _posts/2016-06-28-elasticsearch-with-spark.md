@@ -359,7 +359,8 @@ ES 문서를 parquet로 저장하여 ES Index를 Backup할 수도 있다. Backup
     df.registerTempTable("tab")
 
     sqlContext.sql("SELECT * FROM tab").write.parquet("file:///path/to/parquet/")
-    exit
+
+이제 ls 명령으로 parquet 디렉터리를 조회해보자.
 
     $ ls /path/to/parquet/
     _SUCCESS
