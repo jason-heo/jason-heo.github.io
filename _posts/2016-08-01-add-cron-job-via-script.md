@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "script를 이용해서 cron job 등록하기
+title: "script를 이용해서 cron job 등록하기"
 categories: "sys admin"
 ---
 
