@@ -87,3 +87,6 @@ $ cat stderr
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to localhost port 9200: Connection refused
 ```
+
+
+출처: [http://superuser.com/questions/272265/getting-curl-to-output-http-status-code](http://superuser.com/questions/272265/getting-curl-to-output-http-status-code)
