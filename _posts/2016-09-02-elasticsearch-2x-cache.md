@@ -23,28 +23,28 @@ Node Query Cache
 
 Node Query Cache는 용어가 헷갈리기 때문에 이해하기 어려웠다. ES의 DSL(Domain Specific Language)는 다음과 같이 생겼다.
 ```
-{
-    "query": {
-        "match": {
-            "text": "iphone"
-        }
-    },
-    "aggregations": {
-        "sample": {
-            "sampler": {
-                "shard_size": 200,
-                "field" : "user.id"
-            },
-            "aggregations": {
-                "keywords": {
-                    "significant_terms": {
-                        "field": "text"
+    {
+        "query": {
+            "match": {
+                "text": "iphone"
+            }
+        },
+        "aggregations": {
+            "sample": {
+                "sampler": {
+                    "shard_size": 200,
+                    "field" : "user.id"
+                },
+                "aggregations": {
+                    "keywords": {
+                        "significant_terms": {
+                            "field": "text"
+                        }
                     }
                 }
             }
         }
     }
-}
 ```
 
 DSL이 `query`와 `aggregations` 2개 부분으로 나뉜 것을 볼 수 있다. 여기서 "Query Cache"라고 생각하면 `query`와 `aggregations`를 포함한 전체 DSL의 결과가 Cache된다고 생각하기 쉽다. 하지만, Node Query Cache에서 말하는 Query란 DSL 전체가 아니라 DSL 안의 `query`를 의미한다. 따라서, query의 결과만 저장되게 되며 agregation은 매번 수행된다.
@@ -85,13 +85,12 @@ Cache별 활성 여부 및 default size
 
 - index 단위로 활성화 여부를 지정할 수 있다.
 ```
- curl -XPUT localhost:9200/my_index -d'
-  {
-    "settings": {
-      "index.requests.cache.enable": true
-    }
-  }
-  '
+    curl -XPUT localhost:9200/my_index -d'
+    {
+        "settings": {
+          "index.requests.cache.enable": true
+        }
+    }'
 ```
 - enabling caching per request
 	- disabled되었더라도 `_search?request_cache=true`처럼 질의하면 cache된다.
@@ -100,6 +99,6 @@ Cache별 활성 여부 및 default size
 Cache 사용량 모니터링
 --------------------
 
-- index 별 cache 통계: http://localhost:9200/_stats/request_cache,query_cache?pretty&human
-- 특정 index의 cache 통계: http://localhost:9200/index_name/_stats?pretty&human
-- node별 cache 통계: http://localhost:9200/_nodes/stats/indices/request_cache,query_cache?pretty&human
+- index 별 cache 통계: [http://localhost:9200/_stats/request_cache,query_cache?pretty&human](http://localhost:9200/_stats/request_cache,query_cache?pretty&human)
+- 특정 index의 cache 통계: [http://localhost:9200/index_name/_stats?pretty&human](http://localhost:9200/index_name/_stats?pretty&human)
+- node별 cache 통계: [http://localhost:9200/_nodes/stats/indices/request_cache,query_cache?pretty&human](http://localhost:9200/_nodes/stats/indices/request_cache,query_cache?pretty&human)
