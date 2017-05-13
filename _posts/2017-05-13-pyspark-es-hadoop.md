@@ -41,14 +41,14 @@ root
  |-- id: string (nullable = true)
   ...
 
-  # Let's convert to PythonRDD
-  >>> python_rdd = df.map(lambda item: ('key', {
-  ... 'id': item['id'],
-      ...
-      ... }))
+# Let's convert to PythonRDD
+>>> python_rdd = df.map(lambda item: ('key', {
+... 'id': item['id'],
+    ...
+... }))
 
-      >>> python_rdd
-      PythonRDD[42] at RDD at PythonRDD.scala:43
+>>> python_rdd
+PythonRDD[42] at RDD at PythonRDD.scala:43
 
-      >>> python_rdd.saveAsNewAPIHadoopFile(...) # Now, success
+>>> python_rdd.saveAsNewAPIHadoopFile(...) # Now, success
 ```
