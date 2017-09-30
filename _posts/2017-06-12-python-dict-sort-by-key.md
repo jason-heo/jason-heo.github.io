@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "python dict의 value로 정렬하기
+title: "python dict의 value로 정렬하기"
 categories: "programming"
 ---
 
