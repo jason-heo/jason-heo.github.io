@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2017-09-30-web-analytics-at-naver.md"
+title: "Homebrew must be run under Ruby 2.3! (RuntimeError)"
 categories: "programming"
 ---
 
