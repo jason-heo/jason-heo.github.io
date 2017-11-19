@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Run Length Encoding을 활용한 Parquet File Size 줄이는 방법"
+title: "Run Length Encoding 특성을 활용하여 Parquet File Size 줄이기"
 categories: "bigdata"
 ---
 
