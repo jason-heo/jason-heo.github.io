@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark에 Custom Data source 붙이기"
+title: "Spark에 Custom Data source 붙이기 (Spark Data Source API)"
 categories: "bigdata"
 ---
 
