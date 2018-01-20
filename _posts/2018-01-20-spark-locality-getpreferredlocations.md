@@ -6,7 +6,7 @@ categories: "bigdata"
 
 HDFS에는 두 대의 Data Node가 존재하는데, 내가 읽을 파일은 host1에 존재한다. Spark에서 이 파일을 읽을 때, Spark Job은 host1로 제출되어야 Network Cost없이 파일을 빠르게 읽을 수 있을 것이다.
 
-![Spark Locality](/images/posts/programming)
+![Spark Locality](/images/posts/programming/spark-locality.png)
 
 이런 Locality 정책이 항상 옳바른 것은 아니다. 그러한 예로 host1의 모든 Resource가 할당되어 있어서 Job을 띄울 수 없어서 대기해야 하는 경우가 있다. 이 경우, Job Submit을 대기하기 보다는 원격의 host에 Job을 띄워서 원격 read를 하는 것이 더 빠를 수도 있다.
 
