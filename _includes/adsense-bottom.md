@@ -7,3 +7,7 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+Youtube 테스트를 위해 삽입한 동영상입니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/toHP1OdtITg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
