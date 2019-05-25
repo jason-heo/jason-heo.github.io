@@ -326,7 +326,7 @@ ul.posts .date {
 article h1 {
   margin-bottom: 0;
   line-height: 120%;
-  text-align: center;
+  text-align: left;
 }
 
 .site .meta {
