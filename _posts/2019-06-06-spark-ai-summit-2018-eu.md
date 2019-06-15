@@ -22,7 +22,11 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
     - 발표 자료 링크가 없는데 검색해보니, [THE INTERNALS OF STRUCTURED QUERY EXECUTION](http://blog.jaceklaskowski.pl/spark-workshop/slides/spark-sql-internals-of-structured-query-execution.html#/home) 요거더라
     - 근데 생각보단 내용은 보통 수준
 - https://databricks.com/session/accelerating-apache-spark-with-fpgas-a-case-study-for-10tb-tpcx-hs-spark-benchmark-acceleration-with-fpga
+    - 세션 후기 (2019.06.15.)
+    - 영어가 잘 안 들리고 발표 자료도 없어서 pass
 - https://databricks.com/session/extending-structured-streaming-made-easy-with-algebra
+    - Spark을 확장한다길래 뭔가 Spark 내부 구조를 잘 이해해서 새로운 기능을 추가하는 것에 대한 세션으로 이해했는데,
+    - Spark UDAF (User Defined Aggregation Function)에 관련된 자료 읽어보는 게 좋을 듯
 - https://databricks.com/session/scaling-advanced-analytics-at-shell
 - https://databricks.com/session/a-framework-for-evaluating-the-performance-and-the-correctness-of-the-spark-sql-engine
 - https://databricks.com/session/apple-talk
