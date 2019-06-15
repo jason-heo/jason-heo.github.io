@@ -13,7 +13,14 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
 제목들을 훑어보니 역시 AI가 대세이고, real-time, kubernetes, analytics 등의 키워드가 눈에 띈다.
 
 - https://databricks.com/session/cerns-next-generation-data-analysis-platform-with-apache-spark
+    - 세션 후기 (2019.06.08.)
+    - LHC에서 충돌 시점에는 1초에 1PB라는 어마어마한 양의 데이터가 저장된다고 한다
+    - Jupyter에 [Spark Monitor](https://krishnan-r.github.io/sparkmonitor/)라는 플러그인을 사용 중. 이거 좋아보이는데, 제플린에 비슷한 것은 없으려나. 일단 단순 검색으로는 안 보인다
 - https://databricks.com/session/deep-dive-into-query-execution-in-spark-sql-2-3-2
+    - 세션 후기 (2019.06.09.)
+    - Spark 계의 유명한 컨설턴트인 Jacek Laskowski의 세션
+    - 발표 자료 링크가 없는데 검색해보니, [THE INTERNALS OF STRUCTURED QUERY EXECUTION](http://blog.jaceklaskowski.pl/spark-workshop/slides/spark-sql-internals-of-structured-query-execution.html#/home) 요거더라
+    - 근데 생각보단 내용은 보통 수준
 - https://databricks.com/session/accelerating-apache-spark-with-fpgas-a-case-study-for-10tb-tpcx-hs-spark-benchmark-acceleration-with-fpga
 - https://databricks.com/session/extending-structured-streaming-made-easy-with-algebra
 - https://databricks.com/session/scaling-advanced-analytics-at-shell
@@ -48,14 +55,7 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
 위에 내용이 최신이니 나느 Europe 2018 거부터 볼 거고 North America 2018은 언제볼지 모르지만, 혹 관심있는 분이 계실까봐 적어본다.
 
 - https://databricks.com/session/using-apache-spark-to-tune-spark
-    - 세션 후기 (2019.06.08.)
-    - LHC에서 충돌 시점에는 1초에 1PB라는 어마어마한 양의 데이터가 저장된다고 한다
-    - Jupyter에 [Spark Monitor](https://krishnan-r.github.io/sparkmonitor/)라는 플러그인을 사용 중. 이거 좋아보이는데, 제플린에 비슷한 것은 없으려나. 일단 단순 검색으로는 안 보인다
 - https://databricks.com/session/deep-dive-into-the-apache-spark-scheduler
-    - 세션 후기 (2019.06.09.)
-    - Spark 계의 유명한 컨설턴트인 Jacek Laskowski의 세션
-    - 발표 자료 링크가 없는데 검색해보니, [THE INTERNALS OF STRUCTURED QUERY EXECUTION](http://blog.jaceklaskowski.pl/spark-workshop/slides/spark-sql-internals-of-structured-query-execution.html#/home) 요거더라
-    - 근데 생각보단 내용은 보통 수준
 - https://databricks.com/session/oversubscribing-apache-spark-resource-usage-for-fun-and
 - https://databricks.com/session/apache-spark-data-source-v2
 - https://databricks.com/session/deep-learning-for-recommender-systems
