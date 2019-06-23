@@ -25,9 +25,14 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
     - 세션 후기 (2019.06.15.)
     - 영어가 잘 안 들리고 발표 자료도 없어서 pass
 - https://databricks.com/session/extending-structured-streaming-made-easy-with-algebra
+    - 세션 후기 (2019.06.15.)
     - Spark을 확장한다길래 뭔가 Spark 내부 구조를 잘 이해해서 새로운 기능을 추가하는 것에 대한 세션으로 이해했는데,
     - Spark UDAF (User Defined Aggregation Function)에 관련된 자료 읽어보는 게 좋을 듯
 - https://databricks.com/session/scaling-advanced-analytics-at-shell
+    - 세션 후기 (2019.06.23.)
+    - 녹음 상태가 별로다
+    - 한 5분 정도 시청해봤는데 내가 관심있어할 만한 주제가 아니었다
+    - 이후론 동영상 시청보단 슬라이드 위주로 봤는데, 컴퓨터 비전에 관련된 주제 아닌가 싶다. 왜 제목에 Analytics를 넣어서 사람을 헷갈리게 했지?
 - https://databricks.com/session/a-framework-for-evaluating-the-performance-and-the-correctness-of-the-spark-sql-engine
 - https://databricks.com/session/apple-talk
 - https://databricks.com/session/hudi-near-real-time-spark-pipelines-at-petabyte-scale
