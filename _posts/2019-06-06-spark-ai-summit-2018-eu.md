@@ -34,6 +34,10 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
     - 한 5분 정도 시청해봤는데 내가 관심있어할 만한 주제가 아니었다
     - 이후론 동영상 시청보단 슬라이드 위주로 봤는데, 컴퓨터 비전에 관련된 주제 아닌가 싶다. 왜 제목에 Analytics를 넣어서 사람을 헷갈리게 했지?
 - https://databricks.com/session/a-framework-for-evaluating-the-performance-and-the-correctness-of-the-spark-sql-engine
+    - 세션 후기 (2019.06.23.)
+    - 이것도 한 6분 정도 시청하다가 중단
+    - Spark의 성능 테스트에 관련된 발표이다
+    - 성능 저하를 탐지한 사례들이 있어서, 끝까지 들으면 재미있을 거 같기도 하지만, 큰 관심분야가 아니라서 시청 중지
 - https://databricks.com/session/apple-talk
 - https://databricks.com/session/hudi-near-real-time-spark-pipelines-at-petabyte-scale
 - https://databricks.com/session/experience-of-running-spark-on-kubernetes-on-openstack-for-high-energy-physics-workloads
