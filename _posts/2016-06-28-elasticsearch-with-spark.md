@@ -72,6 +72,8 @@ $ curl -XGET 'http://localhost:9200/bank/account/_search?pretty&size=0'
 }
 ```
 
+{% include adsense-content.md %}
+
 ES와 Spark 연동
 ============
 

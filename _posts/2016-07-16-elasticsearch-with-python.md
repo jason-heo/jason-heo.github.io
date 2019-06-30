@@ -269,6 +269,8 @@ print json.dumps(docs, indent = 2)
 
 `docs` 변수를 `for` 문으로 iterate하면 전체 문서를 탐색할 수 있다.
 
+{% include adsense-content.md %}
+
 scroll 기능 활용하기
 --------------------
 
