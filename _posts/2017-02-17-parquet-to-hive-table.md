@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Parquet File을 Hive Table로 만들기"
-categories: "programming"
+categories: "bigdata"
 ---
 
 [Stackoverflow에 올라온 Q&A](http://stackoverflow.com/questions/33625617/creating-hive-table-using-parquet-file-metadata)를 약간 수정해보았다.

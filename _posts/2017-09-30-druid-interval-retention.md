@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Druid에서 interval 보관 기간 설정하기"
-categories: "druid"
+categories: "bigdata"
 ---
 
 경험해본 BigData Platform 중에 가장 성능이 괜찮았던 Druid. (참고: 각자의 use-case마다 성능은 다를 수 있음) 하지만, 하지만 사용자 비친화적이라서 사용하기가 너무 불편하다.

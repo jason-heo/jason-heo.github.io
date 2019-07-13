@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elasticsearch와 Python 연동"
-categories: elasticsearch
+categories: "bigdata"
 ---
 
 Rest API만을 이용하여 Elasticsearch(이하 ES)를 사용하는 것은 불편하지만, Python ES API를 이용하면 Elasticsearch를 좀 더 편하게 사용할 수 있다.

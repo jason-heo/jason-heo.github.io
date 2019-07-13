@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web Analytics at Scale with ES @ naver.com"
-categories: "elasticsearch"
+categories: "bigdata"
 ---
 
 네이버 콘텐츠소비통계 프로젝트 과정에서 경험했던 내용들을 Elasticsearch Seould Meetup 에서 발표했던 자료입니다.

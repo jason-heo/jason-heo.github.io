@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elasticsearch 2.x의 Query Cache에 관하여"
-categories: "elasticsearch"
+categories: "bigdata"
 ---
 
 본 글은 Elasticsearch (이하ES) 2.x의 Query Cache에 대해 정리한 글이다.

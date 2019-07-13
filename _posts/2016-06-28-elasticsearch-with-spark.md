@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elasticsearch와 Spark 연동 (2019.03 갱신)"
-categories: elasticsearch
+categories: "bigdata"
 ---
 
 ## 2019.03 내용 추가
