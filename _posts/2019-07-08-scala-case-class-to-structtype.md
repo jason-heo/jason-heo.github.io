@@ -58,3 +58,11 @@ val ds = spark.
 ```
 
 처음 코드보다 확실히 깔끔해진 것을 볼 수 있다.
+
+그렇다면 반대로 `StructType`을 `case class`로 변환할 수 있을까?
+
+`StructType`을 traverse하면서 `case class`용 string을 생성하는 코드, 예를 들면 [Schema2CaseClass.scala](https://gist.github.com/yoyama/ce83f688717719fc8ca145c3b3ff43fd)가 있긴 한데, nested type을 지원하지 않는 듯 하다. 그리고 `case class`의 string만 생성되었을 뿐 이걸 가지고 다시 복붙해서 사용하라는 것 같다.
+
+REPL 같은 걸 이용하면 동적으로 `case class`를 생성할 수 있을 것 같은데 이 부분은 잘 모르겠다.
+
+그 이외에 `StrucType`을 `case class`로 변환하는 더 좋은 방법은 아직 찾지 못하였다.
