@@ -16,7 +16,7 @@ scala> println(Encoders.product[Person].schema)
 StructType(StructField(name,StringType,true), StructField(age,IntegerType,false))
 ```
 
-case class인 `Person`의 멤버 변수들을 `StructField`로 한 `StructType`이 생성된 것을 볼 수 있다.
+case class인 `Person`의 멤버 변수들이 `StructField`로 변환되어 `StructType`이 생성된 것을 볼 수 있다.
 
 이걸 어디에 써먹을 수 있을까? Spark에서 json이나 csv 파일을 읽어을 때는 `StructType` 형식의 schema를 지정해야 한다. 그런데, 읽어들은 data를 Dataset으로 변환하기 위해서는 case class를 지정해야 한다.
 
