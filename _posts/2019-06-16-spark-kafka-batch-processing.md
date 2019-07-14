@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kafka & Spark Batch Processing"
-categories: "bigdata"
+categories: "programming"
 ---
 
 Kafka는 Spark에서 Ingestion을 할 때 주로 Streaming Processing의 Data Source로 사용이 된다. 하지만, Batch Processing에서도 사용될 수 있다는 사실.

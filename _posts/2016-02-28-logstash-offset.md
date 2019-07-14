@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Logstash의 offset 관리 기법"
-categories: "bigdata"
+categories: "elasticsearch"
 ---
 
 Logstash는 Logcollector로서 다양한 Input/Output Plugin을 지원하기 때문에 손쉽게 로그 취합 시 편하게 작업할 수 있다.

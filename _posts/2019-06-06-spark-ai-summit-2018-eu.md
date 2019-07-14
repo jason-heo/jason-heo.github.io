@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spark AI Summit 2019 Europe에서 관심가는 세션"
-categories: "bigdata"
+categories: "programming"
 ---
 
 Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개최하는 컨퍼런스로서 Spark만을 다루는 컨퍼런스이다. (처음엔 Spark Summit이었는데 2017년인가부터 Spark AI Summit으로 이름을 변경하였다)

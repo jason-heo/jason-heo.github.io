@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloudera CDH에서 Role Group"
-categories: "bigdata"
+categories: "cdh"
 ---
 
 CDH를 1년 넘게 사용하면서 그 섬세한 기능에 감탄할 때가 한 두번이 아니다. 최근 느낀 기능으로서는 [Role Groups](2017-09-30-druid-interval-retention.md) 기능이 있다.
