@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 10 (guilty, your honor, jury, commit crime ...)"
+title: "guilty 뜻 (유죄의), your honor, jury, commit crime - 오늘 배운 영어 10"
 categories: English
 ---
 

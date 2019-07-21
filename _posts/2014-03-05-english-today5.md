@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 5 (Vulnerable, at the mercy of, apples and oranges, poaching, synthetic product)"
+title: "Vulnerable, at the mercy of, apples and oranges, poaching, synthetic product - 오늘 배운 영어 표현 5"
 date: 2014-03-05
 categories: English
 ---

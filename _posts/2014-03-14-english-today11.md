@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 11 (장점, 단점을 영어로)"
+title: "장점을 영어로, 단점을 영어로 - 오늘 배운 영어 11"
 categories: English
 ---
 

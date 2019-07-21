@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 1. (grab something to eat, vegetarian v.s vegan)"
+title: "채식주의자 영어로 (vegetarian v.s vegan) - 오늘 배운 영어 표현 1. "
 date: 2014-03-05
 categories: English
 ---

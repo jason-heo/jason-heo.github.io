@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 4 (what breed of dog, how about)"
+title: "개종 영어로, 개가 무슨 종입니까 영어로 (What breed of dog) - 오늘 배운 영어 표현 4"
 date: 2014-03-05
 categories: English
 ---

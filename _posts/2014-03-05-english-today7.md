@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 07 (on my way to work, in a row)"
+title: "출근길 영어로(on my way to work), 연속으로 영어로(in a row) - 오늘 배운 영어 표현 07"
 date: 2014-03-05
 categories: English
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 09 (Text me, unlimited plan, No wonder)"
+title: "문자해 영어로(Text me), 무한 요금제 영어로 (unlimited plan), No wonder - 오늘 배운 영어 09"
 date: 2014-03-12
 categories: English
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 13 (get robbed, dodgy, scam, Con Artist)"
+title: "get robbed, dodgy, scam, Con Artist - 오늘 배운 영어 13"
 categories: English
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 2. (erudite, what's your impression of ~)"
+title: "어떻게 생각해 영어로 - 오늘 배운 영어 표현 3"
 date: 2014-03-05
 categories: English
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 표현 06 (Urban Legends)"
+title: "Urban Legends - 오늘 배운 영어 표현 06"
 date: 2014-03-05
 categories: English
 ---

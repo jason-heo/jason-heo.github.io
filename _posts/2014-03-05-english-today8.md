@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "오늘 배운 영어 08 (put it on my tab)"
+title: "후불 영어로 (put it on my tab) - 오늘 배운 영어 08"
 date: 2014-03-10
 categories: English
 ---
