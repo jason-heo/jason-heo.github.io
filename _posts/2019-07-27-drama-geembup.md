@@ -20,7 +20,8 @@ categories: "life"
 
 "아니 나도 38사기동대 좀 봤는데 언제 저런 분이 나왔었지?"하고 열심히 검색. 드디어 찾았다. 높으신 분의 딸로서, 골동품을 좋아하던 그 여배우였다! 38사기동대 볼 때도 참 연기 잘 한다 생각했었는데.
 
-![jiseong](https://i.imgur.com/kX39n8R.gifv)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Ygbont5"><a href="//imgur.com/a/Ygbont5"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 (출처: https://dreamgod.tistory.com/m/35)
 
 네이버 드라마톡을 보면 이 분에 대해 칭찬하는 댓글이 많다.
