@@ -30,8 +30,6 @@ $ echo $?
 
 `-w` 옵션은 다양한 포맷을 지원하는데, 그중 하나가 `%{http_code}`로서 응답 코드를 출력하는 포맷이다.
 
-```
-
 아래와 같이 수행을 하면 결과의 제일 하단에 `200`이 출력된 것을 볼 수 있다.
 
 ```
@@ -87,6 +85,5 @@ $ cat stderr
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to localhost port 9200: Connection refused
 ```
-
 
 출처: [http://superuser.com/questions/272265/getting-curl-to-output-http-status-code](http://superuser.com/questions/272265/getting-curl-to-output-http-status-code)
