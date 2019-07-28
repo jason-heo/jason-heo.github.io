@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark에서 Push된 Filter는 Spark에서 한번 더 Evaluation된다"
+title: "Storage로 push된 filter는 Spark Engine에서 한번 더 evaluation된다"
 categories: "bigdata"
 ---
 
