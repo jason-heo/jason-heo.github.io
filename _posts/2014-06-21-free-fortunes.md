@@ -7,17 +7,12 @@ categories: life
 
 사주에 관심 많은 분들을 위해 모아봤습니다.
 
-{% include adsense-content.md %}
-
 - 뽐뿌운세 - [http://www.ppomppu.co.kr/fortune/index.html](http://www.ppomppu.co.kr/fortune/index.html)
   - 운세 좋은 날이 있어야 뽐뿌질도 할텐데 말이죠.
 - 스포츠조선 - [http://www.unsin.co.kr](http://www.unsin.co.kr)
   - 스포츠 조선에서 하는 서비스가 괜찮아 보이네요.
 - 궁합닷컴 - [http://www.gunghap.com/](http://www.gunghap.com)
   - 궁합닷컴! 이름에서 알 수 있듯이 궁합을 보려면 위로 가보세요^^
-
-{% include adsense-content.md %}
-
 - 팔자닷컴 - [http://paljja.com/zbxe/?mid=saju1](http://paljja.com/zbxe/?mid=saju1)
   - "아이고~ 내 팔자야!". 우리는 팔자를 언제 필 수 있을까요?
 - 신한생명 - [http://www.shinhanlife.co.kr/pbe/a/PBEA601.jsp](http://www.shinhanlife.co.kr/pbe/a/PBEA601.jsp)
