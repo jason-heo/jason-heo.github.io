@@ -117,7 +117,9 @@ ds.groupBy("gender").agg(countDistinct("age")).show
 
 Aggregation 함수가 부족한 것은 Custom Aggregator를 구현하면 될 것 같은데, 이에 대해선 [Type-Safe User-Defined Aggregate Functions](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html#type-safe-user-defined-aggregate-functions)에 설명되어 있다. (본인도 테스트해보지 않았음)
 
+<BR> <BR> <BR> <BR> <BR>
 {% include adsense-content.md %}
+<BR> <BR> <BR> <BR> <BR>
 
 ### 5.
 
