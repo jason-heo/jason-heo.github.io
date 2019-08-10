@@ -141,6 +141,9 @@ Dataset `groupByKey()`의 문제가 하나 더 있는데, 여러 개의 필드�
 이를 방지하려면 `groupByKey()`에 case class를 넘겨주는 방법도 있다.
 
 ```scala
+  case class GroupByKey(name: String, gender: String)
+  case class ResultRow(name: String, gender: String, sum_age: Double)
+
   ds.
     groupByKey(row => GroupByKey(row.name, row.gender)).
     agg(typed.sum(_.age)).
