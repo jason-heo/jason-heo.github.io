@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark AI Summit 2019 Europe에서 관심가는 세션"
+title: "Spark AI Summit 2018 Europe에서 관심가는 세션"
 categories: "programming"
 ---
 
@@ -39,13 +39,15 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
     - Spark의 성능 테스트에 관련된 발표이다
     - 성능 저하를 탐지한 사례들이 있어서, 끝까지 들으면 재미있을 거 같기도 하지만, 큰 관심분야가 아니라서 시청 중지
 - https://databricks.com/session/apple-talk
-    - 세션 후기 [2019.06.23)
+    - 세션 후기 (2019.06.23)
     - 동영상이 없고, 슬라이드만 있다. 동영상을 좀 보고 싶은데 아쉽다.
     - Apple Siri 쪽에서 Spark을 많이 사용하고, contribution도 많이 한단다
     - DataSet에 대한 간단한 예제는 참고할만하군 (나는 그동안 너무 DataFrame만 사용했던 듯. 근데 DataSet의 성능이 좀 낮은 건 걸린다)
     - Spark 2.4에서 Parquet Nested Type의 Schema Pruning이 잘 되나보다.
 - https://databricks.com/session/hudi-near-real-time-spark-pipelines-at-petabyte-scale
 - https://databricks.com/session/experience-of-running-spark-on-kubernetes-on-openstack-for-high-energy-physics-workloads
+    - 2019.09.07
+    - 보다가 중단
 - https://databricks.com/session/spark-sql-adaptive-execution-unleashes-the-power-of-cluster-in-large-scale-2
 - https://databricks.com/session/bucketing-in-spark-sql-2-3
 - https://databricks.com/session/spark-based-reliable-data-ingestion-in-datalake
@@ -57,6 +59,9 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
 - https://databricks.com/session/abris-avro-bridge-for-apache-spark
 - https://databricks.com/session/deep-dive-into-stateful-stream-processing-in-structured-streaming-2
 - https://databricks.com/session/spark-schema-for-free
+    - 세션 후기 (2019.09.07)
+    - 오 이거 좋다
+    - https://github.com/typelevel/frameless 는 바로 써 먹을 수 있겠다
 - https://databricks.com/session/oasis-collaborative-data-analysis-platform-using-apache-spark
 - https://databricks.com/session/apache-spark-on-k8s-and-hdfs-security
 - https://databricks.com/session/an-introduction-to-higher-order-functions-in-spark-sql
