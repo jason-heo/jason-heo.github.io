@@ -13,8 +13,8 @@ categories: "bigdata"
 - https://databricks.com/session/self-service-apache-spark-structured-streaming-applications-and-analytics
 - https://databricks.com/session/the-rule-of-10000-spark-jobs-learning-from-exceptions-and-serializing-your-knowledge
 - https://databricks.com/session/a-deep-dive-into-query-execution-engine-of-spark-sql
-- https://databricks.com/session/bridging-the-gap-between-datasets-and-dataframes
     - https://databricks.com/session/a-deep-dive-into-query-execution-engine-of-spark-sql-continues
+- https://databricks.com/session/bridging-the-gap-between-datasets-and-dataframes
 - https://databricks.com/session/designing-structured-streaming-pipelines-how-to-architect-things-right
 - https://databricks.com/session/understanding-query-plans-and-spark-uis
 - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization
