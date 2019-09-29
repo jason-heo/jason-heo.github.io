@@ -1,16 +1,10 @@
 ---
 layout: post
 title: "Spark AI Summit 2018 Europe에서 관심가는 세션"
-categories: "programming"
+categories: "bigdata"
 ---
 
-Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개최하는 컨퍼런스로서 Spark만을 다루는 컨퍼런스이다. (처음엔 Spark Summit이었는데 2017년인가부터 Spark AI Summit으로 이름을 변경하였다)
-
-1년에 두 번 (미국 샌프란시스코와 유럽) 개최된다. 한국에서 Spark AI Summit에 참여하려면 비용이 꽤나 드는데 (참가비, 항공권, 숙박비) 다행(?)인 점은 모든 세션의 영상과 슬라이드를 인터넷에 공개한다는 점이다. (본인도 2016년 유럽 컨퍼런스에 다녀왔었는데 돈이 ㅎㄷㄷ)
-
-아래 내용은 [2018 Europe 세션](https://databricks.com/sparkaisummit/europe/schedule) 중에서 본인이 관심있는 세션을 정리한 것이다. 틈틈히 시간날 때 봐야겠다 (라고 다짐을 하지만 얼마나 볼 수 있을지 모르겠다. 아싸리 비싼 돈 내고 다녀오면 돈이 아까워서라도 챙겨보겠지만)
-
-제목들을 훑어보니 역시 AI가 대세이고, real-time, kubernetes, analytics 등의 키워드가 눈에 띈다.
+{% include spark-ai-summit.md %}
 
 - https://databricks.com/session/cerns-next-generation-data-analysis-platform-with-apache-spark
     - 세션 후기 (2019.06.08.)
@@ -70,25 +64,3 @@ Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개�
 - https://databricks.com/session/intelligent-applications-with-apache-spark-and-kubernetes-from-prototype-to-production
 - https://databricks.com/session/fpga-as-a-service-to-accelerate-your-big-data-workloads-with-fpga
 - https://databricks.com/session/lessons-from-the-field-episode-ii-applying-best-practices-to-your-apache-spark-applications
-
-### 번외
-
-사실 작년 7월에도 Spark AI Summit North America 2018의 관심가는 세션을 정리해두었었는데, 11개월이 지난 현재까지 딱 1개 밖에 시청을 못했다;;
-
-위에 내용이 최신이니 나느 Europe 2018 거부터 볼 거고 North America 2018은 언제볼지 모르지만, 혹 관심있는 분이 계실까봐 적어본다.
-
-- https://databricks.com/session/using-apache-spark-to-tune-spark
-- https://databricks.com/session/deep-dive-into-the-apache-spark-scheduler
-- https://databricks.com/session/oversubscribing-apache-spark-resource-usage-for-fun-and
-- https://databricks.com/session/apache-spark-data-source-v2
-- https://databricks.com/session/deep-learning-for-recommender-systems
-- https://databricks.com/session/99-problems-but-databricks-apache-spark-aint-one
-- https://databricks.com/session/tunein-how-to-get-your-hadoop-spark-jobs-tuned-while-you-are-sleeping
-- https://databricks.com/session/a-deep-dive-into-stateful-stream-processing-in-structured-streaming
-- https://databricks.com/session/extending-spark-sql-api-with-easier-to-use-array-types-operations
-- https://databricks.com/session/scalable-monitoring-using-prometheus-with-apache-spark-clusters
-- https://databricks.com/session/automated-debugging-of-big-data-analytics-in-apache-spark-using-bigsift
-- https://databricks.com/session/sparser-faster-parsing-of-unstructured-data-formats-in-apache-spark
-- https://databricks.com/session/sos-optimizing-shuffle-i-o
-- https://databricks.com/session/metrics-driven-tuning-of-apache-spark-at-scale
-
