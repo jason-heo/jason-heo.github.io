@@ -15,6 +15,9 @@ categories: "bigdata"
 - https://databricks.com/session/a-deep-dive-into-query-execution-engine-of-spark-sql
     - https://databricks.com/session/a-deep-dive-into-query-execution-engine-of-spark-sql-continues
 - https://databricks.com/session/bridging-the-gap-between-datasets-and-dataframes
+    - 2019-10-01
+    - 발표 내용 좋았음
+    - https://issues.apache.org/jira/browse/SPARK-14083 이게 빨리 resolve되면 좋겠다
 - https://databricks.com/session/designing-structured-streaming-pipelines-how-to-architect-things-right
 - https://databricks.com/session/understanding-query-plans-and-spark-uis
 - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization
