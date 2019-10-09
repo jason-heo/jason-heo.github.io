@@ -20,6 +20,11 @@ categories: "bigdata"
     - https://issues.apache.org/jira/browse/SPARK-14083 이게 빨리 resolve되면 좋겠다
 - https://databricks.com/session/designing-structured-streaming-pipelines-how-to-architect-things-right
 - https://databricks.com/session/understanding-query-plans-and-spark-uis
+    - 2019-10-09
+    - 보통이긴 했는데, SQL 실행 계획에 친숙하지 않는 사람은 읽어볼만 하겠다
+    - 아직 정식 release되지 않은 Spark 3.0의 UI를 볼 수 있던 건 괜찮았던 듯 (뭐 직접 build해보면 되지만 요즘은 귀찮아서;;)
+    - Delta Lake에 대한 이야기가 요즘 많이 언급되는데 좀 조사를 해 봐야겠다
+    - parquet를 wrapping한 거라 별 특이사항이 없다고 생각했었는데, schema/metadata 관리 측면에서는 이점이 있는 듯하다
 - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization
     - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization-continues
 - https://databricks.com/session/how-to-extend-apache-spark-with-customized-optimizations
