@@ -24,6 +24,8 @@ categories: "bigdata"
     - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization-continues
 - https://databricks.com/session/how-to-extend-apache-spark-with-customized-optimizations
 - https://databricks.com/session/apache-spark-listeners-a-crash-course-in-fast-easy-monitoring
+    - 2019-10-09
+    - 읽어보면 좋을 사람들: Lister가 뭐고 왜 필요한지 모르는 분들
 - https://databricks.com/session/cooperative-task-execution-for-apache-spark
 - https://databricks.com/session/etl-made-easy-with-azure-data-factory-and-azure-databricks
 - https://databricks.com/session/lessons-learned-using-apache-spark-for-self-service-data-prep-in-saas-world
