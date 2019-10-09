@@ -2,7 +2,7 @@
 - [2018년 유럽 세션 정리](/bigdata/2019/06/06/spark-ai-summit-2018-eu.html)
 - [2019년 북미 세션 정리](/bigdata/2019/09/29/spark-ai-summit-2019-na.html)
 
-Spark AI Summit은 Spark 개발자들이 많은 회사인 Databricks에서 개최하는 컨퍼런스로서 Spark만을 다루는 컨퍼런스이다. (처음엔 Spark Summit이었는데 2017년인가부터 Spark AI Summit으로 이름을 변경하였다)
+Spark AI Summit은 Spark을 만든 개발자들이 설립한 회사인 Databricks에서 개최하는 컨퍼런스로서 Spark 관련하여 가장 큰 컨퍼런스이다. (처음엔 Spark Summit이었는데 2017년인가부터 Spark AI Summit으로 이름을 변경하였다)
 
 1년에 두 번 (미국 샌프란시스코와 유럽) 개최된다. 한국에서 Spark AI Summit에 참여하려면 비용이 꽤나 드는데 (참가비, 항공권, 숙박비) 다행(?)인 점은 모든 세션의 영상과 슬라이드를 인터넷에 공개한다는 점이다. (본인도 2016년 유럽 컨퍼런스에 다녀왔었는데 돈이 ㅎㄷㄷ)
 
