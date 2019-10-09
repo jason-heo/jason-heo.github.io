@@ -23,6 +23,12 @@ categories: "bigdata"
 - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization
     - https://databricks.com/session/apache-spark-core-deep-dive-proper-optimization-continues
 - https://databricks.com/session/how-to-extend-apache-spark-with-customized-optimizations
+    - 2019-10-09
+    - 이것도 재미있었다
+    - Spark 2.2부터 SparkSQL을 확장할 수 있는 인터페이스가 뚫렸다 (issue: SPARK-18127)
+    - 이젠 SQL syntax를 추가하거나, Optimizer를 확장하는 것이 쉬워진 듯 하다
+        - 이게 없던 당시에는 기능을 추가하려면 Spark 소스 코드를 고쳐야했었다
+        - 예를 들어 SAP Hana Vora (https://github.com/SAP/HANAVora-Extensions) 같이 말이지
 - https://databricks.com/session/apache-spark-listeners-a-crash-course-in-fast-easy-monitoring
     - 2019-10-09
     - 읽어보면 좋을 사람들: Lister가 뭐고 왜 필요한지 모르는 분들
