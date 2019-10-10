@@ -41,5 +41,8 @@ categories: "bigdata"
 - https://databricks.com/session/etl-made-easy-with-azure-data-factory-and-azure-databricks
 - https://databricks.com/session/lessons-learned-using-apache-spark-for-self-service-data-prep-in-saas-world
 - https://databricks.com/session/apache-spark-on-k8s-best-practice-and-performance-in-the-cloud
+    - 2019-10-10
+    - 아직 k8s에 대한 나의 지식이 부족해서일까, 관심이 없어서일가? 동영상 중간에 시청 종료
+    - 첫 번째 발표자는 영어를 매우 잘 하네. 궁금해서 프로필 찾아봤더니 학사/석사는 중국에서 받았던데
 - https://databricks.com/session/smart-join-algorithms-for-fighting-skew-at-scale
 - https://databricks.com/session/apache-arrow-based-unified-data-sharing-and-transferring-format-among-cpu-and-accelerators
