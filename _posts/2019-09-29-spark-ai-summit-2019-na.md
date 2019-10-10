@@ -6,6 +6,7 @@ categories: "bigdata"
 
 {% include spark-ai-summit.md %}
 
+- https://databricks.com/session/building-robust-production-data-pipelines-with-databricks-delta-2
 - https://databricks.com/session/data-driven-transformation-leveraging-big-data-at-showtime-with-apache-spark
 - https://databricks.com/session/productizing-structured-streaming-jobs
     - 2019-10-10
