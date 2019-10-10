@@ -8,6 +8,11 @@ categories: "bigdata"
 
 - https://databricks.com/session/data-driven-transformation-leveraging-big-data-at-showtime-with-apache-spark
 - https://databricks.com/session/productizing-structured-streaming-jobs
+    - 2019-10-10
+    - Test/Deploy 등 운영 관점에서 Structured Streaming에 대한 설명
+    - Spark Streaming의 Unit Test를 하기가 좀 까다로운 편인데, Test에 관련된 내용은 괜찮았던 듯
+    - Delta Lake에 대한 이야기가 많이 나오는데 좀 찾아봐야겠다
+        - 최근 HDFS에 있는 파일을 streaming 처리해야할 일이 있었는데, 만약 input이 Delta 였으면 streaming 처리하기 쉬었을 것 같다
 - https://databricks.com/session/scaling-apache-spark-at-facebook
 - https://databricks.com/session/vectorized-query-execution-in-apache-spark-at-facebook
 - https://databricks.com/session/self-service-apache-spark-structured-streaming-applications-and-analytics
