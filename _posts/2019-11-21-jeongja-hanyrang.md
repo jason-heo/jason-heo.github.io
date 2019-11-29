@@ -25,12 +25,15 @@ categories: "life"
     - 소주/맥주가 4천원
 
 [탕수육 - 그냥 소소]
+
 <a href="https://imgur.com/0kCRweB"><img src="https://i.imgur.com/0kCRweB.jpg" title="source: imgur.com" /></a>
 <BR> <BR> <BR> <BR> <BR> <BR>
 
 [마파두부 - 마라향과 맛이 좀 나서 보통]
+
 <a href="https://imgur.com/dQGV1cG"><img src="https://i.imgur.com/dQGV1cG.jpg" title="source: imgur.com" /></a>
 <BR> <BR> <BR> <BR> <BR> <BR>
 
 [깐풍기 - 맛있었음]
+
 <a href="https://imgur.com/kAlYSwO"><img src="https://i.imgur.com/kAlYSwO.jpg" title="source: imgur.com" /></a>
