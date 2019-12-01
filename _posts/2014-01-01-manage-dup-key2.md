@@ -40,15 +40,17 @@ INSERT INTO person VALUES(NULL, 15, 'James', 'Barkely')
 
 ## 답변
 
-중복 키 관리를 위해서는 중복 방지를 할 컬럼이 `PRIMARY KEY`이거나 `UNIQUE INDEX`이어야 한다. 질문자의 경우 first_name과 last_name의 조합을 이용하여 중복 관리를 하려는 것 같다. 따라서 다음과 같이 last_name, last_name을 PRIMARY KEY로 설정하거나,
+중복 키 관리를 위해서는 중복 방지를 할 컬럼이 `PRIMARY KEY`이거나 `UNIQUE INDEX`이어야 한다. 질문자의 경우 first_name과 last_name의 조합을 이용하여 중복 관리를 하려는 것 같다. 따라서 다음과 같이 first_name, last_name을 PRIMARY KEY로 설정하거나,
 
 ```
+-- PRIMARY 추가
 ALTER TABLE person ADD PRIMARY KEY (first_name, last_name)
 ```
 
 UNIQUE INDEX를 추가해야 한다.
 
 ```
+-- UNIQUE INDEX 추가
 ALTER TABLE person ADD UNIQUE INDEX (first_name, last_name)
 ```
 
