@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apache Spark 3.0 Preview"
+title: "Apache Spark 3.0 Preview & Features"
 categories: "bigdata"
 ---
 
