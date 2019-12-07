@@ -63,4 +63,5 @@ categories: "bigdata"
 - https://databricks.com/session/open-etl-for-real-time-decision-making
 - https://databricks.com/session/intelligent-applications-with-apache-spark-and-kubernetes-from-prototype-to-production
 - https://databricks.com/session/fpga-as-a-service-to-accelerate-your-big-data-workloads-with-fpga
-- https://databricks.com/session/lessons-from-the-field-episode-ii-applying-best-practices-to-your-apache-spark-applications
+- https://databricks.com/session/lessons-from-the-field-applying-best-practices-to-your-apache-spark-applications
+    - https://databricks.com/session/lessons-from-the-field-episode-ii-applying-best-practices-to-your-apache-spark-applications
