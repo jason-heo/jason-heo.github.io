@@ -116,7 +116,7 @@ a.discreet {
 .fancy, section, article {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol
   line-height: 1.5;
-  font-size: 14px
+  font-size: 16px
 }
 
 
@@ -362,10 +362,12 @@ pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
+  font-size: 16px;
 }
 
 pre.terminal code {
   background-color: #333;
+  font-size: 16px;
 }
 
 /* Quotes */
@@ -374,6 +376,7 @@ blockquote {
   color: #666;
   border-left: 4px solid #3073b3;
   padding-left: 1em;
+  font-size: 16px;
 }
 
 .post-footer {
