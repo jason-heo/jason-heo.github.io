@@ -1,6 +1,7 @@
-- [2018년 북미 세션 정리](/bigdata/2018/09/29/spark-ai-summit-2018-na.html)
-- [2018년 유럽 세션 정리](/bigdata/2019/06/06/spark-ai-summit-2018-eu.html)
+- [2019년 유럽 세션 정리](/bigdata/2020/01/26/spark-ai-summit-2019-ue.html)
 - [2019년 북미 세션 정리](/bigdata/2019/09/29/spark-ai-summit-2019-na.html)
+- [2018년 유럽 세션 정리](/bigdata/2019/06/06/spark-ai-summit-2018-eu.html)
+- [2018년 북미 세션 정리](/bigdata/2018/09/29/spark-ai-summit-2018-na.html)
 
 Spark AI Summit은 Spark을 만든 개발자들이 설립한 회사인 Databricks에서 개최하는 컨퍼런스로서 Spark 관련하여 가장 큰 컨퍼런스이다. (처음엔 Spark Summit이었는데 2017년인가부터 Spark AI Summit으로 이름을 변경하였다)
 
