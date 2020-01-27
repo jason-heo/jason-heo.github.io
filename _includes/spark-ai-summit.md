@@ -1,4 +1,4 @@
-- [2019년 유럽 세션 정리](/bigdata/2020/01/26/spark-ai-summit-2019-ue.html)
+- [2019년 유럽 세션 정리](/bigdata/2020/01/26/spark-ai-summit-2019-eu.html)
 - [2019년 북미 세션 정리](/bigdata/2019/09/29/spark-ai-summit-2019-na.html)
 - [2018년 유럽 세션 정리](/bigdata/2019/06/06/spark-ai-summit-2018-eu.html)
 - [2018년 북미 세션 정리](/bigdata/2018/09/29/spark-ai-summit-2018-na.html)
