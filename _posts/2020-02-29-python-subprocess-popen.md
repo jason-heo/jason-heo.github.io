@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "Python subprocess.Popen()을 이용한 exit code, stdout, stderr 캡처"
-categories: "programming"
+categories: "python"
 ---
 
-인터넷에 검색하면 다 나오는 내용을 왜 올리냐고 하는 사람도 있겠지만, 이건 순전히 내가 사용하기 위한 용도이다. Python을 주로 운영 도구 만들 때 잠시 사용하고, 필요한 기능 있으면 검색해서 넣다보니 새로 알게된 기능이나 코드를 자꾸 까먹게 된다. 관리하는 소스 repository도 많아지다보니 지난 번에 넣었던 그 기능을 어느 스크립트에 넣었는지도 잊게 되어 똑같은 내용을 계속 검색하거나 급할 땐 검색할 시간도 없어서 나쁜 코드를 작성하게 된다.
-
-그래서 종종 시간날 때 검색으로 찾아둔 Python code들을 기록으로 남겨서 나중에 찾기 쉽게하려한다.
+{% include python.md %}
 
 첫 번째로는 `subprocess.Popen()`인데, 이걸 사용하면 내가 python에서 호출한 외부 스크립트의 exit code, stdout, stderr 내용을 변수에 쉽게 저장할 수 있다.
 
