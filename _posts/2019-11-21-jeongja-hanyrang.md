@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "정자동 한량 회식 후기"
+title: "어느 직장인의 정자동 한량 회식 후기"
 categories: "life"
 ---
 
