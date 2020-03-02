@@ -22,10 +22,6 @@ categories: "life"
 
 <a href="https://imgur.com/0iw2K56"><img src="https://i.imgur.com/0iw2K56.jpg" title="source: imgur.com" /></a>
 
-
-
-{% include adsense-content.md %}
-
 ## (1) 왼쪽으로 누워야한다
 
 위의 그림에는 왼쪽으로 누워야하는지 오른쪽으로 누워야하는지 방향 표시가 잘 안 되어 있다.
@@ -45,6 +41,8 @@ categories: "life"
 (출처: [질병관리본부](http://health.cdc.go.kr/health/HealthInfoArea/HealthInfo/View.do?idx=4850))
 
 그림을 보면 어렵지 않게 이해할 수 있다. 여기서 궁금했던 점이 시간이 지나면 다시 오른쪽으로 누워서 횡행결장 쪽으로 잘 흐르도록 해야하나?였는데 그럴 필요는 없는 것 같다. 어차피 얄액은 직장/S결장/하행결장(?) 정도까지만 내시경을 할 때 사용하는 것 같을 뿐더러 이따 (3)에서도 나오겠지만 설사 느낌을 참을 수 없어서 방향에 대한 생각을 할틈이 없다. 암튼 초반에만 왼쪽으로 누웠는데 잘 비워진 듯 했다.
+
+{% include adsense-content.md %}
 
 ## (2) 항문에 삽입 후 주입 방법
 
