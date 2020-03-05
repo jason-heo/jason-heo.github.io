@@ -1,8 +1,16 @@
 ---
 layout: post
-title: "Elasticsearch와 Python 연동"
+title: "Elasticsearch와 Python 연동 (ES 2.3 & Python 2 기반)"
 categories: "elasticsearch"
 ---
+
+## 내용 추가: 2020-03-05
+
+아래 내용은 2016년에 작성한 글로서 Elasticsearch 2.3, Python2 기반으로 작성된 글입니다.
+
+2020년 현재 ES 7.x, Python3에서는 작동하지 않는 예제도 있을 것입니다.
+
+## Intro
 
 Rest API만을 이용하여 Elasticsearch(이하 ES)를 사용하는 것은 불편하지만, Python ES API를 이용하면 Elasticsearch를 좀 더 편하게 사용할 수 있다.
 
