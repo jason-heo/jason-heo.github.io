@@ -7,8 +7,6 @@ categories: programming
 
 리눅스에서 여러 개의 파일을 동시에 이름 변경하려면 쉘 스크립트를 작성해야 한다. 변경 규칙이 단순하다면 쉘 스크립트도 간단하지만, 변경 규칙이 복잡한 경우 쉘 스크립트도 복잡해진다. 리눅스에는rename이라는 유틸리티가 존재하는데 파일 이름을 변경할 때 유용하게 사용할 수 있다.
 
-{% include adsense-content.md %}
- 
 우선 man pages에서 rename에 대한 설명을 보자.
 
     NAME
@@ -48,6 +46,8 @@ categories: programming
 
 쉘 스크립트로도 할 수 있긴 하지만 rename을 이용하면 쉽게 파일 이름을 변경할 수 있다.
 
+{% include adsense-content.md %}
+ 
 ## 사용 예2
 
 이번엔 조금 복잡한 예이다. 우선 다음과 같은 파일들이 있다고 하자.
