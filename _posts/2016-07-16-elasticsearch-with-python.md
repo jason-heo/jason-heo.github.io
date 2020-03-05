@@ -8,7 +8,10 @@ categories: "elasticsearch"
 
 아래 내용은 2016년에 작성한 글로서 Elasticsearch 2.3, Python2 기반으로 작성된 글입니다.
 
-2020년 현재 ES 7.x, Python3에서는 작동하지 않는 예제도 있을 것입니다.
+2020년 현재 ES 7.x, Python3에서는 잘 도는 코드가 대부분이긴 하겠지만, 일부 작동하지 않는 예제도 있을 것입니다.
+
+대표적인 예로 `perform_request()`의 return value가 변경된 것 같습니다.
+
 
 ## Intro
 
