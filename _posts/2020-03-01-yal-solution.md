@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "얄액, yal solution 67.5ml 사용 후기, 올바른 사용법"
+title: "얄액 사용 후기, 올바른 사용법, 주의점"
 categories: "life"
 ---
 
