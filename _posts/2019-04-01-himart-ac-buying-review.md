@@ -60,3 +60,5 @@ categories: "life"
 ## 4. 기타
 
 2015년 글이긴 하지만, [안녕마트는 호갱의 왕국인가요?](https://dvdprime.com/g2/bbs/board.php?bo_table=comm&wr_id=9457999) 이걸 읽어보자.
+
+{% include ac-series.md %}
