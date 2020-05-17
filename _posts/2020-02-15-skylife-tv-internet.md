@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "스카이라이프 TV+인터넷 결합상품 이용후기 ("30% 요금할인 홈결합I(100M+All")
+title: "스카이라이프 TV+인터넷 결합상품 이용후기 ('30% 요금할인 홈결합I(100M+All')"
 categories: "life"
 ---
 
