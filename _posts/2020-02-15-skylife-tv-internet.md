@@ -38,6 +38,8 @@ TV 화질도 만족스럽다. DCS 방식이기 때문에 인터넷 회선으로 
 
 나는 [KTM모바일 홈결합](https://internettv.ktmmobile.com/wire/combiList.do)을 통해서 skylife에 가입을 했는데, 6개월인가 1년 동안 KTM모바일 요금이 할인된다. skylife도 2개를 사용 중이고 KTM모바일도 2개 회선을 사용 중인데, 1개 회선은 5,500원 할인 다른 회선은 2,200원 할인이다. 할인금액이 다른 이유는 잘 기억이 안난다. skylife 설치일자가 몇 개월 정도 차이나는데 이때 이벤트가 서로 달라서 였던가.
 
+{% include adsense-content.md %}
+
 ## 이용요금 만족
 
 [KTM모바일 홈결합](https://internettv.ktmmobile.com/wire/combiList.do)에 가보면 알겠지만 다양한 요금이 있다.
