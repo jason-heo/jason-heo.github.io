@@ -52,3 +52,4 @@ categories: "bigdata"
     - 첫 번째 발표자는 영어를 매우 잘 하네. 궁금해서 프로필 찾아봤더니 학사/석사는 중국에서 받았던데
 - https://databricks.com/session/smart-join-algorithms-for-fighting-skew-at-scale
 - https://databricks.com/session/apache-arrow-based-unified-data-sharing-and-transferring-format-among-cpu-and-accelerators
+- https://databricks.com/session/in-memory-storage-evolution-in-apache-spark
