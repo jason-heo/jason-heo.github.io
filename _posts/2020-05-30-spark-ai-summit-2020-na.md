@@ -8,7 +8,6 @@ categories: "bigdata"
 
 전체 Agenda: https://databricks.com/sparkaisummit/north-america-2020/agenda
 
-- https://databricks.com/session_na20/tackling-scaling-challenges-of-apache-spark-at-linkedin
 - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0
     - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0-continues
 - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs
