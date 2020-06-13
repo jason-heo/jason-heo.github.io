@@ -10,7 +10,7 @@ categories: "life"
 
 박스 포장되어 있어서 생김새가 어떤지 궁금했는데, 아래처럼 일반 선풍기와 동일하게 생겼다.
 
-![NF280N](https://i.imgur.com/pMZq8hH.jpg)
+<a href="https://imgur.com/pMZq8hH"><img src="https://i.imgur.com/pMZq8hHh.jpg" title="source: imgur.com" /></a>
 
 박스만 봤을 땐 미니 선풍기는 아니어도 약간 작은 크기의 선풍기라 생각되었는데 조립하고 봤더니 적당한 크기였다.
 
@@ -29,6 +29,6 @@ categories: "life"
 
 선풍기 뒷면의 품질표시 딱지는 아래처럼 생겼다.
 
-![FN280N](https://i.imgur.com/4rhQnB6.jpg)
+<a href="https://imgur.com/4rhQnB6"><img src="https://i.imgur.com/4rhQnB6h.jpg" title="source: imgur.com" /></a>
 
 "최저소비효율기준 만족제품"이라고 나와있고, 정격소비전력이 50W인데 1단 사용시 50W인지 2단인지, 3단인지 설명이 있으면 좋겠다. 중국산이긴 한데 요즘 중국산 아닌 것이 없고.

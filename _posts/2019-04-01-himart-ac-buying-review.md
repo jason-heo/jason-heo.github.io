@@ -16,7 +16,7 @@ categories: "life"
 
 추가 비용은 다음과 같다.
 <BR>
-<a href="https://i.imgur.com/733034C.jpg"><img src="https://i.imgur.com/733034C.jpg"></a>
+<a href="https://i.imgur.com/733034C.jpg"><img src="https://i.imgur.com/733034Ch.jpg"></a>
 <BR> [출처](https://devinterest.tistory.com/267)
 
 항목별로 꼼꼼히 읽어보기 바란다. 매립형 배관이라면 "배관 추가" 비용이 없다. 하지만, "매립배관 청소" 비용이 붙게된다.
@@ -35,7 +35,7 @@ categories: "life"
 
 매립배관 청소를 하지 않으려면 상품 설명서 끝부분에 있는 아래와 같은 "확인동의서"에 서명을 해야한다.
 
-<a href="https://i.imgur.com/yFSdts9.png"><img src="https://i.imgur.com/yFSdts9.png"></a>
+<a href="https://i.imgur.com/yFSdts9.png"><img src="https://i.imgur.com/yFSdts9h.png"></a>
 <BR>
 [출처 - LG전체 서비스센터](https://www.lgservice.co.kr/)
 
@@ -47,7 +47,7 @@ categories: "life"
 
 생김새는 아래와 같다.
 
-<img src="https://i.imgur.com/gq8wRL6.png">
+<img src="https://i.imgur.com/gq8wRL6h.png">
 
 [출처 - 쿠팡 상품](https://www.coupang.com/vp/products/1258473561?itemId=2259389812&vendorItemId=70256683590)
 
@@ -65,7 +65,7 @@ categories: "life"
 
 진공을 잡기 위해선 아래와 같은 콤프레셔가 필요하다.
 <BR>
-<a href="https://i.imgur.com/W0PP4VI.png"><img src="https://i.imgur.com/W0PP4VI.png"></a>
+<a href="https://i.imgur.com/W0PP4VI.png"><img src="https://i.imgur.com/W0PP4VI.pngh"></a>
 
 [출처](https://m.blog.naver.com/airfactory7/220713921464)
 
