@@ -44,6 +44,8 @@ categories: "life"
 
 <a href="https://ibb.co/tDQDHFh"><img src="https://i.ibb.co/BBcBfFP/2020-06-13-5-32-23.png" alt="2020-06-13-5-32-23" border="0"></a>
 
+{% include adsense-content.md %}
+
 ## 3. 여러 URL을 쉽게 추가하는 방법
 
 그런데 추가해야할 URL이 많은 경우, 페이지 URL 추가하는 게 매우 번거로운 작업이다.
