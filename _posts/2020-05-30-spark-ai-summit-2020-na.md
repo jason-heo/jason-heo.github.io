@@ -12,7 +12,7 @@ categories: "bigdata"
     - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0-continues
 - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs
     - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs-continues
-- https://databricks.com/session_na20/power-of-visualising-embeddings
+- https://databricks.com/session_na20/power-of-visualizing-embeddings
 - https://databricks.com/session_na20/data-driven-decisions-at-scale
 - https://databricks.com/session_na20/data-microservices-in-apache-spark-using-apache-arrow-flight
 - https://databricks.com/session_na20/redash-open-source-sql-analytics-on-data-lakes
@@ -26,4 +26,4 @@ categories: "bigdata"
 - https://databricks.com/session_na20/user-defined-aggregation-in-apache-spark-a-love-story
 - https://databricks.com/session_na20/scoring-at-scale-generating-follow-recommendations-for-over-690-million-linkedin-members
 - https://databricks.com/session_na20/sql-performance-improvements-at-a-glance-in-apache-spark-3-0
-- https://databricks.com/session_na20/charm-an-indexing-subsystem-for-apache-spark
+- https://databricks.com/session_na20/hyperspace-an-indexing-subsystem-for-apache-spark
