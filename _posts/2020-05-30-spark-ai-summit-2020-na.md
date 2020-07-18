@@ -8,6 +8,12 @@ categories: "bigdata"
 
 전체 Agenda: https://databricks.com/sparkaisummit/north-america-2020/agenda
 
+- https://databricks.com/session_na20/running-apache-spark-on-kubernetes-best-practices-and-pitfalls
+    - Spark 모니터링에 관한 내용은 좋았다
+    - Spark 3.0부터는 prometheus 연동을 위한 웹 endpoint가 제공되는 듯 하다
+    - 테스트해볼만한 툴들: DropWizard, spark-dashboard, sparkmeasure
+- https://databricks.com/session_na20/running-apache-spark-jobs-using-kubernetes
+- https://databricks.com/session_na20/deploying-apache-spark-jobs-on-kubernetes-with-helm-and-spark-operator
 - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0
     - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0-continues
 - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs
