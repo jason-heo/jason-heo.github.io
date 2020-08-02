@@ -53,3 +53,33 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
     - 알고 봤더니 어떤 전략을 택하든 항상 같은 점수가 나오는 문제이다
     - 요걸 증명할 때부터 약간 집중이 떨어졌다
     - 증명: stack에서 k개를 덜어내더라도 total 점수가 k에 independent함을 수식으로 밝힘
+
+### 4강: Number Theory I
+
+일주일에 강의 두 개 시청하는 것이 목표인데 1개 밖에 못 봤다. 총 25강이니깐 이 속도라면 6개월이나 걸리겠네.
+
+- 시청일: 2020.08.02.(일)
+- https://www.youtube.com/watch?v=NuY7szYSXSw&list=PLB7540DEDD482705B&index=4
+- 강의는 뜬금없이 영화 "다이하드 3"로부터 시작한다
+- 다이하드3는 범인이 경찰에게 퀴즈를 내고, 경찰과 FBI가 퀴즈를 푸는 사이에 은행을 터는 그런 영화라고 네이버 영화에 줄거리가 나와있다
+- 여러 문제 중에서 강의에서 푸는 문제 정의는 [여기](https://www.youtube.com/watch?v=NuY7szYSXSw&feature=youtu.be&t=205)에서 볼 수 있다. 자막을 켜고 듣는 것이 좋다.
+- 이 문제는 무려 [Water and Jub Problem](https://leetcode.com/problems/water-and-jug-problem/)이라는 이름으로 leetcode에 medium 난이도로 올라와 있다
+- 물론 강의는 단순히 "3갤런, 5갤런 물통으로 4갤런을 만들라"를 푸는 게 목적이 아니라 일반적인 문제를 풀 수 있는 알고리즘과 증명에 대해서 설명을 하고 있다- 본 강의부터 내용이 어려워져서 사실 잘 이해가 안 된다 ㅠㅠ
+- 역시 공부는 때가 있다보다
+- `m|a`, `m|b` then `m|any results`
+    - 부분이 이해가 잘 안 된다
+    - 'any results'라는 게 무엇인가?
+- if `a|b` and `a|c` then, `a|sb + tc` for all s and t
+    - 대략 "4 갤런은 `4 = 3*3 - 1*5`로 구할 수 있다" 이걸 이야기하고 싶은 것 같다
+    - 즉, 3갤런 물통을 3번 채우고, 5갤런 물통을 1번 비우면 4갤런이 만들어진다
+- 강의가 이해가 안 되서 text book을 보려고 했는데 2004년 책이라 그런지 2010년 강의 내용과 순서가 다르다
+    - text book에서는 Number Theory II에서 이 문제를 다루고 있었네;;
+- 잠을 자야 내일 출근할 수 있어서 Number Theory II를 읽기는 어려울 것 같아서 인터넷에서 검색을 배 봤더니 아래와 같은 문서가 나왔다
+- https://www.math.tamu.edu/~dallen/hollywood/diehard/diehard.htm
+    - p, q가 서로 소 (영어로는 relatively prime이라고 하는구만)인 경우 (단, p < q라고 가정)
+    - `m*p + n*p = k`를 만족하는 m과 n이 존재한다고 한다 (단, k < q)
+    - 즉, 다이하드3 문제에서도 5보다 작은 k(즉, 4)를 만들 수 있었다
+    - k는 5보다 작으면 되므로, 3갤런 물통과 5갤런 물통으로 1, 2, 3, 4갤런을 모두 만들 수 있다
+    - 그렇다면 leet code 문제는 몰통의 숫자가 소수인지 판단하고, 만약 그렇다면 만들려는 대상 물통이 큰 물통보다 작은지 확인을 해 보면 되겠구나
+    - p, q가 서로 소가 아닌 경우에는 `m*p + n*q`가 "divisor given by the greatest common divisor"라고 하는데 이 부분은 잘 이해가 안 된다
+    - 자면서 생각을 더 해봐야겠다
