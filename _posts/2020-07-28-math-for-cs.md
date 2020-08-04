@@ -83,3 +83,4 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
     - 그렇다면 leet code 문제는 몰통의 숫자가 소수인지 판단하고, 만약 그렇다면 만들려는 대상 물통이 큰 물통보다 작은지 확인을 해 보면 되겠구나
     - p, q가 서로 소가 아닌 경우에는 `m*p + n*q`가 "divisor given by the greatest common divisor"라고 하는데 이 부분은 잘 이해가 안 된다
     - 자면서 생각을 더 해봐야겠다
+    - (내용추가) 자면서 읽어봤는데, 최대공약수의 배수는 만들 수 있다는 내용이군
