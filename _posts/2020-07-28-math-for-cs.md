@@ -72,6 +72,7 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 - if `a|b` and `a|c` then, `a|sb + tc` for all s and t
     - 대략 "4 갤런은 `4 = 3*3 - 1*5`로 구할 수 있다" 이걸 이야기하고 싶은 것 같다
     - 즉, 3갤런 물통을 3번 채우고, 5갤런 물통을 1번 비우면 4갤런이 만들어진다
+    - (내용 추가) 이 부분이 이해가 잘 안 되었었는데, `gcd(a, b) = s*a + t*b)`를 만족하는 s, t가 항상 존재한다는 그런 뜻이었구나. `a|b and a|c`에서 a가 말 그대로 common divisor였었군
 - 강의가 이해가 안 되서 text book을 보려고 했는데 2004년 책이라 그런지 2010년 강의 내용과 순서가 다르다
     - text book에서는 Number Theory II에서 이 문제를 다루고 있었네;;
 - 잠을 자야 내일 출근할 수 있어서 Number Theory II를 읽기는 어려울 것 같아서 인터넷에서 검색을 배 봤더니 아래와 같은 문서가 나왔다
@@ -81,6 +82,7 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
     - 즉, 다이하드3 문제에서도 5보다 작은 k(즉, 4)를 만들 수 있었다
     - k는 5보다 작으면 되므로, 3갤런 물통과 5갤런 물통으로 1, 2, 3, 4갤런을 모두 만들 수 있다
     - 그렇다면 leet code 문제는 몰통의 숫자가 소수인지 판단하고, 만약 그렇다면 만들려는 대상 물통이 큰 물통보다 작은지 확인을 해 보면 되겠구나
+        - (내용 추가) leet code 문제를 보니 이건 relative prime이 아니구나
     - p, q가 서로 소가 아닌 경우에는 `m*p + n*q`가 "divisor given by the greatest common divisor"라고 하는데 이 부분은 잘 이해가 안 된다
     - 자면서 생각을 더 해봐야겠다
-    - (내용추가) 자면서 읽어봤는데, 최대공약수의 배수는 만들 수 있다는 내용이군
+        - (내용추가) 자면서 읽어봤는데, 최대공약수의 배수는 만들 수 있다는 내용이군
