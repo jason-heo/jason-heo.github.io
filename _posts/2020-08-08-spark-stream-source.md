@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark Stream Source 개발하기"
+title: "Custom Spark Stream Source 개발하기"
 categories: "bigdata"
 ---
 
