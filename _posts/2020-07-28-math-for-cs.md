@@ -86,3 +86,51 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
     - p, q가 서로 소가 아닌 경우에는 `m*p + n*q`가 "divisor given by the greatest common divisor"라고 하는데 이 부분은 잘 이해가 안 된다
     - 자면서 생각을 더 해봐야겠다
         - (내용추가) 자면서 읽어봤는데, 최대공약수의 배수는 만들 수 있다는 내용이군
+
+### 5강: Number Theory II
+
+- 시청일: 2020.08.04, 2020.08.06, 2020.08.08
+    - 총 3일에 걸쳐서 시청했다
+    - 근데 25분 정도 밖에 못 봤다 ㅎㅎ
+    - 강의 보면서 필기하랴, 모르는 용어는 검색하랴, 검색하다보면 잠시 다른 웹 서핑하랴 진도가 안나간다
+    - 사실 이해가 잘 안 되는 용어 및 수식이 있어서 이번엔 비디오보다는 text book을 주로 확인했다
+- A4 종이에 노트는 많이 했는데 옮겨적기가 어려워서 대략적인 흐름만 적는다
+- textbook에는 이미테이션 게임이라는 영화로도 소개된 앨런 튜링 이야기가 나온다
+- 수업의 주요 내용은 정수론을 이용하여 암호를 만들고 해독하는 것에 대한 이야기
+- Turing's code v1
+    - encryption: `m' = m*k`
+    - decryption: `m =m'/k=(m*k)/k`
+    - 문제점: 암호화된 메시지 두 개를 얻는 경우 k를 쉽게 알아낼 수 있다. (k=gcd(m1', m2'))
+- Turing's code v2
+    - encryption: `m'=mk rem p`
+- congruent
+    - Turing's code v2의 decryption을 위해선 많은 정수론 개념이 필요하다
+    - 그 중 하나가 congruent
+    - gauss가 최초로 정의한 개념
+    - 31≡16(mod 5), 즉, 31과 16은 '5로 나눈 나머지' 관점에서 congruent하다. 왜냐? (31 mod 5) = (16 mod 5)이기 때문
+    - 시계로 이야기를 해보자. 11시와 35시는 congruent하다. 35시도 24로 나머지 연산을 하면 11시가 된다
+    - 참고 자료: https://science.jrank.org/pages/4772/Number-Theory-Gauss-congruence.html
+- multiplicative inverse (곱의 역원)
+    - real number(실수)에서는 integer에 없는 재미있는 성질이 있다
+    - r에 대해서 곱셈에 대한 inverse가 있다는 것인데
+    - 즉, r 곱하기 (1/r)은 1이다
+    - 하지만, integer에는 이런 성질이 없다
+    - 그런데 congruent에 대해선 multiplicative inverse가 존재한다
+    - 2의 '5의 나머지'에 대한 multiplicative inverse는 3이다
+    - `2*3≡1(mod 5)`가 된다
+- 페르마의 소정리
+    - k^(p-1) congruent to 1(mod p), p는 소수, k는 p의 배수가 아님
+    - 이걸 이용해서 multiplicative inverse를 빠르게 구할 수 있다는 이야기인듯하다
+    - 그리고 이걸 이용해서 Turing's code V2의 k를 구할 수 있으므로, 암호를 해석할 수 있다는 이야기인 듯
+    - 잘 이해가 안 되서 [경희대 이상준 교수님의 강의](https://youtu.be/sWJtKpYNzk0?t=848)를 참고했다
+        - 이 분도 강의를 쉽고 재미있게 하시네 
+- Turing's code v2
+    - decryption: multiplicative inverse를 이용한다(라고 강의를 이해했다)
+        - `m = m'*k^-1 rem p`
+		- 강의 들을 때는 이해한 것 같았는데 정리하려니 무슨 말인지 또 모르겠다
+    - 비밀키 k를 알아오는 방법: 페르마의 소정리를 이용한다(라고 강의를 이해했다)
+		```
+		m*(p^−2) ≡ m^(p-2)*mk (mod p)
+				 ≡ m^(p-1)*k (mod p)
+				 ≡ k (mod p)
+		```
