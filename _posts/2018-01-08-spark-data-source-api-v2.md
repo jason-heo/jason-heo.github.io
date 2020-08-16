@@ -4,6 +4,14 @@ title: "Spark Data Source API V2 소개"
 categories: "bigdata"
 ---
 
+### 2020.08.16. 내용 추가
+
+본 글을 2018년 1월에 작성했었는데, 그 뒤로 인터넷에 Data Source API V2에 관한 글이 많이 올라와 있었다.
+
+그 중에서도 http://shzhangji.com/blog/2018/12/08/spark-datasource-api-v2/ 가 가장 좋은 듯 하다.
+
+### 2018년 1월에 작성했던 원문
+
 앞서 작성했던 [Spark에 Custom Data source 붙이기](Spark에 Custom Data source 붙이기)는 Spark 1.3부터 지원하던 Data Source API를 사용한 것이다. Spark 2.3부터는 새로운 Data Source API를 지원하는데, 이를 V2라고 한다.
 
 [SPIP: Data Source API V2](https://docs.google.com/document/d/1n_vUVbF4KD3gxTmkNEon5qdQ-Z8qU5Frf6WMQZ6jJVM/edit#heading=h.mi1fbff5f8f9)라는 문서를 보면, V2가 나오게 된 배경과 새로운 API의 사용법, 관련 PR을 볼 수 있다.
