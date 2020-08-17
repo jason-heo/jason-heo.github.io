@@ -76,7 +76,7 @@ class RandomIntStreamProvider extends DataSourceV2
 
 ### 참고 - `InternalRow` 자료 구조 사용법
 
-`InternalRow` 자료 구조를 handling하는 방법은 http://jason-heo.github.io/bigdata/2020/08/15/spark-internalrow.html 에 설명해두었다.
+`InternalRow` 자료 구조를 handling하는 방법은 [Spark InternalRow 자료 구조 사용법](http://jason-heo.github.io/bigdata/2020/08/15/spark-internalrow.html) 에 설명해두었다.
 
 primitive type인 경우 큰 어려움은 없지만, Array나 Map으로 가면 사용법이 좀 어려워진다
 
