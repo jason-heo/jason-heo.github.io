@@ -6,6 +6,10 @@ categories: "bigdata"
 
 최근 (2020/08)에 structured streaming을 위한 data source를 구현 테스트하게 되었다. 이때 참고했던 자료들 몇 개를 기록용으로 정리해둔다.
 
+## 2020.08.17. 내용 추가
+
+`MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 http://jason-heo.github.io/bigdata/2020/08/15/spark-stream-source-v2.html 에서 볼 수 있다.
+
 ## 개요
 
 Spark은 data processing 엔진일 뿐 data storage가 아니다. Spark에서 data를 읽기 위해선 해당 data를 읽을 수 있는 data source가 구현되어 있어야 한다.
