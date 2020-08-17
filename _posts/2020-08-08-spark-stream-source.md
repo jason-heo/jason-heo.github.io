@@ -8,7 +8,7 @@ categories: "bigdata"
 
 ## 2020.08.17. 내용 추가
 
-`MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 http://jason-heo.github.io/bigdata/2020/08/15/spark-stream-source-v2.html 에서 볼 수 있다.
+`MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 http://jason-heo.github.io/bigdata/2020/08/17/spark-stream-source-v2.html 에서 볼 수 있다.
 
 ## 개요
 
