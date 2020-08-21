@@ -18,8 +18,7 @@ categories: "bigdata"
 - https://databricks.com/session_na20/deploying-apache-spark-jobs-on-kubernetes-with-helm-and-spark-operator
 - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0
     - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0-continues
-- https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs
-    - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionising-streaming-jobs-continues
+- https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionizing-streaming-jobs
 - https://databricks.com/session_na20/power-of-visualizing-embeddings
 - https://databricks.com/session_na20/data-driven-decisions-at-scale
 - https://databricks.com/session_na20/data-microservices-in-apache-spark-using-apache-arrow-flight
