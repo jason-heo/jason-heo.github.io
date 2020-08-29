@@ -10,8 +10,8 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 
 ### 1강: Introduction and Proofs
 
-- 시청일: 2020.07.20.(월)
 - https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B&index=1
+- 시청일: 2020.07.20.(월)
 - 시청한지 일주일 밖에 안 되었는데 벌써 기억이 안난다;;
 - 재미없을 줄 알았는데 흥미 진진했다
 - (n^2 + n + 41) is a prime number?
@@ -26,8 +26,8 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 
 ### 2강: Induction
 
-- 시청일: 2020.07.25.(토)
 - https://www.youtube.com/watch?v=z8HKWUWS-lA&list=PLB7540DEDD482705B&index=2
+- 시청일: 2020.07.25.(토)
 - Proof by Contradiction
     - root 2가 무리수임을 증명하기
     - 증명 방법: root 2가 유리수인 경우 모순에 빠지는 것을 보여줌으로서 무리수인 것을 증명한다
@@ -39,8 +39,8 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 
 ### 3강: Strong Induction
 
-- 시청일: 2020.07.27.(월)
 - https://www.youtube.com/watch?v=NuGDkmwEObM&list=PLB7540DEDD482705B&index=3
+- 시청일: 2020.07.27.(월)
 - 1, 2강에서 배운 내용을 까먹어서 3강부터는 노트에 필기를 했는데, 옮겨 적는 것도 일이네
 - 증명을 왜 배워야하나?
     - 내가 작성한 코드에 버그가 없다는 걸 증명하기 -> 아무래도 이걸 잘 해야 Unit TC도 잘 작성할 것 같긴 하다
@@ -58,8 +58,8 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 
 일주일에 강의 두 개 시청하는 것이 목표인데 1개 밖에 못 봤다. 총 25강이니깐 이 속도라면 6개월이나 걸리겠네.
 
-- 시청일: 2020.08.02.(일)
 - https://www.youtube.com/watch?v=NuY7szYSXSw&list=PLB7540DEDD482705B&index=4
+- 시청일: 2020.08.02.(일)
 - 강의는 뜬금없이 영화 "다이하드 3"로부터 시작한다
 - 다이하드3는 범인이 경찰에게 퀴즈를 내고, 경찰과 FBI가 퀴즈를 푸는 사이에 은행을 터는 그런 영화라고 네이버 영화에 줄거리가 나와있다
 - 여러 문제 중에서 강의에서 푸는 문제 정의는 [여기](https://www.youtube.com/watch?v=NuY7szYSXSw&feature=youtu.be&t=205)에서 볼 수 있다. 자막을 켜고 듣는 것이 좋다.
@@ -89,9 +89,9 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 
 ### 5강: Number Theory II
 
+- https://www.youtube.com/watch?v=XX7ePR21Ook&list=PLB7540DEDD482705B&index=5
 - 시청일: 2020.08.04, 2020.08.06, 2020.08.08
     - 총 3일에 걸쳐서 시청했다
-    - 근데 25분 정도 밖에 못 봤다 ㅎㅎ
     - 강의 보면서 필기하랴, 모르는 용어는 검색하랴, 검색하다보면 잠시 다른 웹 서핑하랴 진도가 안나간다
     - 사실 이해가 잘 안 되는 용어 및 수식이 있어서 이번엔 비디오보다는 text book을 주로 확인했다
 - A4 종이에 노트는 많이 했는데 옮겨적기가 어려워서 대략적인 흐름만 적는다
@@ -136,3 +136,20 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 				 ≡ m^(p-1)*k (mod p)
 				 ≡ k (mod p)
 		```
+### 6강: Graph Theory 1
+
+최초 목표는 일주일에 두 개 강의 시청이었다가, 5강부터 일주일에 1개로 줄었다.
+
+그런데 6강부터는 일주일에 1개도 못보고 있다. 아무래도 업무 때문에 밤 늦게까지 일하고 주말에도 업무 관련 공부를 했던 영향이 컸다. 이번주에는 공부에도 좀 더 투자를 해야겠다.
+
+- https://www.youtube.com/watch?v=h9wxtqoa1jY&list=PLB7540DEDD482705B&index=6
+- 시청일: 2020.08.10(월), 2020.08.11(화), 2020.08.18(화)
+- 그래프에 대한 용어부터 다시 배웠다
+    - adjcent
+    - incident
+- graph coloring 문제에 대해서 공부를 했다
+    - 일단 greedy한 방법
+- graph coloring을 응용한 문제도 알아봤다
+    - mit 출신이 만든 기업이 akamai라는 회사에서 서버 7.5만대를 서비스에 영향없이 restart하는 방법
+    - 통신 회사에서 주파수 간섭을 최소화하기 위해 송신기에 주파수를 배정하는 방법
+
