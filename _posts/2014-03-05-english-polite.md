@@ -6,7 +6,7 @@ categories: English
 ---
 
 <center>
-[![aa](https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F1.bp.blogspot.com%2F-fijV0Unhock%2FUwFV5tvuMLI%2FAAAAAAAAADY%2FkrDXlnR8mbY%2Fs1600%2F30064945.jpg&container=blogger&gadget=a&rewriteMime=image%2F*)](http://www.yes24.com/24/Goods/11535268?Acode=101)
+![aa](https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F1.bp.blogspot.com%2F-fijV0Unhock%2FUwFV5tvuMLI%2FAAAAAAAAADY%2FkrDXlnR8mbY%2Fs1600%2F30064945.jpg&container=blogger&gadget=a&rewriteMime=image%2F*)](http://www.yes24.com/24/Goods/11535268?Acode=101)
 </center>
 
 본인을 포함한 대부분의 한국 개발자들은 영어 독해는 부족하지 않지만, 영작 능력이나 회화 능력은 부족한 듯 하다. 본인도 영어 능력을 키워볼까 하고 Stackoverflow에서 활동을 하게 되었는데 맨날 하는 것은 "Could you try this?" 정도다. 질문자가 SQL을 올려 놓고 어떻게 개선하면 되는지 물어보면 "이렇게 해 봐라" 정도로 하는 것인데 왜 그렇게 하면 되는지 설명이 없는 경우가 많거나 있더라도 간단하다.
