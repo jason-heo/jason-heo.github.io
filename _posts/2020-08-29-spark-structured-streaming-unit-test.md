@@ -22,7 +22,7 @@ Spark Structured Streaming에서의 Unit Test는 다음과 같은 이유로 번�
 1. custom clock을 사용하여, Processing Time을 현재 시각이 아닌 임의의 시각으로 저장하도록 한다
 1. `MemorySinkV2`를 이용하여 output을 검사하도록 한다
 
-### `MemoryStream`
+### MemoryStream
 
 Structured Streaming의 Unit Test를 할 때 Data source를 Kafka로 한다고 가정해보자. Data를 Kafka에 넣기 위해 Producer를 만들어야 하므로 테스트하기 번거롭다.
 
@@ -30,7 +30,7 @@ Structured Streaming의 Unit Test를 할 때 Data source를 Kafka로 한다고 �
 
 구체적인 사용법은 아래에서 설명된다.
 
-### `StreamingQuery.processAllAvailable()`
+### StreamingQuery.processAllAvailable()
 
 당신이 사용하는 stream의 trigger가 5분이라고 해보자. 그렇다면 test할 때마다 최소 5분이 지나야 micro batch가 작동하게 된다.
 
@@ -215,7 +215,7 @@ Batch: 1
 +------+-------------------+
 ```
 
-### `MemorySinkV2`
+### MemorySinkV2
 
 stream query의 정합성 검사는 output을 통해 검사해야한다. console output을 이용하여 정합성을 검사하기엔 번거롭다.
 
@@ -223,7 +223,7 @@ stream query의 정합성 검사는 output을 통해 검사해야한다. console
 
 `MemorySinkV2.allData`는 data type이 `Seq[Row]`이므로 DataFrame의 Row API를 이용하여 필드 값에 접근할 수 있다.
 
-```
+```scala
 val memorySink = new MemorySinkV2
 
 val streamQuery = transformedDf.sparkSession
