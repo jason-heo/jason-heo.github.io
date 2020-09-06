@@ -27,7 +27,7 @@ val df: DataFrame = Seq(("Heo", 20), ("Park", 19)).toDF("name", "age")
 
 Unit Test를 만들다보면 `var spark`을 사용해야할 경우가 있는데 이때는 아래의 트릭을 사용하면 우회할 수 있다.
 
-```
+```scala
 class SomeSpec extends FlatSpec with BeforeAndAfter { self =>
 
   var spark: SparkSession = _
