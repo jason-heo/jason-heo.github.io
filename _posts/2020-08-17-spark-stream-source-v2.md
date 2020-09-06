@@ -249,6 +249,8 @@ Batch: 3
 ...
 ```
 
+{% include adsense-content.md %}
+
 ### `ContinuousReader` 구현
 
 `MicroBatchReader`를 이해했다면 `ContinuousReader` 구현도 크게 어렵지 않다. 다만 Offset 관리 방법이 `MicroBatchReader`와 달라서 이 부분이 어렵게 느껴진다.
