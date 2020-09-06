@@ -57,7 +57,7 @@ class SomeSpec extends FlatSpec with BeforeAndAfter { self =>
 - `'`: String을 Column으로 변환
 
 
-## `toDF()`
+## Seq를 DataFrame으로 변환: `toDF()`
 
 `toDF()`를 이용하면 Seq를 Dataframe으로 변환할 수 있다. 이와 관련된 첫 번째는 `class SQLImplcits`에 정의된 `def localSeqToDatasetHolder()`이다.
 
