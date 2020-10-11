@@ -33,6 +33,8 @@ categories: "life"
     - ![Imgur](https://i.imgur.com/FBI3YcGm.png)
     - "6일 이상 입원"해야 무조건 20만원을 받을 수 있다.
 
+{% include adsense-content.md %}
+
 ### 필요 서류
 
 청구 서류는 전화 문의하는 것이 좋다.
