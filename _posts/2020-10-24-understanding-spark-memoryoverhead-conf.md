@@ -15,19 +15,21 @@ Spark 2.3부터 memoryOverhead 설정명이 변경되었다. (참고로 2.3, 2.4
 
 설정 이름이 변경된 이유에 대해서는 [Stack overflow의 답변](https://stackoverflow.com/q/58813117/2930152)을 보면 Spark을 운영하는 cluster가 yarn이 아닌 kubernetes도 있기 때문에 "yarn에 종속된 듯한 설정명"을 일반적인 설정명으로 변경한 것 같다.
 
-다만 호환성을 위해 Spark 2.3 이상에서도 `spark.yarn.executor.memoryOverhead` 설정을 사용할 수 있다. ([관련 코드](https://github.com/apache/spark/blob/7766fd13c9e7cb72b97fdfee224d3958fbe882a0/core/src/main/scala/org/apache/spark/SparkConf.scala#L684-L685)]
+다만 호환성을 위해 Spark 2.3 이상에서도 기존의 `spark.yarn.executor.memoryOverhead` 설정을 사용할 수 있다. ([관련 코드](https://github.com/apache/spark/blob/7766fd13c9e7cb72b97fdfee224d3958fbe882a0/core/src/main/scala/org/apache/spark/SparkConf.scala#L684-L685)]
 
 ### memoryOverhead 설정이란?
 
-비교적 설명이 잘 되어 있는 [Spark 2.4](https://spark.apache.org/docs/2.2.0/running-on-yarn.html#spark-properties) 설정을 보면 아래와 같이 설명되어 있다.
+비교적 설명이 잘 되어 있는 [Spark 2.2 메뉴얼](https://spark.apache.org/docs/2.2.0/running-on-yarn.html#spark-properties)을 보면 아래와 같이 설명되어 있다.
 
 > The amount of off-heap memory (in megabytes) to be allocated per executor. This is memory that accounts for things like VM overheads, interned strings, other native overheads, etc. This tends to grow with the executor size (typically 6-10%).
 
-메뉴얼만 봐서는 대략은 이해가 되지만 명확한 이해가 되진 않는다.
+메뉴얼만 봐서는 무슨 말인지 대략은 이해가 되지만 명확한 이해가 되진 않는다.
 
 java를 실행할 때는 `-Xmx` 설정으로 heap size를 지정한다. 즉, `-Xmx2g`라고 지정하는 경우 jvm에는 2GB의 heap이 할당된다. 하지만 `top`으로 해당 jvm의 메모리 사용량 (정확히는 resident memory, 또는 RSS)을 보면 2GB보다 더 많은 메모리를 사용하는 걸 볼 수 있다.
 
-2GB 이외의 메모리는 off-heap이며 jvm에서 다양한 용도로 사용된다.
+2GB 이외의 메모리는 off-heap이며 jvm에서 다양한 용도로 사용되는 영역이다.
+
+Spark의 memoryOverhead 설정을 off-heap용 메모리 공간을 임의로 지정할 수 있다.
 
 ### Yarn으로부터 Mmeory를 할당받는 과정
 
@@ -80,7 +82,7 @@ Consider boosting spark.yarn.executor.memoryOverhead.
 
 ### `--executor-memory=2g --conf spark.executor.memoryOverhead=1g` VS `--executor-memory=3g`
 
-아래 두 가지 방법 모두 3GB를 사용하는 것처럼 보여지나 off-heap 관점에서는 다르다.
+아래 두 가지 방법 모두 3GB를 사용하는 것처럼 보여지나 off-heap 사용량 관점에서는 다르다.
 
 - 1) `--executor-memory=2g --conf spark.executor.memoryOverhead=1g`
     - on-heap: 2GB
