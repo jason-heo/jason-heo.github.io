@@ -122,7 +122,7 @@ object ThreadTest {
 }
 ```
 
-출력 예)
+출력 결과: Child Thread에서 put한 것을 Main Thread에서 poll해간 것을 볼 수 있다. queue가 empty한 경우 poll이 `null`을 return하였다.
 
 ```
 current ts=1604197496974 milli second
@@ -205,7 +205,7 @@ object ThreadTest {
 }
 ```
 
-출력 결과
+출력 결과: 매 5초 단위로 queue size가 출력된 것을 볼 수 있다.
 
 ```
 current ts=1604199242 second
