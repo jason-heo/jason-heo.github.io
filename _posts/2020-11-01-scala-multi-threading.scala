@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scala의 Multi Threading"
+title: "Scala의 Multi Threading 예제 코드"
 categories: "programming"
 ---
 
