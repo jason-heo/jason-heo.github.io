@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark Dataset에서 typed API, untyped API 사용하기"
+title: "Spark DataFrame vs Dataset (부제: typed API 사용하기)"
 categories: "bigdata"
 ---
 
