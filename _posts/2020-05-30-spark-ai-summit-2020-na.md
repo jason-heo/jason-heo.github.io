@@ -20,6 +20,7 @@ categories: "bigdata"
     - https://databricks.com/session_na20/deep-dive-into-the-new-features-of-apache-spark-3-0-continues
 - https://databricks.com/session_na20/performant-streaming-in-production-preventing-common-pitfalls-when-productionizing-streaming-jobs
 - https://databricks.com/session_na20/power-of-visualizing-embeddings
+    - embedding에 대한 기초 지식을 얻기에 괜찮은 듯
 - https://databricks.com/session_na20/data-driven-decisions-at-scale
 - https://databricks.com/session_na20/data-microservices-in-apache-spark-using-apache-arrow-flight
 - https://databricks.com/session_na20/redash-open-source-sql-analytics-on-data-lakes
