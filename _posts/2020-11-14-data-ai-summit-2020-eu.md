@@ -27,6 +27,7 @@ Databricks에서는 Delta Lake를 밀려고하는 것 같다. 컨퍼런스 세�
 - https://databricks.com/session_eu20/solving-data-discovery-challenges-at-lyft-with-amundsen-an-open-source-metadata-platform
 - https://databricks.com/session_eu20/real-time-health-score-application-using-apache-spark-on-kubernates
     - 한국 개발자, BisTel
+    - 한국에서는 BisTel과 SKT분들이 꾸준히 발표 중이시다
 - https://databricks.com/session_eu20/ml-statistics-and-spark-with-databricks
 - https://databricks.com/session_eu20/scale-out-using-spark-in-serverless-herd-mode
 - https://databricks.com/session_eu20/extending-apache-spark-beyond-spark-session-extensions
