@@ -32,8 +32,9 @@ Databricks에서는 Delta Lake를 밀려고하는 것 같다. 컨퍼런스 세�
 - https://databricks.com/session_eu20/extending-apache-spark-beyond-spark-session-extensions
 - https://databricks.com/session_eu20/improving-sparksql-performance-by-30-how-we-optimize-parquet-pushdown-and-parquet-reader
 - https://databricks.com/session_eu20/apache-spark-streaming-in-k8s-with-argocd-spark-operator
-- https://databricks.com/session_eu20/query-or-not-to-query-using-apache-spark-metrics-to-highlight-potentially-problematic-queries- https://databricks.com/session_eu20/efficient-query-processing-using-machine-learning
-    - 교표인지 한국인인지 모르겠으나 이력보니 멋진 분이네
+- https://databricks.com/session_eu20/query-or-not-to-query-using-apache-spark-metrics-to-highlight-potentially-problematic-queries-
+- https://databricks.com/session_eu20/efficient-query-processing-using-machine-learning
+    - 교포인지 한국인인지 모르겠으나 이력보니 멋진 분이네
     - https://ddkang.github.io/
 - https://databricks.com/session_eu20/ebays-work-on-dynamic-partition-pruning-runtime-filter
 - https://databricks.com/session_eu20/spark-sql-join-improvement-at-facebook
