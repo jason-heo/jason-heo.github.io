@@ -16,6 +16,10 @@ Databricks에서는 Delta Lake를 밀려고하는 것 같다. 컨퍼런스 세�
 - https://databricks.com/session_eu20/from-query-plan-to-query-performance-supercharging-your-apache-spark-queries-using-the-spark-ui-sql-tab
 - https://databricks.com/session_eu20/spark-sql-beyond-official-documentation
 - https://databricks.com/session_eu20/what-is-new-with-apache-spark-performance-monitoring-in-spark-3-0
+- https://databricks.com/session_eu20/hyperspace-an-indexing-subsystem-for-apache-spark
+    - MS에서 만든 Spark용 Indexing Subsystem
+    - 이거 꼭 한번 테스트해봐야겠다
+    - 발표자 중에는 Kim씨 성을 가진 사람도 있네
 - https://databricks.com/session_eu20/how-the-weather-company-uses-apache-spark-to-serve-weather-data-fast-at-low-cost
 - https://databricks.com/session_eu20/building-a-simd-supported-vectorized-native-engine-for-spark-sql
 - https://databricks.com/session_eu20/containerized-stream-engine-to-build-modern-delta-lake
