@@ -259,6 +259,8 @@ JSR310을 사용하면 위의 결과보다는 포맷이 간단해진다.
   }
 ```
 
+{% include adsense-content.md %}
+
 ### Deserialize 1
 
 `readValue()`를 이용하여 deserialize할 수 있다.
