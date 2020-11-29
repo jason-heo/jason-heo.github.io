@@ -39,7 +39,12 @@ INNER JOIN PLAYERS P ON F.Playernr = P.Playernr
 GROUP BY  P.Name, P.Playernr
 ```
 
-GROUP BY를 사용하는 경우, SELECT할 수 있는 컬럼은 GROUP BY에 나열된 컬럼과 SUM(), COUNT() 같은 집계 함수(Aggregation Function)으로 한정된다. 질문자의 경우 "GROUP BY P.Playernr"로 GROUP BY를 하였으나 "SELECT P.Name, P.Playernr, SUM(F.Amount)"와 같이 GROUP BY에 사용되지 않은 "P.Playernr"을 SELECT하려고 했기 때문에 결과가 이상하게 출력된 것이다. Oracle은 이러한 경우 "not a GROUP BY expression"이라는 오류 메시지를 출력해 주었다.
+GROUP BY 질의에서  SELECT할 수 있는 컬럼은 다음과 같다.
+
+- GROUP BY에 나열된 컬럼
+- SUM(), COUNT() 같은 집계 함수(Aggregation Function)으로 한정된다.
+
+질문자의 경우 GROUP BY에 사용되지 않은 "P.Name"을 SELECT하려고 했기 때문에 결과가 이상하게 출력된 것이다. Oracle은 이러한 경우 "not a GROUP BY expression"이라는 오류 메시지를 출력해 주었다.
 
 물론 MySQL에서도 설정 값 변경을 통해 잘못된 GROUP BY를 사용하는 경우 에러를 발생하도록 할 수 있지만, 이 옵션이 기본으로 비활성화되어 있으며, 이 옵션의 존재를 아는 사용자도 드물다. 다음의 예처럼 sql_mode의 값을 "ONLY_FULL_GROUP_BY"로 변경하면 잘못된 GROUP BY를 사용하는 것을 방지할 수 있다.
 
