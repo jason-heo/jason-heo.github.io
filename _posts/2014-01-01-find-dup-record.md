@@ -5,89 +5,172 @@ date: 2014-03-05
 categories: mysql
 ---
 
-{% include pmysql.md %}
+test에 사용된 MySQL 버전: 8.0
 
-## Stackoverflow URL
+(일반적인 방법이기 때문에 5.x에서도 적용된다)
 
-http://stackoverflow.com/questions/20206488/fetching-data-from-three-different-tables-but-it-is-duplicating-records/20206570
+### 개요
 
-## 질문
+1:n 관계의 테이블을 JOIN하면 동일한 결과의 레코드가 n개 출력된다.
 
-아래 SELECT문과 같이 3개의 테이블을 JOIN하고 있다. 테이블들의 관계가 1:n이기 때문에 레코드가 출력되는데, 중복을 제거할 수 있는 방법은 없는가?
+중복을 제거하는 방법은 아래와 같이 두 가지 방법이 있다.
+
+1. 최종 SELECT 결과에서 `SELECT DISTINCT`를 이용하는 방법
+    - 장점: 간단한다
+    - 단점: 속도가 느리다
+1. JOIN 전에 중복을 미리 제거하는 방법
+    - 장점: 속도가 빠르다
+    - 단점: 복잡하다
+
+### 예제 데이터
+
+아래와 같은 테이블 두 개를 이용하였다. `job` 테이블에 중복된 레코드가 없어야 정상이겠지만 예를 위해 중복 레코드를 입력하였다.
+
+- `person` 테이블
+    ```sql
+    CREATE TABLE person
+    (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255),
+        PRIMARY KEY(id)
+    );
+
+    INSERT INTO person (name) VALUES ('Kim');
+    INSERT INTO person (name) VALUES ('Heo');
+    ```
+- `job` 테이블
+    ```sql
+    CREATE TABLE job
+    (
+        id INT NOT NULL AUTO_INCREMENT,
+        person_name VARCHAR(255),
+        job_name VARCHAR(255),
+        PRIMARY KEY(id)
+    );
+
+    INSERT INTO job (person_name, job_name) VALUES ('Kim', 'Programmer');
+    INSERT INTO job (person_name, job_name) VALUES ('Kim', 'Programmer');
+
+    INSERT INTO job (person_name, job_name) VALUES ('Heo', 'Can Opener');
+    INSERT INTO job (person_name, job_name) VALUES ('Heo', 'Can Opener');
+    INSERT INTO job (person_name, job_name) VALUES ('Heo', 'Can Opener');
+    ```
+
+### 문제 상황
+
+아래 JOIN 결과를 보면 중복된 레코드가 출력된 것을 볼 수 있다.
 
 ```sql
-SELECT c.categoriestype, s.SubCatName,
-  p.productname, p.productprice, p.id, p.productimage,
-  p.productthumbnail
-FROM tbl_ProCategories c, tbl_ProSubCategories s, tbl_products p
-WHERE p.subcat_id = s.cat_id
-  AND p.cat_id = c.id
-  AND c.id = s.cat_id
-LIMIT 0 , 30
+SELECT
+    person.id, person.name, job.job_name
+FROM person INNER JOIN job
+    ON person.name = job.person_name;
++----+------+------------+
+| id | name | job_name   |
++----+------+------------+
+|  1 | Kim  | Programmer |
+|  1 | Kim  | Programmer | <= 중복 레코드
+|  2 | Heo  | Can Opener |
+|  2 | Heo  | Can Opener | <= 중복 레코드
+|  2 | Heo  | Can Opener | <= 중복 레코드
++----+------+------------+
+5 rows in set (0.00 sec)
+
+```
+
+이런 중복을 어떻게 제거할 수 있을까?
+
+### 방법 1: SELECT DISTINCT를 사용하는 방법
+
+개요에서 설명한 것처럼 `SELECT DISTINCT`를 사용하면 중복을 매우 쉽게 제거할 수 있다.
+
+```sql
+SELECT DISTINCT -- DISTINCT를 추가
+    person.id, person.name, job.job_name
+FROM person INNER JOIN job
+    ON person.name = job.person_name;
+
++----+------+------------+
+| id | name | job_name   |
++----+------+------------+
+|  1 | Kim  | Programmer |
+|  2 | Heo  | Can Opener |
++----+------+------------+
+2 rows in set (0.00 sec)
+```
+
+`SELECT`에 `DISTINCT`만 추가했는데 중복이 제거되었다.
+
+매우 쉬운 방법이지만 레코드 수가 많은 경우 성능이 느리다는 단점이 있다.
+
+### 참고: DISTINCT에 대한 이해
+
+간혹 `DISTINCT`를 함수처럼 사용하는 걸 볼 수 있다.
+
+```sql
+SELECT DISTINCT(job_name)
+FROM job;
+
++------------+
+| job_name   |
++------------+
+| Programmer |
+| Can Opener |
++------------+
+2 rows in set (0.00 sec)
+```
+
+그런데 두 개 이상의 필드를 `DISTINCT()` 안에 넣으면 에러가 발생한다.
+
+```sql
+SELECT DISTINCT(person_name, job_name)
+FROM job;
+
+ERROR 1241 (21000): Operand should contain 1 column(s)
+```
+
+`DISTINCT`를 함수라고 생각하지 않고 `SELECT DISTINCT`로 생각하는 것이 필드 개수와 상관없이 사용할 수 있으므로 편하다.
+
+```sql
+SELECT DISTINCT person_name, job_name
+FROM job;
+
++-------------+------------+
+| person_name | job_name   |
++-------------+------------+
+| Kim         | Programmer |
+| Heo         | Can Opener |
++-------------+------------+
+2 rows in set (0.00 sec)
 ```
 
 {% include adsense-content.md %}
 
-## 답변
+### 방법 2: JOIN 전에 중복을 제거하기
 
-다음과 같이 DISTINCT를 붙여서 쉽게 중복을 제거할 수 있다.
+앞서 말한 것처럼 `SELECT DISTINCT`는 간단하지만 성능이 느리다.
+
+성능을 위해서는 JOIN 전에 중복을 제거하는 것이 좋다. (물론 더 좋은 것은 중복이 없도록 테이블 설계를 잘 하는 것이다)
+
+'JOIN 전에 중복 제거'는 다음과 같이 inline view를 사용하면 아주 어렵지 않다.
 
 ```sql
-SELECT DISTINCT c.categoriestype, s.SubCatName,
-  p.productname, p.productprice, p.id, p.productimage, p.productthumbnail
-FROM tbl_ProCategories c, tbl_ProSubCategories s, tbl_products p
-WHERE p.subcat_id = s.cat_id
-  AND p.cat_id = c.id
-  AND c.id = s.cat_id
-LIMIT 0 , 30
+SELECT person.id, person.name, job.job_name
+FROM person INNER JOIN (
+    -- 중복 제거를 위한 inline view
+    SELECT DISTINCT person_name, job_name
+    FROM job
+) AS job ON person.name = job.person_name;
+
++----+------+------------+
+| id | name | job_name   |
++----+------+------------+
+|  1 | Kim  | Programmer |
+|  2 | Heo  | Can Opener |
++----+------+------------+
+2 rows in set (0.00 sec)
 ```
 
-DISTINCT가 함수인 줄 알고 DISTINCT(col)과 같이 함수처럼 사용하는 경우가 있는데 엄밀히 말하면 DISTINCT는 함수가 아니다. 중복을 제거할 컬럼이 1개인 경우는 함수 표현처럼 사용해도 에러가발생하지 않는다. 다음 예를 보자
+언뜻보면 복잡해보일 수 있있고 복잡하니깐 성능이 더 느려보일 수 있는데 일반적으로 레코드 수가 많은 경우 JOIN 전에 중복을 제거해서 1:1 JOIN으로 바꾸는 것이 훨씬 빠르다.
 
-    mysql> SELECT * FROM test;
-    +------+------+
-    | a    | b    |
-    +------+------+
-    |    1 |    1 |
-    |    1 |    1 |
-    |    2 |    2 |
-    +------+------+
-    3 rows in set (0.00 sec)
-     
-    mysql> SELECT DISTINCT(a) FROM test;
-    +------+
-    | a    |
-    +------+
-    |    1 |
-    |    2 |
-    +------+
-    2 rows in set (0.00 sec)
-
-`DISTINCT(a)` 처럼 함수 형식으로 사용해도 중복 제거가 잘 되었다. 하지만 a, b 컬럼을 동시에 중복 제거하는 경우 다음과 같이 DISTINCT(a, b)를 입력하면 에러가 발생하게 된다.
-
-    mysql> SELECT DISTINCT(a, b) FROM test;
-    ERROR 1241 (21000): Operand should contain 1 column(s)
-
-DISTINCT를 함수라고 생각하기 보다는 "SELECT DISTINCT"를 묶어서 중복을 제거하는 SELECT라고 인식하는 것이 좋다. 다음과 같이 사용하면 복수 개의 컬럼에 대해서도 중복을 제거할 수 있다.
-
-    mysql> SELECT DISTINCT a, b FROM test;
-    +------+------+
-    | a    | b    |
-    +------+------+
-    |    1 |    1 |
-    |    2 |    2 |
-    +------+------+
-    2 rows in set (0.00 sec)
-
-참고로 MySQL 매뉴얼에 따르면 우리가 평소 무심코 사용하는 SELECT는 사실 "SELECT ALL"과 같이 "ALL"이 생략된 것이다. 따라서 다음과 같은 질의도 사용 가능하다. "SELECT ALL"을 생각해본다면 "SELECT DISTINCT"의 사용법도 이해가 될 것이다.
-
-    mysql> SELECT ALL a, b FROM test;
-    +------+------+
-    | a    | b    |
-    +------+------+
-    |    1 |    1 |
-    |    1 |    1 |
-    |    2 |    2 |
-    +------+------+
-    3 rows in set (0.00 sec)
-
+물론 WHERE 절에 조건이 존재 여부, index 존재 여부, 한쪽 테이블의 크기가 엄청 적은 경우 등등 많은 시나리오가 있으니 성능 비교를 하는 것이 좋겠다.
