@@ -6,7 +6,7 @@ categories: "programming"
 
 본 포스팅에서는 bash의 command line 옵션 parsing 방법에 대해 설명한다.
 
-### 개요
+## 개요
 
 command line 프로그램의 실행 옵션 parsing이 생각보다 어렵다.
 
@@ -81,7 +81,7 @@ ls: -l: No such file or directory
 
 C 언에에서는 위의 어려움을 해결할 수 있는 library를 제공하지만 bash에서는 아쉽게도 이런 library가 부족하다.
 
-### 예제 프로그램
+## 예제 프로그램
 
 본 예제에서는 위의 curl 예처럼 `-X`와 `-v` 옵션을 지원하는 bash script를 만들어보려한다.
 
@@ -95,7 +95,7 @@ Options:
  -v, --verbose           Make the operation more talkative
 ```
 
-### short option 사용하기 - bash의 `getopts` 사용
+## short option 사용하기 - bash의 `getopts` 사용
 
 다행인 점은 bash에서도 `getopts`를 이용하면 short option을 사용할 수 있다는 점이다. 앞서 설명했던 `curl` 만큼의 자유도는 없지만 꽤나 편하게 사용할 수 있다.
 
@@ -187,7 +187,7 @@ url='m.naver.com -v'
 
 {% include adsense-content.md %}
 
-### long short option 섞어 사용하기 1 - bash의 `${1:-}` 사용
+## long short option 섞어 사용하기 1 - bash의 `${1:-}` 사용
 
 이번엔 long option과 short option을 동시에 지원해보자.
 
@@ -273,13 +273,13 @@ url='http://m.naver.com'
 
 {% include adsense-content.md %}
 
-### long short option 섞어 사용하기 2 - gnu `getopt` 사용
+## long short option 섞어 사용하기 2 - gnu `getopt` 사용
 
 마지막으로 gnu `getopt`를 사용하는 예를 보자. 앞에서 본 예는 모두 bash에 내장된 기능을 활용한 예였다. 하지만 gnu `getopt`는 별도 프로그램을 이용한다.
 
 console에서 `getopt -h` 명령을 수행하면 아래와 같은 도움말이 나와야한다.
 
-```
+```console
 $ getopt -h
 
 Usage:
@@ -332,10 +332,10 @@ EOM
 
 function set_options()
 {
-	# --options에는 short option을 지정한다
-	# --longoptions에는 말그대로 long option을 지정한다
-	# --name은 도움말에 출력할 프로그램 이름이다
-	# -- 이후에는 사용자가 입력한 문자열이 입력된다
+    # --options에는 short option을 지정한다
+    # --longoptions에는 말그대로 long option을 지정한다
+    # --name은 도움말에 출력할 프로그램 이름이다
+    # -- 이후에는 사용자가 입력한 문자열이 입력된다
     arguments=$(getopt --options X:v \
                        --longoptions request:,verbose \
                        --name $(basename $0) \
