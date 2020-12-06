@@ -125,20 +125,20 @@ $ spark-shell --master=local[1] --packages com.microsoft.hyperspace:hyperspace-c
         +- *(1) Filter (isnotnull(zip_code#8L) && (zip_code#8L = 78704))
            +- *(1) FileScan parquet [zip_code#8L,score#10] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code), EqualTo(zip_code,78704)], ReadSchema: struct<zip_code:bigint,score:int>
         ```
-- 동일 질의에 대해서 Hyperspace를 diable시킨 결과
-    ```scala
-    spark.disableHyperspace
+    - 동일 질의에 대해서 Hyperspace를 diable시킨 결과
+        ```scala
+        spark.disableHyperspace
 
-    df.filter("zip_code = 78704").select("score").explain
-    scala> df.filter("zip_code = 78704").select("score").explain
-    == Physical Plan ==
-    *(1) Project [score#10]
-    +- *(1) Filter (isnotnull(zip_code#8L) && (zip_code#8L = 78704))
-       +- *(1) FileScan csv [zip_code#8L,score#10] Batched: false, Format: CSV, Location: InMemoryFileIndex[file:/path/to/datasets/hyperspace/dataset.csv], PartitionFilters: [], PushedFilters: [IsNotNull(zip_code), EqualTo(zip_code,78704)], ReadSchema: struct<zip_code:bigint,score:int>
-    ```
+        df.filter("zip_code = 78704").select("score").explain
+        scala> df.filter("zip_code = 78704").select("score").explain
+        == Physical Plan ==
+        *(1) Project [score#10]
+        +- *(1) Filter (isnotnull(zip_code#8L) && (zip_code#8L = 78704))
+           +- *(1) FileScan csv [zip_code#8L,score#10] Batched: false, Format: CSV, Location: InMemoryFileIndex[file:/path/to/datasets/hyperspace/dataset.csv], PartitionFilters: [], PushedFilters: [IsNotNull(zip_code), EqualTo(zip_code,78704)], ReadSchema: struct<zip_code:bigint,score:int>
+        ```
 - `GROUP BY` test
     - 이번엔 `GROUP BY`를 수행해봤다
-    - 아쉽게도 Hyperspace index를 사용하지 못한다
+    - 아쉽게도 Hyperspace index를 사용하지 못했다
         ```scala
         spark.enableHyperspace
 
