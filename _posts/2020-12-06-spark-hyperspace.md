@@ -61,6 +61,8 @@ OLTP 성 index라기보다는 OLAP을 위한 index로 보여진다.
 $ spark-shell --master=local[1] --packages com.microsoft.hyperspace:hyperspace-core_2.11:0.3.0
 ```
 
+{% include adsense-content.md %}
+
 ## test code
 
 - csv를 Dataframe으로 변환하기 위한 코드
@@ -113,16 +115,16 @@ $ spark-shell --master=local[1] --packages com.microsoft.hyperspace:hyperspace-c
 - Hyperspace index를 사용한 SQL의 execution plan
     - `zip_code`와 `score` 필드만 filtering하고 select하는 질의를 수행했다
     - explain 결과를 보면 알겠지만 csv file이 아닌 Parquet file을 열고 있다
-    ```scala
-    // 질의 수행 시 Hyperspace를 활성화한다
-    spark.enableHyperspace
+        ```scala
+        // 질의 수행 시 Hyperspace를 활성화한다
+        spark.enableHyperspace
 
-    df.filter("zip_code = 78704").select("score").explain
-    == Physical Plan ==
-    *(1) Project [score#10]
-    +- *(1) Filter (isnotnull(zip_code#8L) && (zip_code#8L = 78704))
-       +- *(1) FileScan parquet [zip_code#8L,score#10] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code), EqualTo(zip_code,78704)], ReadSchema: struct<zip_code:bigint,score:int>
-    ```
+        df.filter("zip_code = 78704").select("score").explain
+        == Physical Plan ==
+        *(1) Project [score#10]
+        +- *(1) Filter (isnotnull(zip_code#8L) && (zip_code#8L = 78704))
+           +- *(1) FileScan parquet [zip_code#8L,score#10] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code), EqualTo(zip_code,78704)], ReadSchema: struct<zip_code:bigint,score:int>
+        ```
 - 동일 질의에 대해서 Hyperspace를 diable시킨 결과
     ```scala
     spark.disableHyperspace
@@ -137,53 +139,53 @@ $ spark-shell --master=local[1] --packages com.microsoft.hyperspace:hyperspace-c
 - `GROUP BY` test
     - 이번엔 `GROUP BY`를 수행해봤다
     - 아쉽게도 Hyperspace index를 사용하지 못한다
-    ```scala
-    spark.enableHyperspace
+        ```scala
+        spark.enableHyperspace
 
-    spark.sql("""
-        SELECT zip_code,
-            AVG(score)
-        FROM logs
-        GROUP BY zip_code
-        ORDER BY AVG(score)
-    """).explain
-    == Physical Plan ==
-    *(3) Project [zip_code#8L, avg(score)#597]
-    +- *(3) Sort [aggOrder#598 ASC NULLS FIRST], true, 0
-       +- Exchange rangepartitioning(aggOrder#598 ASC NULLS FIRST, 4)
-          +- *(2) HashAggregate(keys=[zip_code#8L], functions=[avg(cast(score#10 as bigint))])
-             +- Exchange hashpartitioning(zip_code#8L, 4)
-                +- *(1) HashAggregate(keys=[zip_code#8L], functions=[partial_avg(cast(score#10 as bigint))])
-                   +- *(1) FileScan csv [zip_code#8L,score#10] Batched: false, Format: CSV, Location: InMemoryFileIndex[file:/path/to/datasets/hyperspace/dataset.csv], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<zip_code:bigint,score:int>
-    ```
+        spark.sql("""
+            SELECT zip_code,
+                AVG(score)
+            FROM logs
+            GROUP BY zip_code
+            ORDER BY AVG(score)
+        """).explain
+        == Physical Plan ==
+        *(3) Project [zip_code#8L, avg(score)#597]
+        +- *(3) Sort [aggOrder#598 ASC NULLS FIRST], true, 0
+           +- Exchange rangepartitioning(aggOrder#598 ASC NULLS FIRST, 4)
+              +- *(2) HashAggregate(keys=[zip_code#8L], functions=[avg(cast(score#10 as bigint))])
+                 +- Exchange hashpartitioning(zip_code#8L, 4)
+                    +- *(1) HashAggregate(keys=[zip_code#8L], functions=[partial_avg(cast(score#10 as bigint))])
+                       +- *(1) FileScan csv [zip_code#8L,score#10] Batched: false, Format: CSV, Location: InMemoryFileIndex[file:/path/to/datasets/hyperspace/dataset.csv], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<zip_code:bigint,score:int>
+        ```
 - JOIN TEST
     - 이번엔 JOIN을 돌려봤다
     - 이번엔 Hyperspace index를 잘 사용했다
     - 즉, shuffle과 Sort Merge Join이 사라졌다
-    ```scala
-    spark.enableHyperspace
+        ```scala
+        spark.enableHyperspace
 
-    spark.sql("""
-        SELECT t1.zip_code, MAX(t2.score)
-        FROM logs t1 INNER JOIN logs t2 ON t1.zip_code = t2.zip_code
-        GROUP BY t1.zip_code
-        ORDER BY MAX(t2.score)
-    """).explain
-    *(4) Sort [max(score)#626 ASC NULLS FIRST], true, 0
-    +- Exchange rangepartitioning(max(score)#626 ASC NULLS FIRST, 4)
-       +- *(3) HashAggregate(keys=[zip_code#8L], functions=[max(score#621)])
-          +- Exchange hashpartitioning(zip_code#8L, 4)
-             +- *(2) HashAggregate(keys=[zip_code#8L], functions=[partial_max(score#621)])
-                +- *(2) Project [zip_code#8L, score#621]
-                   +- *(2) BroadcastHashJoin [zip_code#8L], [zip_code#619L], Inner, BuildLeft
-                      :- BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, true]))
-                      :  +- *(1) Project [zip_code#8L]
-                      :     +- *(1) Filter isnotnull(zip_code#8L)
-                      :        +- *(1) FileScan parquet [zip_code#8L] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code)], ReadSchema: struct<zip_code:bigint>, SelectedBucketsCount: 200 out of 200
-                      +- *(2) Project [zip_code#619L, score#621]
-                         +- *(2) Filter isnotnull(zip_code#619L)
-                            +- *(2) FileScan parquet [zip_code#619L,score#621] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code)], ReadSchema: struct<zip_code:bigint,score:int>, SelectedBucketsCount: 200 out of 200
-    ```
+        spark.sql("""
+            SELECT t1.zip_code, MAX(t2.score)
+            FROM logs t1 INNER JOIN logs t2 ON t1.zip_code = t2.zip_code
+            GROUP BY t1.zip_code
+            ORDER BY MAX(t2.score)
+        """).explain
+        *(4) Sort [max(score)#626 ASC NULLS FIRST], true, 0
+        +- Exchange rangepartitioning(max(score)#626 ASC NULLS FIRST, 4)
+           +- *(3) HashAggregate(keys=[zip_code#8L], functions=[max(score#621)])
+              +- Exchange hashpartitioning(zip_code#8L, 4)
+                 +- *(2) HashAggregate(keys=[zip_code#8L], functions=[partial_max(score#621)])
+                    +- *(2) Project [zip_code#8L, score#621]
+                       +- *(2) BroadcastHashJoin [zip_code#8L], [zip_code#619L], Inner, BuildLeft
+                          :- BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, true]))
+                          :  +- *(1) Project [zip_code#8L]
+                          :     +- *(1) Filter isnotnull(zip_code#8L)
+                          :        +- *(1) FileScan parquet [zip_code#8L] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code)], ReadSchema: struct<zip_code:bigint>, SelectedBucketsCount: 200 out of 200
+                          +- *(2) Project [zip_code#619L, score#621]
+                             +- *(2) Filter isnotnull(zip_code#619L)
+                                +- *(2) FileScan parquet [zip_code#619L,score#621] Batched: true, Format: Parquet, Location: InMemoryFileIndex[file:/path/to/spark-warehouse/indexes/index/v__=0/part-00050-1136a1aa-f18d-4..., PartitionFilters: [], PushedFilters: [IsNotNull(zip_code)], ReadSchema: struct<zip_code:bigint,score:int>, SelectedBucketsCount: 200 out of 200
+        ```
 
 ## Index 구조
 
