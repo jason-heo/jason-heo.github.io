@@ -40,7 +40,7 @@ OLTP 성 index라기보다는 OLAP을 위한 index로 보여진다.
 
 다음주에는 실 데이터와 훨씬 큰 데이터 규모로 테스트를 해봐야겠다.
 
-### test용 dataset 및 환경
+## test용 dataset 및 환경
 
 - test용 dataset은 아래 url에서 다운로드하였다
     - https://data.world/cityofaustin/ecmv-9xxi
@@ -98,6 +98,7 @@ $ spark-shell --master=local[1] --packages com.microsoft.hyperspace:hyperspace-c
     +-----+--------------+---------------+----------+--------------------+--------------------+------+
     |index|    [zip_code]|        [score]|       200|{"type":"struct",...|file:/path/to/...|ACTIVE|
     +-----+--------------+---------------+----------+--------------------+--------------------+------+
+    ```
 - 실제 index data는 Delta Lake에 저장되는 것으로 보인다 (따라서 파일 포맷은 parquet이다)
     ```console
     $ ls spark-warehouse/indexes/index/v__\=0/
