@@ -22,15 +22,15 @@ command line 프로그램의 실행 옵션 parsing이 생각보다 어렵다.
     - flag성 옵션으로서 argument를 필요로하지 않는다
 
 ```console
-$ curl -X GET -v http://m.naver.com
+$ curl -X GET -v http://m.daum.net
 ```
 
 두 번째 어려움은 argument가 필요한 경우 옵션과 argument를 구분하는 방식이 3가지 존재한다는 점이다. 아래 3가지 표현은 모두 동일한 것을 의미한다
 
 ```console
-$ curl -XGET http://m.naver.com
-$ curl -X GET http://m.naver.com
-$ curl -X=GET http://m.naver.com
+$ curl -XGET http://m.daum.net
+$ curl -X GET http://m.daum.net
+$ curl -X=GET http://m.daum.net
 ```
 
 세 번째 어려움은 long option, short option을 지원해야하는 경우다. 사내 혹은 개인적으로 사용할 때는 short option만 지원해도 되지만 외부에 공개할 때는 user friendly하게 long option, short option을 모두 지원하는 것이 좋다.
@@ -38,7 +38,7 @@ $ curl -X=GET http://m.naver.com
 아래는 short option을 long option으로 변경해본 예이다.
 
 ```console
-$ curl --request=GET --verbose http://m.naver.com
+$ curl --request=GET --verbose http://m.daum.net
 ```
 
 네 번째 어려움은 option과 option이 아닌 것(?)의 순서가 섞여 있을 수 있다는 점이다.
@@ -46,9 +46,9 @@ $ curl --request=GET --verbose http://m.naver.com
 아래 3개 명령의 수행 결과는 모두 동일하다.
 
 ```console
-$ curl -XGET -v http://m.naver.com
-$ curl -XGET http://m.naver.com -v
-$ curl http://m.naver.com -XGET -v
+$ curl -XGET -v http://m.daum.net
+$ curl -XGET http://m.daum.net -v
+$ curl http://m.daum.net -XGET -v
 ```
 
 다섯 번째 어려움은 short option의 경우 flag 변수는 서로 붙여서 사용할 수 있다는 점이다.
@@ -60,7 +60,7 @@ $ ls -l -h
 $ ls -lh
 ```
 
-여셧 번째 어려움은 옵션의 arugment가 아닌 프로그램의 argument인 옵션이 존재하다는 점이다. 예를 들어 `http://m.naver.com`은 최종적으로 `curl`에서 읽어들일 url argument이다. `curl`을 사용할 때마다 매번 `curl -u http://m.naver.com` 처럼 사용하는 건 번거로울 것이다.
+여셧 번째 어려움은 옵션의 arugment가 아닌 프로그램의 argument인 옵션이 존재하다는 점이다. 예를 들어 `http://m.daum.net`은 최종적으로 `curl`에서 읽어들일 url argument이다. `curl`을 사용할 때마다 매번 `curl -u http://m.daum.net` 처럼 사용하는 건 번거로울 것이다.
 
 게다가 `ls` 처럼 여러 개의 file을 지정할 수 있는 경우를 위해서는 좀 더 까다로운 처리가 필요하다.
 
@@ -146,16 +146,16 @@ echo "url='${url}'"
 정상적인 수행 예)
 
 ```console
-$ ./curl.sh -X GET -v m.naver.com
+$ ./curl.sh -X GET -v m.daum.net
 request_method='GET'
 verbose_mode='true'
-url='m.naver.com'
+url='m.daum.net'
 ```
 
 지정된 옵션이 아닌 경우 에러를 출력한다.
 
 ```console
-$ ./curl.sh -X GET -v -h m.naver.com
+$ ./curl.sh -X GET -v -h m.daum.net
 ./curl.sh: illegal option -- h
 Usage: ./curl.sh [options] <url>
 Options:
@@ -168,10 +168,10 @@ Options:
 예를 들어 `-X=GET` 과 같은 사용하면 `=GET`을 `-X`의 value로 인식한다.
 
 ```console
-./curl.sh -X=GET -v m.naver.com
+./curl.sh -X=GET -v m.daum.net
 request_method='=GET'
 verbose_mode='true'
-url='m.naver.com'
+url='m.daum.net'
 ```
 
 (하지만 `-XGET`은 제대로 parsing한다)
@@ -179,10 +179,10 @@ url='m.naver.com'
 또한 인자의 순서가 바뀐 것을 인식하지 못한다.
 
 ```console
-$ ./curl.sh -XGET m.naver.com -v
+$ ./curl.sh -XGET m.daum.net -v
 request_method='GET'
 verbose_mode=''
-url='m.naver.com -v'
+url='m.daum.net -v'
 ```
 
 {% include adsense-content.md %}
@@ -193,7 +193,7 @@ url='m.naver.com -v'
 
 아래 소스코드는 [Stackoverflow의 답변](https://stackoverflow.com/a/9271406/2930152)을 참고하여 작성했다.
 
-그런데 아쉽게도 이 방법에서는 `-u http://m.naver.com` 처럼 `-u` 옵션을 항상 지정해야했다. bash 내장 `getopts`의 경우 remaining argument를 처리하는 방법이 있지만 현재 설명하는 구현에서는 remain argument 처리가 불가능하였다. (`case`의 default case 안에서 예외 처리를 하면 가능할 것으로 보인다)
+그런데 아쉽게도 이 방법에서는 `-u http://m.daum.net` 처럼 `-u` 옵션을 항상 지정해야했다. bash 내장 `getopts`의 경우 remaining argument를 처리하는 방법이 있지만 현재 설명하는 구현에서는 remain argument 처리가 불가능하였다. (`case`의 default case 안에서 예외 처리를 하면 가능할 것으로 보인다)
 
 ```sh
 #!/bin/bash
@@ -243,19 +243,19 @@ echo "url='${url}'"
 short option 사용 예는 다음과 같다.
 
 ```console
-$ ./curl2.sh -X GET -v -u http://m.naver.com
+$ ./curl2.sh -X GET -v -u http://m.daum.net
 request_method='GET'
 verbose_mode='true'
-url='http://m.naver.com'
+url='http://m.daum.net'
 ```
 
 long option과 short option을 섞어서 사용할 수 있다.
 
 ```console
-$ ./curl2.sh --request GET -v --url http://m.naver.com
+$ ./curl2.sh --request GET -v --url http://m.daum.net
 request_method='GET'
 verbose_mode='true'
-url='http://m.naver.com'
+url='http://m.daum.net'
 ```
 
 하지만 아쉽게도 `-X=GET` 과 같은 표현은 인식을 못한다. `case "$1"` 부분의 `$1`에 `-X=GET` 전체가 전달되기 때문이다.
@@ -265,10 +265,10 @@ url='http://m.naver.com'
 아래 예는 `-X`의 argument가 생략되었지만 `-v`를 `-X`의 argument로 인식한 경우이다. (이 문제는 오류 검사를 좀 더 하면 해결할 수 있는 문제이긴 하다)
 
 ```console
-$ ./curl2.sh -X -v -u http://m.naver.com
+$ ./curl2.sh -X -v -u http://m.daum.net
 request_method='-v'
 verbose_mode=''
-url='http://m.naver.com'
+url='http://m.daum.net'
 ```
 
 {% include adsense-content.md %}
@@ -381,8 +381,8 @@ echo "url='${url}'"
 수행 예)
 
 ```console
-$ ./curl3.sh --request=GET -v m.naver.com
+$ ./curl3.sh --request=GET -v m.daum.net
 request_method='GET'
 verbose_mode='true'
-url='m.naver.com'
+url='m.daum.net'
 ```
