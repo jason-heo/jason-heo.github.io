@@ -8,9 +8,13 @@ scala에서는 REPL을 지원하기 때문에 간단한 테스트를 하기 쉽�
 
 이런 경우 `-Xnojline` 옵션을 주고 `scala`나 `spark-shell`을 실행하면 된다.
 
+scala의 경우
+
 ```console
 $ scala -Xnojline
 ```
+
+혹은 spark-shell의 경우
 
 ```console
 $ spark-shell -Xnojline <그외 spark 옵션들>
