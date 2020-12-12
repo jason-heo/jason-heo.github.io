@@ -4,7 +4,7 @@ title: "scala REPL에서 TAB 문자 입력하기, spark-shell에서 TAB 문자 �
 categories: "programming"
 ---
 
-scala에서는 REPL을 지원하기 때문에 간단한 테스트를 하기 쉽다. REPL에서는 <kbd>TAB</kdb>를 이용하여 자동 완성도 할 수 있다. 그런데 가끔 TAB 문자를 입력해야하는데 <kbd>TAB</kbd>을 입력하면 자동완성 기능이 작동하기 때문에 TAB 문자를 입력할 수 없다.
+scala에서는 REPL을 지원하기 때문에 간단한 테스트를 하기 쉽다. REPL에서는 <kbd>TAB</kbd> key를 이용하여 자동 완성도 할 수 있다. 그런데 가끔 `\t` 문자를 입력해야하는데 <kbd>TAB</kbd> key을 입력하면 자동완성 기능이 작동하기 때문에 `\t` 문자를 입력할 수 없다.
 
 이런 경우 `-Xnojline` 옵션을 주고 `scala`나 `spark-shell`을 실행하면 된다.
 
