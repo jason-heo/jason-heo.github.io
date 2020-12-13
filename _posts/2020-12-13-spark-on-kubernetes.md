@@ -77,7 +77,7 @@ $ ./dev/make-distribution.sh --name custom-spark --pip --tgz -Phadoop-3.2 -Phive
 
 ### 3-1) 물리 장비에서 실행하기
 
-어렵지 않게 수행할 수 있었다.
+Kubernetes에 spark job을 실행하는 건 크게 어렵지 않았다.
 
 ```console
 $ spark-shell \
@@ -90,7 +90,12 @@ $ spark-shell \
 ```
 ### 3-2) pod 내부에서 실행하기
 
-pod 내부에서 수행할 때의 변경
+어려웠던 점
+
+- default API 서버가 뭔지 몰랐다 -> 회사 분이 알려주셔서 해결
+- 처음엔 executor에서 driver로 연결이 안 되었다 -> 아래 참고:w
+
+pod 내부에서 수행할 때 변경되는 옵션
 
 - `--master`에 지정하는 API 서버가 default로 변경되었다
 - `spark.driver.host`를 ip 주소로 지정한다
@@ -114,13 +119,18 @@ $ spark-shell \
 
 참고 문서: https://spark.apache.org/docs/3.0.1/security.html#secure-interaction-with-kubernetes
 
-Spark on Yarn에서도 이것 때문에 고생을 많이했는데 Spark on Kubernetes에서도 고생했다.
+Spark on Yarn에서도 secure HDFS를 읽느라 고생을 많이했는데 Spark on Kubernetes에서도 고생을 했다.
 
-Spark Image에 아래와 같은 설정을 추가했다
+우선 Spark docker image에 아래 파일과 설정을 추가하는 것이 중요하다.
 
 - `/etc/krb5.conf` 파일 추가
-    - Spark on Yarn에서는 `krb5.conf` 파일이 `/etc/krb5.conf`에 있을 필요가 없었고 `KRB5_CONFIG` 환경 변수에 지정이 가능하여 `kinit`하는데 없었다. spark submit 시에는 `SPARK_SUBMIT_OPTS="-Djava.security.krb5.conf=<path-to-krb5.conf>"`로 지정이 가능했다.
-    - 그런데 Spark on Kubernetes에서는 이게 설정이 어려웠다. 어차피 docker image를 우리가 맘대로 설정할 수 있으므로 `/etc/krb5.conf` 파일을 만들었다
+    - Spark on Yarn에서는 `krb5.conf` 파일이 `/etc/krb5.conf`에 있을 필요가 없었다.
+        - /`etc/krb5.conf`에 없더라도 `KRB5_CONFIG` 환경 변수를 이용하여 `kinit` 명령을 수행하는데 문제가 없었고
+        - spark submit 시에는 `SPARK_SUBMIT_OPTS="-Djava.security.krb5.conf=<path-to-krb5.conf>"`로 지정이 가능했다
+    - 그런데 Spark on Kubernetes에서는 이 설정이 잘 안 되었다
+        - 내가 설정을 제대로 못한 것인지 원래 Spark on Kubernetes가 이렇게 작동하는 것인지 알기가 어려웠다
+        - 어차피 Spark docker image를 우리가 맘대로 설정할 수 있으므로 `/etc/krb5.conf` 파일을 만들었다
+        - 이렇게 되면 executor pod에도 내가 입맛대로 수정한 `/etc/krb5.conf`를 만들 수 있다
 - Hadoop 설정을 Spark on Yarn에서 사용하던 config file들을 등록
     - Spark on Yarn에서 secure HDFS에 접근이 가능하던 Hadoop 설정들을 그대로 복사해봤다
     - Spark on yarn에는 spark job을 제출하는 서버에서만 `$HADOOP_CONF_DIR`의 설정 내용이 secure HDFS에 접근할 수 있으면 되었는데, Spark on Kubernetes에는 잘 안 되었다
