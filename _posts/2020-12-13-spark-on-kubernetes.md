@@ -102,6 +102,8 @@ pod 내부에서 수행할 때 변경되는 옵션
     - 사유는 executor에서 driver에 접속할 때 pod name으로 접속이 불가능하기 때문이다
     - service나 headless가 설정된 pod이라면 굳이 ip로 지정할 필요는 없다
 
+실제 옵션은 아래와 같다.
+
 ```console
 $ spark-shell \
     --master=k8s://https://kubernetes.default \
@@ -121,7 +123,7 @@ $ spark-shell \
 
 Spark on Yarn에서도 secure HDFS를 읽느라 고생을 많이했는데 Spark on Kubernetes에서도 고생을 했다.
 
-우선 Spark docker image에 아래 파일과 설정을 추가하는 것이 중요하다.
+우선 Spark docker image에 아래 파일과 설정을 추가하는 것이 중요했다. 앞서 말했듯이 본인에게만 중요한 것인지 다른 사람들의 환경에서도 중요한 것인지는 확실치 한다.
 
 - `/etc/krb5.conf` 파일 추가
     - Spark on Yarn에서는 `krb5.conf` 파일이 `/etc/krb5.conf`에 있을 필요가 없었다.
