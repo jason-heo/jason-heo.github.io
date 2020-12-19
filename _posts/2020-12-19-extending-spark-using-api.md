@@ -44,7 +44,7 @@ customize할 수 있는 부분들은 다음과 같다.
 
 구체적으로는 SQL 수행 단계에서 아래의 부분을 우리 맘대로 확장할 수 있다. (물론 마음만 먹는다고 막 추가되는 건 아니고 공부할 게 많다)
 
-<a href="https://imgur.com/ZDoXNOm"><img src="https://i.imgur.com/ZDoXNOml.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/5kG1s77"><img src="https://i.imgur.com/5kG1s77l.png" title="source: imgur.com" /></a>
 
 (출처: 발표 자료)
 
@@ -52,7 +52,7 @@ customize할 수 있는 부분들은 다음과 같다.
 
 확장 기능 종류에 따라 사용되는 API가 다르다.
 
-<a href="https://imgur.com/oTiS9cJ"><img src="https://i.imgur.com/oTiS9cJl.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/jHx159K"><img src="https://i.imgur.com/jHx159Kl.png" title="source: imgur.com" /></a>
 
 (출처: 발표 자료)
 
