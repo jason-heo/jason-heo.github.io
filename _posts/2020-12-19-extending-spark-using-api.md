@@ -42,7 +42,7 @@ customize할 수 있는 부분들은 다음과 같다.
 - 최적화 rules
 - 실행 계획
 
-구체적으로는 SQL 수행 단계에서 아래의 부분을 우리 맘대로 확장할 수 있다. (물론 마음대로 막 되는 건 
+구체적으로는 SQL 수행 단계에서 아래의 부분을 우리 맘대로 확장할 수 있다. (물론 마음만 먹는다고 막 추가되는 건 아니고 공부할 게 많다)
 
 <a href="https://imgur.com/ZDoXNOm"><img src="https://i.imgur.com/ZDoXNOml.png" title="source: imgur.com" /></a>
 
@@ -54,6 +54,8 @@ customize할 수 있는 부분들은 다음과 같다.
 
 <a href="https://imgur.com/oTiS9cJ"><img src="https://i.imgur.com/oTiS9cJl.png" title="source: imgur.com" /></a>
 
+(출처: 발표 자료)
+
 여기서 소개되는 use case는 발표자의 사용 예이다.
 
 use-case별로 어떤 함수를 사용하는지를 중점보자.
@@ -62,6 +64,8 @@ use-case별로 어떤 함수를 사용하는지를 중점보자.
 - `e.injectParser()`
 - `e.injectResolutionRule()`
 - `e.injectPlannerStrategy()`
+
+실제 발표에서는 각 함수를 사용할 때 내부적으로 어떤 방식으로 작동하는지도 설명되므로 관심있는 사람은 직접 발표 영상을 확인하기 바란다.
 
 ### 2-1) Case 1 - groupBy pushdown
 
