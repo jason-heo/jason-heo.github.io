@@ -11,5 +11,6 @@ redcarpet:
       - superscript
       - autolink
       - hard_wrap
+      - with_toc_data
 
 paginate: 10
