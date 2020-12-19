@@ -17,6 +17,20 @@ https://github.com/jason-heo/scala-jackson-example
 
 검색해서 나오는 내용은 의존성이나 import가 누락되어 있어서 돌아가는 코드를 어떻게 작성해야하는지 헷갈릴 때가 있는데 이런 문제는 겪는 분들에게 도움이 될 것이라 생각한다.
 
+### 목차
+
+- [build.sbt에 의존성 추가하기](#buildsbt에-의존성-추가하기)
+- [Serialize 기본](#serialize-기본)
+- [pretty print](#pretty-print)
+- [LocalDate Format 0 - Default Format](#localdate-format-0---default-format)
+- [LocalDate Format 1 - JSR310 사용하기](#localdate-format-1---jsr310-사용하기)
+- [LocalDate Format 2 - Array 대신 String으로 출력하기](#localdate-format-2---array-대신-string으로-출력하기)
+- [LocalDate Format 3 - custom format 지정하기](#localdate-format-3---custom-format-지정하기)
+- [Deserialize 1](#deserialize-1)
+- [Deserialize 2](#deserialize-2)
+- [Deserialize 3 - Map으로 변환하기](#deserialize-3---map으로-변환하기)
+- [Deserialize 4 - LocalDate](#deserialize-4---localdate)
+
 ### build.sbt에 의존성 추가하기
 
 아래 내용만 추가하면 된다.
