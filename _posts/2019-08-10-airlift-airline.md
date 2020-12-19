@@ -4,10 +4,17 @@ title: "Scala용 Airlift/Airline 예제 코드"
 categories: "programming"
 ---
 
+### 목차
+
+- [개요](#개요)
+- [소스 코드](#소스-코드)
+- [실행 예](#실행-예)
+
+### 개요
+
 Druid의 소스 코드를 보다가 Airline을 알게되었다.
 
 [Airline의 github](https://github.com/airlift/airline)을 보면, Airline에 대해 "Airline is a Java annotation-based framework for parsing Git like command line structures"라고 설명되어있다.
-
 
 git의 사용법을 보면 명령이 다양하고 명령마다 파라미터가 서로 다른 것을 볼 수 있는데, 이런 것을 일반적인 argument parsing library를 사용하여 구현하기엔 매우 복잡하다.
 
@@ -19,6 +26,8 @@ Druid에서 Airline을 잘 사용하고 있고, 성숙도도 높아보여서 다
 암튼 Scala 코드로 짠 건 없는지 검색을 해봤는데 찾기 어려웠고, 누군가 github gist에 올린 걸 겨우 찾아냈다. https://gist.github.com/jw3/14e8cc45f7f5fe9161ba
 
 4년 전 코드라서 그런지 `@Arguments` 부분이 잘 돌아가질 않았는데, Data Type을 `Seq[String]`에서 `java.util.List[String]`로 바꾸니 잘 돌아갔다.
+
+### 소스 코드
 
 아래는 gist에서 찾은 코드를 약간 손 본 코드이다. Scala 2.11.8에서 잘 도는 것 확인 완료.
 
@@ -109,7 +118,7 @@ object AirlineTest {
 }
 ```
 
-### 사용 예 및 출력 결과
+### 실행 예
 
 본인도 처음에 위의 코드를 볼 때 어떻게 argument를 넘겨야할는지, 어떤 변수에 어떤 값이 할당되는지 살짝 헷갈렸기에 사용 예를 적어 놓는다.
 

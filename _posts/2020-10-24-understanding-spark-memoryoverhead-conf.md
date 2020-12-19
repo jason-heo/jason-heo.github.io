@@ -4,6 +4,16 @@ title: "spark memoryOverhead 설정에 대한 이해"
 categories: "bigdata"
 ---
 
+### 목차
+
+- [Spark 버전에 따른 설정명](#spark-버전에-따른-설정명)
+- [memoryOverhead 설정이란?](#memoryoverhead-설정이란)
+- [Yarn으로부터 Mmeory를 할당받는 과정](#yarn으로부터-mmeory를-할당받는-과정)
+- [executor 실행시 jvm 옵션](#executor-실행시-jvm-옵션)
+- ["Consider boosting spark.yarn.executor.memoryOverhead" 메시지의 이해](#consider-boosting-sparkyarnexecutormemoryoverhead-메시지의-이해)
+- [`--executor-memory=2g --conf spark.executor.memoryOverhead=1g` VS `--executor-memory=3g`](#--executor-memory2g---conf-sparkexecutormemoryoverhead1g-vs---executor-memory3g)
+- [메모리가 부족한 경우에 `--executor-memory`를 늘려야할까? memoryOverhead를 늘려야할까?](#메모리가-부족한-경우에---executor-memory를-늘려야할까-memoryoverhead를-늘려야할까)
+
 ### Spark 버전에 따른 설정명
 
 우선 Spark 버전에 따른 설명명부터 알아보자.

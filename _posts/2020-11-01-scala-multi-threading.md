@@ -6,6 +6,12 @@ categories: "programming"
 
 Scala의 Multi Threading은 Java와 동일하다. 자주 사용되는 몇 가지만 정리해본다.
 
+## 목차
+
+- [1. 동시성 자료구조](#1-동시성-자료구조)
+- [2. Main Thread와 Child Thread 간에 Data 교환](#2-main-thread와-child-thread-간에-data-교환)
+- [3. 일정 주기마다 일을하는 Thread](#3-일정-주기마다-일을하는-thread)
+
 ## 1. 동시성 자료구조
 
 `java.util.concurrent`에는 multi thread를 위한 유용한 자료구조가 있다.

@@ -12,6 +12,16 @@ Spark 2.4 기반으로 작성 및 테스트 되었다. Data Source API V2가 Spa
 
 소스 코드는 https://github.com/jason-heo/spark-stream-source-v2 에서 볼 수 있다.
 
+### 목차
+
+- [상위 구조](#상위-구조)
+- [참고: `MicroBatchReader` vs `ContinuousReader`](#참고-microbatchreader-vs-continuousreader)
+- [`MicroBatchReader` 구현](#microbatchreader-구현)
+- [참고 - `InternalRow` 자료 구조 사용법](#참고---internalrow-자료-구조-사용법)
+- [`MicroBatchReader` 호출 예](#microbatchreader-호출-예)
+- [`ContinuousReader` 구현](#continuousreader-구현)
+- [`ContinuousReader` 호출 예](#continuousreader-호출-예)
+
 ### 상위 구조
 
 `MicroBatchReadSupport`와 `ContinuousReadSupport`를 상속받은 후 `MicroBatchReader`와 `ContinuousReader`를 구현하면 된다.

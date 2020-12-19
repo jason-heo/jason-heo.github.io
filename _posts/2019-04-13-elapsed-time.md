@@ -4,6 +4,15 @@ title: "수행 시간 측정 (Scala, Python, Java)"
 categories: "programming"
 ---
 
+## 목차
+
+- [개요](#개요)
+- [Scala](#scala)
+- [Python2](#python2)
+- [Java](#java)
+
+## 개요
+
 일반적으로 code의 수행 시간을 측정할 때는 아래와 같은 방식을 사용한다.
 
 ```

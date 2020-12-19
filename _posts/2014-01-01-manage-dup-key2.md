@@ -10,7 +10,16 @@ Test에 사용된 MySQL 버전
 - MySQL 5.5
 - MySQL 8.0
 
-### 1. 개요
+### 목차
+
+- [1. 개요](#1-개요)
+- [2. 사전 조건](#2-사전-조건)
+- [3. 중복 처리 방법](#3-중복-처리-방법)
+  - [3-1) INSERT IGNORE](#3-1-insert-ignore)
+  - [3-2) REPLACE INTO](#3-2-replace-into)
+  - [3-3) ON DUPLICATE UPDATE](#3-3-on-duplicate-update)
+
+## 1. 개요
 
 MySQL에는 아래 3가지 방법을 이용하여 중복 레코드를 관리할 수 있다.
 
@@ -26,7 +35,7 @@ MySQL에는 아래 3가지 방법을 이용하여 중복 레코드를 관리할 
 |`REPLACE INTO ...`|최초 입수된 레코드가 삭제되고, 신규 레코드가 INSERT됨<BR>AUTO_INCREMENT의 값이 변경됨|
 |`INSERT INTO ... ON DUPLICATE UPDATE`|INSERT IGNORE의 장점 포함함<BR>중복 키 오류 발생 시, 사용자가 UPDATE될 값을 지정할 수 있음|
 
-### 2. 사전 조건
+## 2. 사전 조건
 
 중복 레코드 관리를 위해선 테이블에 `PRIMARY KEY` 혹은 `UNIQUE INDEX`가 필요하다.
 
@@ -55,8 +64,9 @@ ALTER TABLE person ADD PRIMARY KEY (name)
 ALTER TABLE person ADD UNIQUE INDEX (name)
 ```
 
+## 3. 중복 처리 방법
 
-### INSERT IGNORE
+### 3-1) INSERT IGNORE
 
 `INSERT IGNORE`는 중복 키 에러가 발생했을 때 신규로 입력되는 레코드를 무시하는 단순한 방법이다.
 
@@ -102,7 +112,7 @@ MySQL에서 AUTO_INCREMENT는 식별키 용도로 많이 사용하는데, 중복
 
 {% include adsense-content.md %}
 
-### REPLACE INTO
+### 3-2) REPLACE INTO
 
 `REPLACE INTO`는 중복이 발생되었을 때 기존 레코드를 삭제하고 신규 레코드를 INSERT하는 방식이다.
 
@@ -153,7 +163,7 @@ id가 4, 5로 변하였다. 또한 James의 주소가 "Incheon"으로 변경되�
 
 {% include adsense-content.md %}
 
-### ON DUPLICATE UPDATE
+### 3-3) ON DUPLICATE UPDATE
 
 `ON DUPLICATE UPDATE`의 장점은 중복 키 오류 발생 시 사용자가 원하는 값을 직접 설정할 수 있다는 점이다.
 

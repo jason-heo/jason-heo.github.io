@@ -6,6 +6,15 @@ categories: "bigdata"
 
 설명에 사용된 Spark Version: 2.4.0
 
+## 목차
+
+- [들어가며](#들어가며)
+- [Seq를 DataFrame으로 변환: `toDF()`](#seq를-dataframe으로-변환-todf)
+- [String을 Column으로 변환: `$`](#string을-column으로-변환-)
+- [String을 Column으로 변환: `'`](#string을-column으로-변환--1)
+- [참고: `'`는 앞으로 없어질 것 같다](#참고-는-앞으로-없어질-것-같다)
+- [마무리](#마무리)
+
 ## 들어가며
 
 Spark에서 Seq를 Dataframe으로 변환하는 `toDF()`라던가 String을 Column으로 변환하는 `$`을 사용하기 위해선 `import spark.implicits._`을 해야한다.

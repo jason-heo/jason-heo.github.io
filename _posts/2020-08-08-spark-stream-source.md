@@ -6,6 +6,13 @@ categories: "bigdata"
 
 최근 (2020/08)에 structured streaming을 위한 data source를 구현 테스트하게 되었다. 이때 참고했던 자료들 몇 개를 기록용으로 정리해둔다.
 
+## 목차
+
+- [2020.08.17. 내용 추가](#20200817-내용-추가)
+- [개요](#개요)
+- [DStreaming 용 Data Source 구현하기](#dstreaming-용-data-source-구현하기)
+- [Structured Stream read용 Data Source 구현하기](#structured-stream-read용-data-source-구현하기)
+
 ## 2020.08.17. 내용 추가
 
 `MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 [Spark Custom Stream Source 만들기 (MicroBatchReader, ContinuousReader)](http://jason-heo.github.io/bigdata/2020/08/17/spark-stream-source-v2.html) 에서 추가해두었다.
