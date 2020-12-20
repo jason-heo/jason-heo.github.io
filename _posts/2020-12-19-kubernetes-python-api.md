@@ -92,8 +92,8 @@ $ TOKEN=$(kubectl get secrets -o jsonpath="{.items[?(@.metadata.annotations['kub
 `$API_SERVER`와 `$TOEKN`에 API 서버와 인증에 필요한 토큰 값이 저장되어 있다.
 
 ```console
-echo $API_SERVER
-echo $TOKEN
+$ echo $API_SERVER
+$ echo $TOKEN
 ```
 
 token 값이 정상적으로 저장된 경우 `curl`을 이용하여 Rest API를 조회했을 때 오류가 없어야한다.
@@ -179,6 +179,8 @@ pod의 IP 주소와 이름이 출력된다.
 ```console
 $ kubectl exec <pod name> -- ls -l /tmp
 ```
+
+전체 코드는 다음과 같다.
 
 ```python
 from kubernetes import client, config
