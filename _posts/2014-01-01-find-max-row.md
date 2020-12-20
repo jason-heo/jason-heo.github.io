@@ -5,76 +5,84 @@ date: 2014-03-05
 categories: mysql
 ---
 
-{% include pmysql.md %}
+Test에 사용된 MySQL 버전: 8.0.22
 
-## Stackoverflow URL
+그런데 아주 일반적인 기능이라서 MySQL 5은 물론 그 이전 버전에서도 작동한다.
 
-http://stackoverflow.com/questions/20289068/mysql-unique-email-with-user-that-has-most-currency/20289211
+## Data set
 
-## SQLFiddle URL
+email이 중복되었지만, name은 서로 다른 레코드가 저장되어 있다.
 
-http://www.sqlfiddle.com/#!2/2f2c00/1
+```sql
+CREATE TABLE user
+(
+  email VARCHAR(50),
+  name VARCHAR(50),
+  score INT
+);
 
-## 질문
+INSERT INTO user VALUES ('user1@gmail.com', 'smith', 25);
+INSERT INTO user VALUES ('user1@gmail.com', 'kim', 30);
+INSERT INTO user VALUES ('user2@hotmail.com', 'another', 25);
+INSERT INTO user VALUES ('user2@hotmail.com', 'ben', 62);
+INSERT INTO user VALUES ('user3@yahoo.com', 'joe', 2);
+INSERT INTO user VALUES ('user3@yahoo.com', 'lee', 5);
+INSERT INTO user VALUES ('user4@hotmail.com', 'barbra', 6);
+INSERT INTO user VALUES ('user5@comcast.net', 'rob', 8);
 
-다음과 같은 데이터가 존재한다.
-
-mysql> SELECT * FROM tbl;
-+-----------------+---------+---------+
-| email           | uname   | credits |
-+-----------------+---------+---------+
-| 824@hotmail.com | barbra  |       6 |
-| 123@gmail.com   | smith   |      25 |
-| 123@gmail.com   | smithy  |      30 |
-| abc@hotmail.com | another |      25 |
-| def@comcast.net | rob     |       8 |
-| abc@hotmail.com | ben     |      62 |
-| ijk@yahoo.com   | jeb     |       2 |
-| ijk@yahoo.com   | joe     |       5 |
-+-----------------+---------+---------+
+mysql> SELECT * FROM user;
++-------------------+---------+-------+
+| email             | name    | score |
++-------------------+---------+-------+
+| user1@gmail.com   | smith   |    25 |
+| user1@gmail.com   | kim     |    30 | <= 위의 레코드와 email은 동일하지만 name이 다르다
+| user2@hotmail.com | another |    25 |
+| user2@hotmail.com | ben     |    62 |
+| user3@yahoo.com   | joe     |     2 |
+| user3@yahoo.com   | lee     |     5 |
+| user4@hotmail.com | barbra  |     6 |
+| user5@comcast.net | rob     |     8 |
++-------------------+---------+-------+
 8 rows in set (0.00 sec)
-보는 바와 같이 email 컬럼에 중복된 email이 저장되어 있는데 중복된 email의 uname은 서로 다르다. 모든 회원들에게 뉴스레터를 발송하려고 하는데 중복된 email 주소에는 1회만 email을 전송하려고 한다. email별로 credits이 가장 큰 값을 가진 uname과 email을 조회하고 싶다.
+```
 
-예를 들어 'smith'와 'smithy'가 123@gmail.com을 소유했는데, smithy의 credits가 smith보다 더 크므로 smithy를 선택하면 된다.
+## email별 max score 조최하기
 
-{% include adsense-content.md %}
+```sql
+mysql> SELECT email, MAX(score) as max_sscore
+       FROM user
+       GROUP BY  email;
++-------------------+------------+
+| email             | max_sscore |
++-------------------+------------+
+| user1@gmail.com   |         30 |
+| user2@hotmail.com |         62 |
+| user3@yahoo.com   |          5 |
+| user4@hotmail.com |          6 |
+| user5@comcast.net |          8 |
++-------------------+------------+
+5 rows in set (0.00 sec)
+```
 
-## 답변
+max score를 갖는 `name`을 구하기 위해서는 앞 SQL의 결과를 다시 한번 JOIN해야 한다.
 
-email별로 최대 credits는 다음과 같이 쉽게 구할 수 있다.
+```sql
+mysql> SELECT user.email, user.name, user.score
+       FROM(
+           SELECT email, MAX(score) as max_score
+           FROM user
+           GROUP BY email
+       ) t1 INNER JOIN user ON t1.email = user.email AND t1.max_score = user.score;
++-------------------+--------+-------+
+| email             | name   | score |
++-------------------+--------+-------+
+| user1@gmail.com   | kim    |    30 |
+| user2@hotmail.com | ben    |    62 |
+| user3@yahoo.com   | lee    |     5 |
+| user4@hotmail.com | barbra |     6 |
+| user5@comcast.net | rob    |     8 |
++-------------------+--------+-------+
+5 rows in set (0.00 sec)
+```
 
-    SELECT email, MAX(credits) as credits
-    FROM tbl
-    GROUP BY  email;
-    +-----------------+---------+
-    | email           | credits |
-    +-----------------+---------+
-    | 123@gmail.com   |      30 |
-    | 824@hotmail.com |       6 |
-    | abc@hotmail.com |      62 |
-    | def@comcast.net |       8 |
-    | ijk@yahoo.com   |       5 |
-    +-----------------+---------+
-    5 rows in set (0.00 sec)
-
-최대 credits를 갖는 uname을 구하기 위해서는 앞 SQL의 결과를 다시 한번 JOIN해야 한다.
-
-    SELECT tbl.email, tbl.uname, tbl.credits
-    FROM(
-        SELECT email, MAX(credits) as credits
-        FROM tbl
-        GROUP BY  email
-    ) x INNER JOIN tbl ON x.email = tbl.email AND tbl.credits = x.credits;
-     
-    +-----------------+--------+---------+
-    | email           | uname  | credits |
-    +-----------------+--------+---------+
-    | 824@hotmail.com | barbra |       6 |
-    | 123@gmail.com   | smithy |      30 |
-    | def@comcast.net | rob    |       8 |
-    | abc@hotmail.com | ben    |      62 |
-    | ijk@yahoo.com   | joe    |       5 |
-    +-----------------+--------+---------+
-    5 rows in set (0.00 sec)
-
-단, 동일 그룹 내에서 서로 다른 uname은 서로 다른 credits를 가진다는 가정을 만족해야 한다. 동일 그룹에서 MAX(credits)의 값이 중복된 경우는 중복된 개수만큼 출력이 된다.
+단, 가정이 있는데 동일 그룹 내에서 서로 다른 `name`은 서로 다른 `score` 값을 가진다는 가정을 만족해야 한다. 그렇지 않은 경우 `MAX(score)`의 값이 중복된 개수만큼 출력이 된다.
