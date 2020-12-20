@@ -400,6 +400,18 @@ val esConf = Map(
 
 이외에도 수많은 옵션이 있는데, [Elasticsearch Hadoop Configuration](https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html) 문서에서 옵션들을 볼 수 있다. 지금까지 위에서 설명한 내용은 정말 기초적인 내용들이었고, 앞으로는 입수 속도와 입수 시 exactly once 처리 등을 위해서 es-hadoop 옵션들을 이해하고 있으면 좋다.
 
+INSERT 관점에서는 다음과 같은 옵션들을 이해하는 것이 중요하다.
+
+- `es.batch.size.bytes`
+- `es.batch.size.entries`
+- `es.batch.write.retry.count`
+- `es.batch.write.retry.wait`
+- `es.http.timeout`
+- `es.mapping.id`
+- `es.mapping.exclude`
+- `es.net.http.auth.user`
+- `es.net.http.auth.pass`
+
 ### 5-4) parquet 를 ES에 저장하기
 
 이제 Tutorial의 마지막이다. 앞에서 언급했듯이 parquet를 ES에 저장할 수도 있다. parquet 만이 아니라 어떠한 Data든 Spark의 DataFrame은 ES에 저장할 수 있다.
