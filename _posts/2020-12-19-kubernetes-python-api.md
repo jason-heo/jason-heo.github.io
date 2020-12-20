@@ -31,13 +31,13 @@ $ pip3 install kubernetes
 
 Python API를 처음 사용할 때 이 부분이 약간 어려웠다. 특히나 본인의 경우 pod 내부에서 Python API를 사용해야했으므로 더 힘들었던 것 같다. 모든 개발 프로젝트가 그렇듯 처음 셋팅하는 게 제일 어려운 것 같다. 이 부분만 잘 설정되면 나머지는 검색해보면서 코딩하면 된다.
 
-### 2-1) config file에서 조회하기
+### 2-1) config file 이용하기
 
 [참고 문서](https://stackoverflow.com/a/54051435/2930152)
 
 제일 편한 방법이다.
 
-```
+```python
 from kubernetes import client, config
 from kubernetes.stream import stream
 
