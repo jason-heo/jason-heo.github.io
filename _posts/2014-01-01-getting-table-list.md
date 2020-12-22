@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MySQL 테이블 목록 구하기 (MySQL information schema)"
+title: "MySQL 테이블 목록 구하기 (SHOW TABLES, information schema)"
 date: 2014-03-05 
 categories: mysql
 ---
