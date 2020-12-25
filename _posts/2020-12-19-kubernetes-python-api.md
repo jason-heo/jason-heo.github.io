@@ -136,6 +136,8 @@ config.host = 'echo $API_SERVER 결과'
 config.verify_ssl=False
 ```
 
+{% include adsense-content.md %}
+
 ## 3. 예제 프로그램 1 - pod 목록 출력하기
 
 [참고 문서](https://kubernetes.io/ko/docs/tasks/administer-cluster/access-cluster-api/#python-client)
