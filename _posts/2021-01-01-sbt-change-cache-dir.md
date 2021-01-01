@@ -26,4 +26,4 @@ $ export SBT_OPTS="-Dsbt.ivy.home=/path/to/ivy2 -Dsbt.coursier.home=/path/to/cac
 
 Coursier의 cache 경로는 변경하는 방법이 `-Dsbt.coursier.home=/path/to/cache`이다.
 
-[github의 댓글](https://github.com/coursier/coursier/issues/783#issuecomment-537452742)을 보면 `COURSIER_CACHE`라는 환경 변수를 설정해도 된다고 하는데, 버전 문제인지 뭔지 나의 경우에는 이 환경 변수로 cahce 경로 변경이 되지 않았다.
+[github의 댓글](https://github.com/coursier/coursier/issues/783#issuecomment-537452742)을 보면 `COURSIER_CACHE`라는 환경 변수를 설정해도 된다고 하는데, 나의 개발 황경에서는 이 걸로는 cache 경로가 변경되지 않았다.
