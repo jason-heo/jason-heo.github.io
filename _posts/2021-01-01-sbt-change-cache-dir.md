@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "sbt로 빌드 시 cache 디렉터리 변경하기 (ivy, coursier)
+title: "sbt로 빌드 시 cache 디렉터리 변경하기 (ivy, coursier)"
 categories: "programming"
 ---
 
