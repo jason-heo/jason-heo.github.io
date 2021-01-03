@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark Data AI Summit 2020 North America에 관심가는 세션들"
+title: "Spark Data AI Summit 2020 EU에 관심가는 세션들"
 categories: "bigdata"
 ---
 
