@@ -142,7 +142,7 @@ a.discreet {
 /* Header and navigation */
 header {
   margin: auto;
-  max-width: 800px;
+  max-width: 95%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -300,7 +300,7 @@ ul.posts .date {
 
 .site {
   text-align: justify;
-  max-width: 800px;
+  max-width: 95%;
   margin: 1em auto 1em;
   line-height: 1.5em;
 }
