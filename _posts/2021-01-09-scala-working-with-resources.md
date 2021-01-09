@@ -4,6 +4,15 @@ title: "scala에서 resources 디렉터리 파일 사용하기"
 categories: "programming"
 ---
 
+## 목차
+
+- [1. 개요](#1-개요)
+- [2. 예제 코드](#2-예제-코드)
+  - [2-1) json file 읽기](#2-1-json-file-읽기)
+  - [2-2) hocon file 사용하기](#2-2-hocon-file-사용하기)
+- [3. sbt에서 resource 디렉터리 변경하기](#3-sbt에서-resource-디렉터리-변경하기)
+- [4. 참고 자료](#4-참고-자료)
+
 ## 1. 개요
 
 sbt도 java maven의 디렉터리 구조를 사용한다. 따라서 `src/main/resources/` 디렉터리에 존재하는 파일은 자동으로 읽을 수 있다.
