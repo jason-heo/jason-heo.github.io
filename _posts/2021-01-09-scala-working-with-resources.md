@@ -71,14 +71,14 @@ private def getConfigFromURL(config: URL): MyConfig = {
 	}
 	```
 - `include/inc.conf`
-```conf
-{
-  server {
-    hostname = localhost
-    port = 8080
-  }
-}
-```
+    ```conf
+    {
+      server {
+        hostname = localhost
+        port = 8080
+      }
+    }
+    ```
 
 실행 결과는 다음과 같다.
 
