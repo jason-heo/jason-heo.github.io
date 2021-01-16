@@ -36,7 +36,7 @@ Spark 3.0이 정식으로 release된지 벌써 6개월이 지났고 preview까�
 build 방법은 간단하다. JAVA 1.8만 설치되어 있으면 되고 별도로 설정해야할 것도 없다. (아마 `JAVA_HOME` 정도는 설정되어 있어야할 듯)
 
 ```console
-$ ./gradlew -Pdistro=hadoopYarn3
+$ ./gradlew -Pdistro=hadoopYarn3 -x test
 ```
 
 이후 `spark/sql-20/build/libs/` 디렉터리를 보면 `elasticsearch-spark-30_2.12-6.5.5-SNAPSHOT.jar` 이런 파일이 생성된 것을 볼 수 있다.
