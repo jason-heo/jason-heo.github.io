@@ -72,20 +72,20 @@ class InquiryResBodyDeserializer extends JsonDeserializer[Person] {
 Custom Deserializer를 등록하는 방법은 다음과 같이 두가지 방법이 있다
 
 - 방법1: annotation을 사용하는 방법
-    ```scala
-    @JsonDeserialize(using = classOf[PersonDeserializer])
-    case class Person(id: Int, name: String)
-    ```
+  ```scala
+  @JsonDeserialize(using = classOf[PersonDeserializer])
+  case class Person(id: Int, name: String)
+  ```
 - 방법2: ObjectMapper에 module을 등록하는 방법
-    ```scala
-    val objectMapper: ObjectMapper = new ObjectMapper() with ScalaObjectMapper
-    objectMapper.registerModule(DefaultScalaModule)
+  ```scala
+  val objectMapper: ObjectMapper = new ObjectMapper() with ScalaObjectMapper
+  objectMapper.registerModule(DefaultScalaModule)
 
-    val module: SimpleModule = new SimpleModule()
+  val module: SimpleModule = new SimpleModule()
 
-    module.addDeserializer(classOf[Person], new PersonDeserializer)
-    objectMapper.registerModule(module)
-    ```
+  module.addDeserializer(classOf[Person], new PersonDeserializer)
+  objectMapper.registerModule(module)
+  ```
 
 참고 자료: [Getting Started with Custom Deserialization in Jackson](https://www.baeldung.com/jackson-deserialization)를 Scala에 맞게 수정했음
 
