@@ -4,6 +4,27 @@ title: "Scala 언어에서 Jackson Custom Deserializer 만들기"
 categories: "programming"
 ---
 
+## 목차
+
+- [1. 개요](#1-개요)
+- [2. Custom Deserializer 예1 - 기본 사용법](#2-custom-deserializer-예1---기본-사용법)
+  - [2-1) model](#2-1-model)
+  - [2-2) Custom Serializer](#2-2-custom-serializer)
+  - [2-3) 사용 예](#2-3-사용-예)
+  - [2-4) asText vs textValue](#2-4-astext-vs-textvalue)
+- [3. Custom Deserializer 예2 - empty object를 null로](#3-custom-deserializer-예2---empty-object를-null로)
+  - [3-1) model](#3-1-model)
+  - [3-2) Custom Deserializer](#3-2-custom-deserializer)
+  - [3-3) 사용 예](#3-3-사용-예)
+- [4. Custom Deserializer 예3 - Array of object 변환](#4-custom-deserializer-예3---array-of-object-변환)
+  - [4-1) model](#4-1-model)
+  - [4-2) Custom Deserializer](#4-2-custom-deserializer)
+  - [4-3) 사용 예](#4-3-사용-예)
+- [5. Custom Deserializer에서 ObjectMapper 사용하기](#5-custom-deserializer에서-objectmapper-사용하기)
+  - [5-1) model](#5-1-model)
+  - [5-2) Custom Deserializer](#5-2-custom-deserializer)
+- [6. 기타 - codehaus jackson vs faster xml jackson](#6-기타---codehaus-jackson-vs-faster-xml-jackson)
+
 ## 1. 개요
 
 Jackson을 사용하면 json을 class instance로 만들기 쉽다. 반대로 class를 json으로 변경하기 쉽다. 이를 serialize, deserialize라고 한다. (이하 se/der)
@@ -40,10 +61,10 @@ Custom ser/de가 아닌 default 방식의 Jackson 사용법은 본인이 작성�
 ```scala
 class InquiryResBodyDeserializer extends JsonDeserializer[Person] {
   override def deserialize(jsonParser: JsonParser,
-						   ctxt: DeserializationContext): Person = {
-	val node: JsonNode = jsonParser.getCodec.readTree(jsonParser)
+                           ctxt: DeserializationContext): Person = {
+    val node: JsonNode = jsonParser.getCodec.readTree(jsonParser)
 
-	Person(node.get("id").intValue(), node.get("name").textValue())
+    Person(node.get("id").intValue(), node.get("name").textValue())
   }
 }
 ```
@@ -51,12 +72,12 @@ class InquiryResBodyDeserializer extends JsonDeserializer[Person] {
 Custom Deserializer를 등록하는 방법은 다음과 같이 두가지 방법이 있다
 
 - 방법1: annotation을 사용하는 방법
-	```scala
-	@JsonDeserialize(using = classOf[PersonDeserializer])
-	case class Person(id: Int, name: String)
-	```
+    ```scala
+    @JsonDeserialize(using = classOf[PersonDeserializer])
+    case class Person(id: Int, name: String)
+    ```
 - 방법2: ObjectMapper에 module을 등록하는 방법
-	```scala
+    ```scala
     val objectMapper: ObjectMapper = new ObjectMapper() with ScalaObjectMapper
     objectMapper.registerModule(DefaultScalaModule)
 
@@ -64,7 +85,7 @@ Custom Deserializer를 등록하는 방법은 다음과 같이 두가지 방법�
 
     module.addDeserializer(classOf[Person], new PersonDeserializer)
     objectMapper.registerModule(module)
-	```
+    ```
 
 참고 자료: [Getting Started with Custom Deserialization in Jackson](https://www.baeldung.com/jackson-deserialization)를 Scala에 맞게 수정했음
 
@@ -99,24 +120,24 @@ println(person)
 ### 3-1) model
 
 - json model
-	```json
-	{
-	  "name": "Kim",
-	  "company": {
-		"name": "my-company",
-		"address": "Seoul"
-	  }
-	}
-	```
+    ```json
+    {
+      "name": "Kim",
+      "company": {
+        "name": "my-company",
+        "address": "Seoul"
+      }
+    }
+    ```
 - scala class
-	```scala
-	case class Person(name: String, company: Option[Company])
+    ```scala
+    case class Person(name: String, company: Option[Company])
 
-	case class Company(name: String, address: String)
-	```
+    case class Company(name: String, address: String)
+    ```
 - 문제 정의
-	- `company: {}`이 입력되더라도 `company: null`과 같이 작동하도록 해보자
-	- Jackson의 기본 동작은 `company: {name: null, address: null}`과 동일해서 약간 불편하다
+    - `company: {}`이 입력되더라도 `company: null`과 같이 작동하도록 해보자
+    - Jackson의 기본 동작은 `company: {name: null, address: null}`과 동일해서 약간 불편하다
 
 ### 3-2) Custom Deserializer
 
@@ -175,31 +196,31 @@ println(person)
 ### 4-1) model
 
 - json model
-	```json
-	{
-	  "name": "Kim",
-	  "companies": [
-		{
-		  "name": "my-company",
-		  "address": "Seoul"
-		},
-		{
-		  "name": "your-company",
-		  "address": "Busan"
-		},
-	  ]
-	}
-	```
+    ```json
+    {
+      "name": "Kim",
+      "companies": [
+        {
+          "name": "my-company",
+          "address": "Seoul"
+        },
+        {
+          "name": "your-company",
+          "address": "Busan"
+        },
+      ]
+    }
+    ```
 - scala class
-	```scala
-	case class Company(name: String, address:String)
+    ```scala
+    case class Company(name: String, address:String)
 
-	case class Person(name: String, companies: Option[List[Company]])
-	```
+    case class Person(name: String, companies: Option[List[Company]])
+    ```
 
 ### 4-2) Custom Deserializer
 
-Member 변수 중에 Array를 Iterate해야하므로 이번엔 `Person`에 대한 Deserializer를 만든다.
+이번엔 `Person`에 대한 Deserializer를 만들었다. `companies` key를 iterate할 것인데 `Company`에 대한 Deserializer를 만들면 Array를 iterate할 수 없기 때문이다.
 
 ```scala
 class PersonDeserializer extends JsonDeserializer[Person] {
@@ -212,7 +233,7 @@ class PersonDeserializer extends JsonDeserializer[Person] {
     if (companiesNode.isArray) {
       import scala.collection.JavaConverters._
 
-	  // 핵심 포인트: asScala를 이용하여 scala 객체로 만든 뒤 map을 사용하는 부분
+      // 핵심 포인트: asScala를 이용하여 scala 객체로 만든 뒤 map을 사용하는 부분
       val companies: List[Company] = companiesNode.asScala.map {
         companyNode: JsonNode => {
           Company(
@@ -247,14 +268,14 @@ val json = """
 {
   "name": "Kim",
   "companies": [
-	{
-	  "name": "my-company",
-	  "address": "Seoul"
-	},
-	{
-	  "name": "your-company",
-	  "address": "Busan"
-	}
+    {
+      "name": "my-company",
+      "address": "Seoul"
+    },
+    {
+      "name": "your-company",
+      "address": "Busan"
+    }
   ]
 }
 """
@@ -276,21 +297,21 @@ Custom Deserialzer를 사용 중에 deep nested한 field를 만나면 번거롭�
 ### 5-1) model
 
 - json model
-	```json
-	{
-	  "name": "Kim",
-	  "company": {
-		"name": "my-company",
-		"address": "Seoul"
-	  }
-	}
-	```
+    ```json
+    {
+      "name": "Kim",
+      "company": {
+        "name": "my-company",
+        "address": "Seoul"
+      }
+    }
+    ```
 - scala class
-	```scala
-	case class Person(name: String, company: Option[Company])
+    ```scala
+    case class Person(name: String, company: Option[Company])
 
-	case class Company(name: String, address: String)
-	```
+    case class Company(name: String, address: String)
+    ```
 
 ### 5-2) Custom Deserializer
 
