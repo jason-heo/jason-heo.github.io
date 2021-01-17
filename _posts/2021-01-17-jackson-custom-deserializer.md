@@ -45,16 +45,16 @@ Custom ser/de가 아닌 default 방식의 Jackson 사용법은 본인이 작성�
 ### 2-1) model
 
 - json model
-    ```json
-    {
-      "id": 1,
-      "name": "Kim"
-    }
-    ```
+  ```json
+  {
+    "id": 1,
+    "name": "Kim"
+  }
+  ```
 - scala class
-    ```scala
-    case class Person(id: Int, name: String)
-    ```
+  ```scala
+  case class Person(id: Int, name: String)
+  ```
 
 ### 2-2) Custom Serializer
 
@@ -120,21 +120,21 @@ println(person)
 ### 3-1) model
 
 - json model
-    ```json
-    {
-      "name": "Kim",
-      "company": {
-        "name": "my-company",
-        "address": "Seoul"
-      }
+  ```json
+  {
+    "name": "Kim",
+    "company": {
+      "name": "my-company",
+      "address": "Seoul"
     }
-    ```
+  }
+  ```
 - scala class
-    ```scala
-    case class Person(name: String, company: Option[Company])
+  ```scala
+  case class Person(name: String, company: Option[Company])
 
-    case class Company(name: String, address: String)
-    ```
+  case class Company(name: String, address: String)
+  ```
 - 문제 정의
     - `company: {}`이 입력되더라도 `company: null`과 같이 작동하도록 해보자
     - Jackson의 기본 동작은 `company: {name: null, address: null}`과 동일해서 약간 불편하다
@@ -196,27 +196,27 @@ println(person)
 ### 4-1) model
 
 - json model
-    ```json
-    {
-      "name": "Kim",
-      "companies": [
-        {
-          "name": "my-company",
-          "address": "Seoul"
-        },
-        {
-          "name": "your-company",
-          "address": "Busan"
-        },
-      ]
-    }
-    ```
+  ```json
+  {
+    "name": "Kim",
+    "companies": [
+      {
+        "name": "my-company",
+        "address": "Seoul"
+      },
+      {
+        "name": "your-company",
+        "address": "Busan"
+      },
+    ]
+  }
+  ```
 - scala class
-    ```scala
-    case class Company(name: String, address:String)
+  ```scala
+  case class Company(name: String, address:String)
 
-    case class Person(name: String, companies: Option[List[Company]])
-    ```
+  case class Person(name: String, companies: Option[List[Company]])
+  ```
 
 ### 4-2) Custom Deserializer
 
@@ -297,21 +297,21 @@ Custom Deserialzer를 사용 중에 deep nested한 field를 만나면 번거롭�
 ### 5-1) model
 
 - json model
-    ```json
-    {
-      "name": "Kim",
-      "company": {
-        "name": "my-company",
-        "address": "Seoul"
-      }
+  ```json
+  {
+    "name": "Kim",
+    "company": {
+      "name": "my-company",
+      "address": "Seoul"
     }
-    ```
+  }
+  ```
 - scala class
-    ```scala
-    case class Person(name: String, company: Option[Company])
+  ```scala
+  case class Person(name: String, company: Option[Company])
 
-    case class Company(name: String, address: String)
-    ```
+  case class Company(name: String, address: String)
+  ```
 
 ### 5-2) Custom Deserializer
 
