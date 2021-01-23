@@ -33,12 +33,14 @@ streamingDF.writeStream.foreachBatch { (batchDF: DataFrame, batchId: Long) =>
 암튼 이것도 구글링해보니 역시 Stackoverflow에 답변이 있었다. 아래처럼 함수를 만들어서 `foreachBatch`에 전달하면 잘 돌아간다.
 
 ```scala
-def myFunc( askDF:DataFrame, batchID:Long ) : Unit = {
-    askDF.persist()
+def myFunc(askDF: DataFrame, batchID: Long): Unit = {
     askDF.write.parquet("/src/main/scala/file.json")
-    askDF.unpersist()
 }
-askDF.writeStream.foreachBatch(myFunc _).start().awaitTermination()
+
+askDF
+    .writeStream
+    .foreachBatch(myFunc _)
+    .start()
 ```
 
 (출처: https://stackoverflow.com/a/63176091/2930152)
