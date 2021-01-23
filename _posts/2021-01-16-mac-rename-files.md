@@ -4,7 +4,7 @@ title: "Mac에서 여러 파일 이름 변경하기 (rename)"
 categories: programming
 ---
 
-내 블로그의 조회수 상위 10% 글 중에 [리눅스에서 여러 파일 이름 변경하기 (rename)](/2014/03/05/linux-rename.html)라는 글이 있다.
+내 블로그의 조회수 상위 10% 글 중에 [리눅스에서 여러 파일 이름 변경하기 (rename)](/programming/2014/03/05/linux-rename.html)라는 글이 있다.
 
 Mac에도 `rename`이라는 명령이 있는데 사용방법이 리눅스와 다르다.
 
