@@ -97,6 +97,8 @@ spark.sql.streaming.metricsEnabled=true
 
 `/metrics/json`으로 접근하면 streaming metric들도 잘 나오는데 `/metrics/executors/prometheus`에는 나오지 않고 있다.
 
+위 질문 작성자가 open한 [SPARK-33193](https://issues.apache.org/jira/browse/SPARK-33194) 티켓이 있는데 아무도 관심이 없다.
+
 ### 5) 작동 과정
 
 Prometheus는 기본적으로 Pull 모델이다. Prometheus Server가 metric들을 땡겨(pull)오겠다는 의미이다. 반대로 Push 모델이 있는데 이때는 어플리케이션이 Prometheus 서버에 metric을 전송하게 된다. 처음 접할 때는 '어라? 왜 Pull 모델이지?'라고 할 수 있는데 Spark Summit 발표 자료를 보면 push 중이 app 자체가 죽은 경우 metric 전송이 중단되기 때문이라고 한다.
