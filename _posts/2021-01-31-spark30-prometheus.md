@@ -72,6 +72,8 @@ metrics_executor_completedTasks_total{application_id="spark-10180bcec2b14c2ab445
 
 (출처: Spark Summit 발표 자료)
 
+{% include adsense-content.md %}
+
 ### 4) streaming 모니터링
 
 아래의 설정을 추가하면 streaming job도 모니터링할 수 있다.
