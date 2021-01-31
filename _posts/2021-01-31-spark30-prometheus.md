@@ -72,7 +72,26 @@ metrics_executor_completedTasks_total{application_id="spark-10180bcec2b14c2ab445
 
 (출처: Spark Summit 발표 자료)
 
-### 4) 작동 과정
+### 4) streaming 모니터링
+
+아래의 설정을 추가하면 streaming job도 모니터링할 수 있다.
+
+```
+--conf spark.sql.streaming.metricsEnabled=true
+```
+
+(설정 이름만 봐서는 Structured Streaming만 모니터링 할 수 있는 듯 한데 확인해보진 못했다.)
+
+위 설정을 추가하면 다음과 같은 metric을 출력한다.
+
+- latency
+- inputRate-total
+- processingRate-total
+- states-rowsTotal
+- states-usedBytes
+- eventTime-watermark
+
+### 5) 작동 과정
 
 Prometheus는 기본적으로 Pull 모델이다. Prometheus Server가 metric들을 땡겨(pull)오겠다는 의미이다. 반대로 Push 모델이 있는데 이때는 어플리케이션이 Prometheus 서버에 metric을 전송하게 된다. 처음 접할 때는 '어라? 왜 Pull 모델이지?'라고 할 수 있는데 Spark Summit 발표 자료를 보면 push 중이 app 자체가 죽은 경우 metric 전송이 중단되기 때문이라고 한다.
 
