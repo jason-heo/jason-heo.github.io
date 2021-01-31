@@ -79,7 +79,7 @@ metrics_executor_completedTasks_total{application_id="spark-10180bcec2b14c2ab445
 아래의 설정을 추가하면 streaming job도 모니터링할 수 있다.
 
 ```
---conf spark.sql.streaming.metricsEnabled=true
+spark.sql.streaming.metricsEnabled=true
 ```
 
 (설정 이름만 봐서는 Structured Streaming만 모니터링 할 수 있는 듯 한데 확인해보진 못했다.)
@@ -92,6 +92,10 @@ metrics_executor_completedTasks_total{application_id="spark-10180bcec2b14c2ab445
 - states-rowsTotal
 - states-usedBytes
 - eventTime-watermark
+
+테스트 결과 Structured Streaming에서도 metric이 잘 출력되지 않는다. 구글링을 해보면 [Spark 3.0 streaming metrics in Prometheus](https://stackoverflow.com/q/64436497/2930152) 질문이 검색되는데 이 사람도 나랑 같은 문제가 있다.
+
+`/metrics/json`으로 접근하면 streaming metric들도 잘 나오는데 `/metrics/executors/prometheus`에는 나오지 않고 있다.
 
 ### 5) 작동 과정
 
