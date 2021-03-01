@@ -118,7 +118,7 @@ spark.sql("""
 
 작동 방법을 이해하려면 inner query 결과를 눈으로 이해해보면 된다.
 
-```
+```sql
 spark.sql("""
     SELECT prod_id,
         FLOOR(RAND() * 2) AS rnd,
@@ -130,8 +130,8 @@ spark.sql("""
 +-------+---+---+
 |prod_id|rnd|cnt|
 +-------+---+---+
-| prod01|  0|  3| <= prod01이 두 개의 레코드에 나뉘어 저장되었다
-| prod01|  1|  2|
+| prod01|  0|  3| <= prod01이 rnd=0, rnd=1에 의해 두 개의 레코드로 나뉘었다
+| prod01|  1|  2| <= prod01의 두 번째 레코드
 | prod02|  1|  1|
 | prod02|  0|  1|
 | prod03|  0|  1|
@@ -172,7 +172,7 @@ spark.sql("""
 
 우선 `order` 테이블에 랜덤 값을 할당해야햔다.
 
-```
+```sql
 spark.sql("""
     SELECT order_id,
         prod_id,
@@ -231,8 +231,8 @@ spark.sql("""
 +-------+-----+---+
 |prod_id|price|rnd|
 +-------+-----+---+
-| prod01|  100|  0| -- prod01의 레코드가 두개가 되었다
-| prod01|  100|  1| -- rnd의 값이 0인 것과 1인 것 두개가 생성되었다
+| prod01|  100|  0| <= prod01의 레코드가 두개가 되었다
+| prod01|  100|  1| <= rnd의 값이 0인 것과 1인 것 두개가 생성되었다
 | prod02|  200|  0|
 | prod02|  200|  1|
 | prod03|  200|  0|
