@@ -62,6 +62,6 @@ spill은 memory와 disk를 '그릇'으로 비교하면 이해하기 쉽다. 아�
 
 executor에는 1GB만 저장할 수 있는데 shuffle로 전달받은 데이터가 1GB 이상이라면 Disk에 저장해야한다. 이걸 spill이라고 하는 것이다.
 
-<img width=100% src="https://i.imgur.com/P4tFdvh.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/P4tFdvh.png" title="source: imgur.com" />
 
-(출처: 본인)
+(그림 출처: 본인)
