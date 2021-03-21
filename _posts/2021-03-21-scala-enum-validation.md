@@ -6,7 +6,7 @@ categories: "programming"
 
 literal 대신 Enum을 사용하면 여러 장점이 있다. [What are enums and why are they useful?](https://stackoverflow.com/a/4709224/2930152) 참고
 
-그런데 Enum은 허용되지 않은 값이 입력되는 경우 exception이 발생하기 때문에 주의해야한다.
+Scala의 Enum 사용법은 다음과 같다.
 
 ```scala
 object Color extends Enumeration {
@@ -19,7 +19,7 @@ Color.withName("Blue")
 // res3: Color.Value = Blue
 ```
 
-하지만 지정되지 않은 Color가 입력되면 Exception이 발생한다.
+하지만 지정되지 않은 Color가 입력되면 Exception이 발생하므로 프로그램이 중지되지 않기 위해선 input 검사를 잘 해야한다.
 
 ```scala
 Color.withName("Green")
