@@ -20,7 +20,7 @@ Spark UI에 내가 원하는 정보를 출력하기 위한 방법을 구글링�
 
 [작성자가 github에 올린 코드](https://github.com/skp33/spark-ui-extension)를 실행 후 Spark UI에 접속하면 아래와 같은 UI를 볼 수 있다.
 
-<img src="https://i.imgur.com/ol5nIF1l.png">
+<img src="https://i.imgur.com/ol5nIF1.png">
 
 Spark UI 확장은 Spark 외부 API가 아닌 private class, method를 사용하는데 이런 경우 Spark Version에 의존적인 경우가 많다. 예를 들어 Spark 2.2 기준으로 만든 Spark 확장이 Saprk 3.0에서는 작동되지 않을 경우도 있다. 하지만 다행이도 UI 관련 함수는 Spark 2.2부터 Spark 3.1까지 테스트해봤을 때 동일 코드가 잘 작동되었다. (특정 버전에 의존적인 경우 새로운 Spark 버전이 나와도 upgrade를 하기 어려울 수 있다)
 
