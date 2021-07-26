@@ -60,7 +60,7 @@ Logger.getLogger("io.github.jasonheo").setLevel(Level.INFO)
 
 ```
 # WARN Level로 설정한다
-log4j.rootCategory=WARN, console
+log4j.rootLogger=WARN, console
 
 log4j.appender.console=org.apache.log4j.ConsoleAppender
 log4j.appender.console.target=System.err
