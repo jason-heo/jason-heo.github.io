@@ -6,6 +6,13 @@ categories: "programming"
 
 오랜만의 포스팅이다. 3월까지는 비교적 포스팅을 자주했었는데 어쩌다보니 뜸해졌다. 날도 많이 시원해졌고 나의 작업 환경도 다시 자리를 잡아가고 있다. 평소 수준의 포스팅을 작성해볼까 한다.
 
+### 목차
+
+- [Modern Unix Tools](#modern-unix-tools)
+- [`bat`](#bat)
+- [`mcfly`](#mcfly)
+- [`delta`](#delta)
+
 ### Modern Unix Tools
 
 몇년 전부터 페이스북은 자주 사용을 안하고 있다. 그냥 2~3일에 한두번 정도 방문해서 페친들 소식을 보는 수준인데, 오늘은 페친이 공유한 [어썸 블로그](https://www.facebook.com/awesomeblogs/posts/1204819803371049)의 글을 보았다.
@@ -76,7 +83,7 @@ brew 패키지 이름이 `git-delta`인 것에서 볼 수 있듯이 git과 연�
 
 우선 `delta` 적용 전 `git diff` output을 보자.
 
-<img src="https://i.imgur.com/2r07d2V.png">
+<img width=50% src="https://i.imgur.com/2r07d2V.png">
 
 git과 연동을 하려면 아래 설정을 추가해야햔다.
 
@@ -86,7 +93,7 @@ $ git config --local pager.diff delta
 
 이후 `git diff`를 보면 다음과 같이 보인다.
 
-<img src="https://i.imgur.com/vCaW4gF.png">
+<img width=50% src="https://i.imgur.com/vCaW4gF.png">
 
 뭔가 visual해진 것 같은데 default theme가 나랑 잘 안 맞는 것 같다. 이제 thema를 변경해보자.
 
@@ -126,8 +133,8 @@ $ git config --local delta.features calochortus-lyallii
 
 `git diff`를 다시 실행하면 결과가 다음과 같이 변경된 걸 볼 수 있다.
 
-<img src="https://i.imgur.com/v7plwSL.png">
+<img width=50% src="https://i.imgur.com/v7plwSL.png">
 
 아래 내용은 동일한 변경을 github에서 본 것이다. 현재 선택된 delta의 output이 github과 유사해서 괜찮은 듯 하다.
 
-<img src="https://i.imgur.com/Mbs1iwo.png">
+<img width=50% src="https://i.imgur.com/Mbs1iwo.png">
