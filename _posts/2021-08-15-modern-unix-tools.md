@@ -48,6 +48,7 @@ categories: "programming"
 - 기능
     - syntax highlight
     - git repository의 파일이 modified된 경우 diff를 보여줌
+
 스샷은 다음과 같다. (출처: bat 홈페이지)
 
 <img src="https://camo.githubusercontent.com/7b7c397acc5b91b4c4cf7756015185fe3c5f700f70d256a212de51294a0cf673/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67" />
