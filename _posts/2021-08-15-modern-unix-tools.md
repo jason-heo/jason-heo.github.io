@@ -48,9 +48,11 @@ categories: "programming"
 - 기능
     - syntax highlight
     - git repository의 파일이 modified된 경우 diff를 보여줌
-- 스샷 (출처: bat 홈페이지)
-    - <img src=https://camo.githubusercontent.com/7b7c397acc5b91b4c4cf7756015185fe3c5f700f70d256a212de51294a0cf673/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67>
-    - <img src=https://camo.githubusercontent.com/c436c206f2c86605ab2f9fb632dd485afc05fccbf14af472770b0c59d876c9cc/68747470733a2f2f692e696d6775722e636f6d2f326c53573452452e706e67>
+스샷은 다음과 같다. (출처: bat 홈페이지)
+
+<img src="https://camo.githubusercontent.com/7b7c397acc5b91b4c4cf7756015185fe3c5f700f70d256a212de51294a0cf673/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67" />
+<BR>
+<img src="https://camo.githubusercontent.com/c436c206f2c86605ab2f9fb632dd485afc05fccbf14af472770b0c59d876c9cc/68747470733a2f2f692e696d6775722e636f6d2f326c53573452452e706e67" />
 
 ### `mcfly`
 
@@ -66,8 +68,10 @@ categories: "programming"
         ```
 - 사용 방법
     - 쉘에서 <kbd>Ctrl</kbd>+<kbd>r</kbd>를 입력하면 과거 입력했던 명령을 쉽게 선택할 수 있다
-- 스샷 (출처: mcfly 홈페이지)
-    - <img src=https://raw.githubusercontent.com/cantino/mcfly/master/docs/screenshot.png>
+
+스샷은 다음과 같다. (출처: mcfly 홈페이지)
+
+<img src="https://raw.githubusercontent.com/cantino/mcfly/master/docs/screenshot.png">
 
 ### `delta`
 
@@ -83,9 +87,9 @@ brew 패키지 이름이 `git-delta`인 것에서 볼 수 있듯이 git과 연�
 
 우선 `delta` 적용 전 `git diff` output을 보자.
 
-<img width=50% src="https://i.imgur.com/2r07d2V.png">
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/2r07d2V.png" />
 
-git과 연동을 하려면 아래 설정을 추가해야햔다.
+이제 delta를 git에 연동해보자.
 
 ```console
 $ git config --local pager.diff delta
@@ -93,7 +97,7 @@ $ git config --local pager.diff delta
 
 이후 `git diff`를 보면 다음과 같이 보인다.
 
-<img width=50% src="https://i.imgur.com/vCaW4gF.png">
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/vCaW4gF.png" />
 
 뭔가 visual해진 것 같은데 default theme가 나랑 잘 안 맞는 것 같다. 이제 thema를 변경해보자.
 
@@ -133,8 +137,8 @@ $ git config --local delta.features calochortus-lyallii
 
 `git diff`를 다시 실행하면 결과가 다음과 같이 변경된 걸 볼 수 있다.
 
-<img width=50% src="https://i.imgur.com/v7plwSL.png">
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/v7plwSL.png" />
 
 아래 내용은 동일한 변경을 github에서 본 것이다. 현재 선택된 delta의 output이 github과 유사해서 괜찮은 듯 하다.
 
-<img width=50% src="https://i.imgur.com/Mbs1iwo.png">
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/Mbs1iwo.png" />
