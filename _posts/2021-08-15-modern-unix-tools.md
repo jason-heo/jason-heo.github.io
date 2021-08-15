@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modern Unix Tools (bat, mcfly, delta)
+title: "Modern Unix Tools (bat, mcfly, delta)"
 categories: "programming"
 ---
 
