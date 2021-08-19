@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "부천시 자전거보험 수령 후기"
+title: "부천시 자전거보험 청구 및 수령 후기"
 categories: "life"
 ---
 
