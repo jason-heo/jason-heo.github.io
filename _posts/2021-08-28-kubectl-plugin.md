@@ -61,9 +61,9 @@ $ kubectl print podname
 
 `krew`를 이용하면 외부 개발자들이 만든 plugin을 쉽게 설치할 수 있다.
 
-설치 방법은 [이 문서](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)를 참고한다.
+설치 방법은 [install](https://krew.sigs.k8s.io/docs/user-guide/setup/install/) 문서를 참고한다.
 
-plugin 목록은 [여기](https://krew.sigs.k8s.io/plugins/)에서 볼 수 있다.
+이미 많은 plugin들이 등록되어 있는데 전체 목록은 [plugins](https://krew.sigs.k8s.io/plugins/) 문서에서 볼 수 있다.
 
 원하는 plugin을 찾은 경우 다음과 같은 명령을 이용하여 plugin을 설치할 수 있다.
 
