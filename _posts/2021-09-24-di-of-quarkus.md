@@ -113,7 +113,7 @@ public class MyResource {
 
 아래의 명령을 실행하면  Rest Server가 실행된다.
 
-```
+```console
 $ ./mvnw compile quarkus:dev -DskipTests
 ```
 
@@ -197,7 +197,7 @@ public class DbService {
 
 `MyResource`의 내용은 다음과 같이 변경했다.
 
-```
+```java
 package io.github.jasonheo;
 
 import org.jboss.logging.Logger;
@@ -255,7 +255,7 @@ normal scope에서는 client proxy가 사용된다고 한다. client proxy가 �
 
 CDI에서는 Lifecycle callback을 제공한다. 말로 설명하는 것보다 아래의 예를 보는 것이 더 편할 것이다.
 
-```
+```java
 package io.github.jasonheo;
 
 import org.jboss.logging.Logger;
@@ -544,7 +544,7 @@ Quarkus의 CDI는 J2EE 표준 CDI의 구현과 다른 점이 있다.
 
 DI를 사용하다보면 ambiguity 문제가 발생할 수 있다. 예를 들어 다음과 같이 `ImageFileEditor`의 구현이 여러 개인 경우 `ImageFileEditor editor`에 대해 어떤 bean을 inject해야할지 ambiguous하므로 에러가 발생한다.
 
-```
+```java
 public class GifFileEditor implements ImageFileEditor { ... }
 
 public class JpgFileEditor implements ImageFileEditor { ... }
@@ -554,7 +554,7 @@ public class PngFileEditor implements ImageFileEditor { ... }
 
 이때 `@Alternative`를 사용할 수 있다.
 
-```
+```java
 @Alternative
 public class GifFileEditor implements ImageFileEditor { ... }
 
@@ -909,4 +909,8 @@ public class InjectMockTest {
 }
 ```
 
-Mockito의 `thenAnswer()`를 이용하여, `getName()`의 argument value를 return하도록 하였다.
+Mockito의 `thenAnswer()`를 이용하여, `getName()`의 argument value를 return하도록 하였다. (당연하겠지만, 원래 함수와 동일한 일을 하므로 Test도 통과를 한다)
+
+## 4. 마무리
+
+올해 6월경인가, Spark Operator를 알아보다가 Quarkus를 알게 되면서 그동안 잘 알지 못했던 기술 및 라이브러리들을 알게 되었다. 이후 9월부터 본격적으로 Quarkus에 대해 공부를 하게 되었다. Quarkus 관련된 내용이 워낙 방대한데 그 중에서 Quarkus의 DI를 중심으로 글을 적어봤다. Quarkus에 처음 접하는 분에게 도움이 되면 좋겠다. 그리고 업무를 마치고 저녁 늦게, 주말에 틈틈히 시간내서 공부한 내용을 정리했는데, 도움이 안 되더라도 내 스스로에게는 뿌듯함이 남는 작업이었다.
