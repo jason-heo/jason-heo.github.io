@@ -16,7 +16,7 @@ categories: "programming"
     - `METADATA`
     - `UNLINK`
     - `TRUNCATE`
-- (아쉽게도) admin user만 본 API를 사용할 수 있다
+- (아쉽게도) 본 API는 admin user만 사용할 수 있다
     - Admin API를 사용해야하기 때문에 admin user만 사용할 수 있는 기능이다
     - 혹시나하고 실행시켜 봤는데 normal user인 경우 다음과 같은 에러가 발생한다
         - > Exception in thread "main" org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.AccessControlException): Access denied for user XXX. Superuser privilege is require
