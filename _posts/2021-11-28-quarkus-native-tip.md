@@ -36,7 +36,7 @@ GraalVM은 native image를 생성할 때 사용되지 않는 code는 제거한�
 
 따라서 Jackson ObjectMapper를 사용하는 경우 다음과 같은 에러 메시지를 보게 된다.
 
-> com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.acme.jsonb.Person and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+> `com.fasterxml.jackson.databind.exc.InvalidDefinitionException`: No serializer found for class `org.acme.jsonb.Person` and no properties discovered to create BeanSerializer (to avoid exception, disable `SerializationFeature.FAIL_ON_EMPTY_BEANS`)
 
 이때는 class에 `@RegisterForReflection` annotation을 추가해주면 된다.
 
