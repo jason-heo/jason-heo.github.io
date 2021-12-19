@@ -4,6 +4,12 @@ title: "Kafka & Spark Batch Processing"
 categories: "programming"
 ---
 
+### 2021.12.18 내용 추가
+
+[Spark에서 Kafka를 batch 방식으로 읽기](/bigdata/2021/12/18/spark-kafka-batch-mode.html) 글을 새로 작성하였다.
+
+### 들어가며
+
 Kafka는 Spark에서 Ingestion을 할 때 주로 Streaming Processing의 Data Source로 사용이 된다. 하지만, Batch Processing에서도 사용될 수 있다는 사실.
 
 ### Spark 1.x의 DStream과 유사한 Batch
