@@ -8,6 +8,16 @@ Apache Spark의 공식 문서인 [Structured Streaming + Kafka Integration Guide
 
 오늘은 batch 방식과 관련된 option들을 알아보려한다. (option 대부분은 streaming 방식에서도 사용할 수 있다)
 
+### 목차
+
+- [Streaming vs Batch 방식 비교](#streaming-vs-batch-방식-비교)
+- [offset 지정 방식 1: Timestamp 방식](#offset-지정-방식-1-timestamp-방식)
+- [offset 지정 방식 2: offset 방식](#offset-지정-방식-2-offset-방식)
+- [`minPartitions`: task 개수](#minpartitions-task-개수)
+- [offset 지정 방식과 `minPartitions`의 관계](#offset-지정-방식과-minpartitions의-관계)
+- [Timestamp에 해당하는 offset 찾는 방법](#timestamp에-해당하는-offset-찾는-방법)
+- [마무리](#마무리)
+
 ### Streaming vs Batch 방식 비교
 
 아래의 많이 봤을 코드인데 Kafka `topic1`의 data를 streaming 방식으로 처리하는 예이다.

@@ -6,6 +6,12 @@ categories: "bigdata"
 
 그동안 Kafka AdminClient API를 사용하면서 Unit Test를 작성하지 않았었다. 지금이라도 Unit Test를 적용하고 싶어서 찾아본 내용을 정리한다.
 
+### 목차
+
+- [들어가며](#들어가며)
+- [Kafka Unit Test 방법들](#kafka-unit-test-방법들)
+- [`EmbeddedKafka` 사용법](#embeddedkafka-사용법)
+
 ### 들어가며
 
 본인이 Kafka Unit Test로 작성하고 싶은 것은 본인 블로그의 [Spark에서 Kafka를 batch 방식으로 읽기](/bigdata/2021/12/18/spark-kafka-batch-mode.html)에 나온 것처럼 "Timestamp를 기반으로하여 `startingOffsets` 옵션을 지정"하는 것이다.
@@ -187,3 +193,5 @@ class EmbeddedKafkaTest extends FlatSpec with Matchers with EmbeddedKafka {
   }
 }
 ```
+
+{% include spark-reco.md %}
