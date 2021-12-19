@@ -1,5 +1,7 @@
 ### 본 카테고리의 추천 글
 
+- [Kafka Unit Test with EmbeddedKafka](/bigdata/2021/12/19/kafka-unit-test.html)
+- [Spark Structured Streaming에서의 Unit Test](/bigdata/2020/08/29/spark-structured-streaming-unit-test.html)
 - [spark memoryOverhead 설정에 대한 이해](/bigdata/2020/10/24/understanding-spark-memoryoverhead-conf.html)
 - [Spark 기능 확장하기](/bigdata/2020/12/19/extending-spark-using-api.html)
 - [Spark DataFrame vs Dataset (부제: typed API 사용하기)](/bigdata/2019/08/10/dataset-typed-api.html)
@@ -11,6 +13,5 @@
 - [Scala case class를 Spark의 StructType으로 변환하기](/bigdata/2019/07/08/scala-case-class-to-structtype.html)
 - [Spark on Kubernetes 사용법 및 secure HDFS에 접근하기](/bigdata/2020/12/13/spark-on-kubernetes.html)
 - [Spark의 Locality와 getPreferredLocations() Method](/bigdata/2018/01/20/spark-locality-getpreferredlocations.html)
-- [Spark Structured Streaming에서의 Unit Test](/bigdata/2020/08/29/spark-structured-streaming-unit-test.html)
 - [Spark Streaming의 History](/bigdata/2019/07/27/history-of-spark-streaming.html)
 

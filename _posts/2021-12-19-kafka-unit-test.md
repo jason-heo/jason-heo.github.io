@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit Test with Kafka"
+title: "Kafka Unit Test with EmbeddedKafka"
 categories: "bigdata"
 ---
 
