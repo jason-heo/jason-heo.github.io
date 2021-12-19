@@ -1,4 +1,4 @@
-## 시리즈 읽기
+## "에어컨" 카테고리 추천 글
 
 1. [엘지 휘센 에어컨 위너와 칸의 차이](http://jason-heo.github.io/life/2019/03/23/ac-lg.html) - 2019-03-23 작성
 1. [에어컨 구매 및 설치에 도움되는 글들](http://jason-heo.github.io/life/2019/03/27/ac.html) - 2019-03-27 작성
