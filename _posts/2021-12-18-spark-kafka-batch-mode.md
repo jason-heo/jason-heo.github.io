@@ -142,6 +142,8 @@ stream 처리에서는 out-of-order가 발생할 수 있기 때문에 `OffsetSpe
 
 하지만 "The earliest offset"를 return하므로 timestamp가 `18`인 message의 offset이 return되지 않는다. 따라서 timestamp `10`, `15` message가 유실되지는 않는다.
 
+만약 partition의 Max Timestamp보다 더 큰값이 인자로 들어오는 경우 `-1`을 return한다. 그렇다. `latest`를 의미하는 offset이다.
+
 그런데 `OffsetSpec.forTimestamp()` 방식의 Time Complexity가 궁금하다. 첫 번째 segment부터 sequential하게 scan한다면 O(n)이라서 속도가 느릴 것 같은데 어떻게 구현되었는지 궁금해진다.
 
 Kafka 소스코드에서 [`LogSegment.findOffsetByTimestamp()`](https://github.com/a0x8o/kafka/blob/85b06cc913a47cc57d9d6bea0631e716c8ab73cd/core/src/main/scala/kafka/log/LogSegment.scala#L557-L585)를 보면 segment의 metadata 중에 timestamp를 이용하여 특정 segment는 바로 pruning할 수 있고, target timestamp를 포함한 segment인 경우 sequential scan을 하는 것 같다. 이렇게 되면 Time Complexity는 `O(1개 segment에 저장된 message 개수)`가 될 것 같다. (정확하게는 segment pruning 비용도 포함해야함)
