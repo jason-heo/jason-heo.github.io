@@ -132,6 +132,20 @@ Timestamp 방식보다는 `startingOffsets` 같은 방식의 장점이 커보인
 
 본인도 java doc만 가지고는 구현이 어려워서 구글링하면서 남들의 코드를 참고했다. AdminClinet 관련해서는 인터넷에 많은 자료들이 존재하고 대략 [AdminClientExample.java](https://github.com/gwenshap/kafka-examples/blob/master/AdminClientExample/src/main/java/org/example/AdminClientExample.java)를 보면서 부족한 것은 다시 구글링해보면 될 듯하다.
 
+참고로 `OffsetSpec.forTimestamp(ts1)`에서 return된 offset부터 consume하더라도, 실제론 `ts1`보다 더 이전의 message가 소비될 수 있다.
+
+아래의 이미지는 [What's the time? ...and why? (Mattias Sax, Confluent)](https://www.slideshare.net/ConfluentInc/whats-the-time-and-why-mattias-sax-confluent-kafka-summit-sf-2019)의 28 페이지에서 발췌한 그림이다.
+
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/y8OKc7G.png" />
+
+stream 처리에서는 out-of-order가 발생할 수 있기 때문에 `OffsetSpec.forTimestamp(10)`로 호출하더라도 timestamp가  `5`, `7`인 메시지가 소비된다.
+
+하지만 "The earliest offset"를 return하므로 timestamp가 `18`인 message의 offset이 return되지 않는다. 따라서 timestamp `10`, `15` message가 유실되지는 않는다.
+
+그런데 `OffsetSpec.forTimestamp()` 방식의 Time Complexity가 궁금하다. 첫 번째 segment부터 sequential하게 scan한다면 O(n)이라서 속도가 느릴 것 같은데 어떻게 구현되었는지 궁금해진다.
+
+Kafka 소스코드에서 [`LogSegment.findOffsetByTimestamp()`](https://github.com/a0x8o/kafka/blob/85b06cc913a47cc57d9d6bea0631e716c8ab73cd/core/src/main/scala/kafka/log/LogSegment.scala#L557-L585)를 보면 segment의 metadata 중에 timestamp를 이용하여 특정 segment는 바로 pruning할 수 있고, target timestamp를 포함한 segment인 경우 sequential scan을 하는 것 같다. 이렇게 되면 Time Complexity는 `O(1개 segment에 저장된 message 개수)`가 될 것 같다. (정확하게는 segment pruning 비용도 포함해야함)
+
 ### 마무리
 
 Spark에서 batch 방식으로 Kafka 데이터를 읽을 수 있다면 여러 용도로 활용될 수 있을 것 같다. 혹은 use-case가 없더라도 streaming에서 사용되는 옵션들을 제대로 이해하는 계기가 될 것이다.
