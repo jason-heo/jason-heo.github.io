@@ -4,6 +4,14 @@ title: "Scala에서 Annotation 접근 방법"
 categories: "programming"
 ---
 
+### 목차
+
+- [들어가며](#들어가며)
+- [참고한 자료들](#참고한-자료들)
+- [주의 사항](#주의-사항)
+- [코드](#코드)
+- [`case class`에 적용 방법](#case-class에-적용-방법)
+
 ### 들어가며
 
 Scala에서 Annotation을 사용할 일이 생겼다. 인터넷을 보면 Annotation을 정의하는 글은 찾을 수 있었지만, Annotation의 값을 접근하는 예는 찾기가 어려웠다. 관련된 글을 찾더라도 `import` 구문이 없어서 작동하는 코드를 찾기가 어려웠다. 게다가 IntelliJ에서 Reflection 관련 import가 제대로 자동 완성되지 않아서 더 어려웠다.
