@@ -226,3 +226,5 @@ scala> indexDf.show
 +--------+-----+
 only showing top 20 rows
 ```
+
+{% include spark-reco.md %}

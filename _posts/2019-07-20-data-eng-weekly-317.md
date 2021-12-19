@@ -44,3 +44,5 @@ https://sematext.com/blog/best-log-management-tools/
 로그 수집, 로그 분석, 시각화, 알람 등에 관련된 오픈 소스 툴에 대한 포스팅.
 
 혹시라도 로그 분석 툴을 지금막 도입하려고 조사 중인 분이 계시다면 일단 Elastic Stack부터 시작하는 것이 좋을 듯 하다. ES도 만능은 아니라서  한계가 있지만, 이런 것들은 겪어보면서 경험해보면서 여러 공부도하고 다른 대안거리가 있는지 찾아보면서 많은 도움이 될 듯.
+
+{% include spark-reco.md %}

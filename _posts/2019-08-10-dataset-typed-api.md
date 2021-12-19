@@ -193,3 +193,5 @@ untyped API인 `groupBy()`를 사용하는 경우에는 compile time에 에러�
 컴파일 타입에는 에러를 잡을 수 없지만, 만약 필드 명이 잘못된 오류가 있다면 런타입 중이라도 `as[ResultRow]` 단계에서 Exception이 발생한다. 이를 통해 Dataframe을 사용할 때보다 에러를 빨리 잡을 수 있다.
 
 예를 들어, 필드명이 잘못된 상태로 parquet 파일이 생성해서 외부로 전달하는 경우 사용하는 쪽에서 에러를 인지할 수 있지만 Dataset으로 변환하는 경우는 parquet로 변환하기 전에 에러가 발생하므로 외부로 파일을 전달하기 전에 오류가 발생한 것을 알게 된다.
+
+{% include spark-reco.md %}

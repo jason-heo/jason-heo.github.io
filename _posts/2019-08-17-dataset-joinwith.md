@@ -39,3 +39,5 @@ articles
 ```
 
 원래 이 글을 작성할 때는 본인 스스로 예제 Data를 만들어서 `joinWith()`의 사용 방법을 설명할까 했었는데 위의 Medium 글에 설명이 워낙 잘 되어 있어서 그냥 링크만 남기기로 했다. (예제 중에 오타가 있는 듯 한데 `"left"`과 `"full"`이 `"inner"`로 잘못 작성된 것 같다)
+
+{% include spark-reco.md %}

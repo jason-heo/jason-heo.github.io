@@ -11,3 +11,5 @@ categories: "bigdata"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/daXEp4HmS-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [발표 자료 다운로드](https://www.slideshare.net/databricks/apache-spark-coredeep-diveproper-optimization)
+
+{% include spark-reco.md %}

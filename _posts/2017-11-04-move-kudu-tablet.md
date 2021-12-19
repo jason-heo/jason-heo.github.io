@@ -52,3 +52,5 @@ $ kudu tablet \
 tablet 1개를 옮기는 명령이 위와 같고, 실제로는 table 및 tablet 개수가 많기 때문에 위 명령을 수동으로 실행하기엔 쉬운 일이 아니라 생각된다.
 
 본인의 경우는 서버 추가 시, (kafka의 partition 재분배 스크립트 비슷하게) 어느 정도 자동화된 방식으로 위 명령을 생성해주는 간단한 script를 개발해서 사용 중이다.
+
+{% include spark-reco.md %}

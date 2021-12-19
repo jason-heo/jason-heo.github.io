@@ -32,3 +32,5 @@ Case 5. "When using an http load balancer you cannot use the Sniffing functional
 
 확실하진 않지만, 이유는 뒷 문장에 "the cluster would supply the client with IP addresses to directly connect to the cluster"라고 나오는 것처럼, L4 하위에 붙은 장비들의 private IP를 얻기 때문인 듯 한데, `/_cat/nodes`로 sniff를 하기 때문에 L4 하위에 붙어도 잘 작동할 것이라 생각되는데, 테스트를 못해봐서 뭐라 말씀드리긴 어렵네요.
 
+
+{% include spark-reco.md %}

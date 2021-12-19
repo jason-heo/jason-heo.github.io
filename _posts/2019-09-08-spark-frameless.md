@@ -236,3 +236,5 @@ fds.filter(fds('age2) === 10).select(fds('age)).explain()
 원래는 "문제3", "문제4" 즉, frameless에서 GroupBy와 Join에 대한 사용법도 적으려했으나, 주말 낮에 업무도 보고 저녁 늦게 블로깅 하느라 이쯤에서 마무리한다. (글 을 작성하면서 IntelliJ와 연동이 안 좋다는 걸 알고나서 피곤이 더 몰려왔다)
 
 인터넷 상에 있는 다른 문서를 좀 더 찾아봤는데 [Typesafe data analytics](https://georgheiler.com/2018/02/26/typesafe-data-analytics/)도 좋아보인다. (내가 작성하려던 의도와 많이 비슷하다. 단 GroupBy 예제는 없다)
+
+{% include spark-reco.md %}

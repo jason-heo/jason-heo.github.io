@@ -137,3 +137,5 @@ Timestamp 방식보다는 `startingOffsets` 같은 방식의 장점이 커보인
 Spark에서 batch 방식으로 Kafka 데이터를 읽을 수 있다면 여러 용도로 활용될 수 있을 것 같다. 혹은 use-case가 없더라도 streaming에서 사용되는 옵션들을 제대로 이해하는 계기가 될 것이다.
 
 이 글을 적으면서 몇 가지 구현을 하다보니 Unit Test용 Kafka Broker가 있다면 좋겠다는 생각이 들었다. 시간되면 이에 대해 조사후 포스팅 해봐야겠다.
+
+{% include spark-reco.md %}

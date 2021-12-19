@@ -21,3 +21,5 @@ Spark 3.0에 대한 논의는 [2018년 4월](http://apache-spark-developers-list
 쑥 훑어봤는데 크게 와닿는 기능은 없고, "Adaptive execution of Spark SQL" 이건 좀 괜찮아 보인다. BigData에서는 모든 게 Big하기 때문에 Cost Based Optimizer에서 사용할 cost가 없는 경우가 많은데, 부족한 정보로 생성한 execution plan을  adaptive하게 변경하는 기능 같다.
 
 
+
+{% include spark-reco.md %}

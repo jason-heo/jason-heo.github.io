@@ -124,3 +124,5 @@ https://spark.apache.org/docs/2.4.0/streaming-custom-receivers.html
         - Spark 2.2의 `StreamSourceProvider` 방식에서 봤던 `KafkaSourceRD`도 안 보인다
         - 이걸 봐선 정황상으로는 topic partition들을 executor들에게 할당하고 개별 executor에서 kafka로부터 데이터를 읽어들이는 것 같다
         - 정확한 것은 아무래도 테스트를 해봐야겠다
+
+{% include spark-reco.md %}

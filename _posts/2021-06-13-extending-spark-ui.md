@@ -25,3 +25,5 @@ Spark UI에 내가 원하는 정보를 출력하기 위한 방법을 구글링�
 Spark UI 확장은 Spark 외부 API가 아닌 private class, method를 사용하는데 이런 경우 Spark Version에 의존적인 경우가 많다. 예를 들어 Spark 2.2 기준으로 만든 Spark 확장이 Saprk 3.0에서는 작동되지 않을 경우도 있다. 하지만 다행이도 UI 관련 함수는 Spark 2.2부터 Spark 3.1까지 테스트해봤을 때 동일 코드가 잘 작동되었다. (특정 버전에 의존적인 경우 새로운 Spark 버전이 나와도 upgrade를 하기 어려울 수 있다)
 
 원글 작성자의 소스코드는 maven & Spark 2.2 기반이라서, sbt & Spark 3.0 기반으로 코드를 작성해서 github에 올려두었다. [repository 바로 가기](https://github.com/jason-heo/spark-ui-extention)
+
+{% include spark-reco.md %}

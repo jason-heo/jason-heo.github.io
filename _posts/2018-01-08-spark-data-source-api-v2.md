@@ -76,3 +76,5 @@ Column DB의 read 효율을 최대화하기 위하여 Columnar Batch Read도 지
     batch
   }
 ```
+
+{% include spark-reco.md %}

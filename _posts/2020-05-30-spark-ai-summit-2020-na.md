@@ -35,3 +35,5 @@ categories: "bigdata"
 - https://databricks.com/session_na20/scoring-at-scale-generating-follow-recommendations-for-over-690-million-linkedin-members
 - https://databricks.com/session_na20/sql-performance-improvements-at-a-glance-in-apache-spark-3-0
 - https://databricks.com/session_na20/hyperspace-an-indexing-subsystem-for-apache-spark
+
+{% include spark-reco.md %}

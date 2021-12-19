@@ -112,3 +112,5 @@ Consider boosting spark.yarn.executor.memoryOverhead.
     - GC는 적지만, yarn에 의해 executor가 죽는 경우
 
 물론 둘다 늘려야하는 경우도 있겠다.
+
+{% include spark-reco.md %}

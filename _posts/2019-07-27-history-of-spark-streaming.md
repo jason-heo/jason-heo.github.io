@@ -35,3 +35,5 @@ Spark Streaming에서는 다음과 같은 Streaming Processing 방식이 있다.
 1. Introducing Low-latency Continuous Processing Mode
   - https://databricks.com/blog/2018/03/20/low-latency-continuous-processing-mode-in-structured-streaming-in-apache-spark-2-3-0.html
 
+
+{% include spark-reco.md %}

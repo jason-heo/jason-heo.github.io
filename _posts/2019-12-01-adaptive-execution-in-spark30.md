@@ -43,3 +43,5 @@ Intel 개발자들에 의해 [SPARK-9850](https://issues.apache.org/jira/browse/
 개발자들이 [2017년 10월에 Spark Summit](https://www.youtube.com/watch?v=FZgojLWdjaw)에서 발표한 영상도 있으니 어떤 문제를 어떻게 해결했는지 참고할 수 있다.
 
 SPARK-23128 이슈를 보면 Baidu에서 성능 측정한 것이 있는데 50~200% 정도의 성능 향상이 있다고 한다.
+
+{% include spark-reco.md %}

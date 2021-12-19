@@ -21,3 +21,5 @@ Spark에서 Elasticsearch를 연동한다던가, Cassandra를 연동하는 것�
 - [Exploring the Apache Spark™ DataSource API](http://www.spark.tc/exploring-the-apache-spark-datasource-api/)
 - [The Pushdown of Everything](https://www.slideshare.net/SparkSummit/the-pushdown-of-everything-by-stephan-kessler-and-santiago-mola)
 - [Filtering and Projection in Spark SQL External Data sources](Filtering and Projection in Spark SQL External Data Sources)
+
+{% include spark-reco.md %}

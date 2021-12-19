@@ -65,3 +65,5 @@ executor에는 1GB만 저장할 수 있는데 shuffle로 전달받은 데이터�
 <img src="https://i.imgur.com/P4tFdvh.png" title="source: imgur.com" />
 
 (그림 출처: 본인)
+
+{% include spark-reco.md %}

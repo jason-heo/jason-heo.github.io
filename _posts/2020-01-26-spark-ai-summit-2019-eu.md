@@ -51,3 +51,5 @@ categories: "bigdata"
 - https://databricks.com/session_eu19/simplify-and-scale-data-engineering-pipelines-with-delta-lake
 - https://databricks.com/session_eu19/optimizing-delta-parquet-data-lakes-for-apache-spark
 - https://databricks.com/session_eu19/using-production-profiles-to-guide-optimizations
+
+{% include spark-reco.md %}

@@ -67,3 +67,5 @@ Custom Data Source들은 이를 어떻게 구현하고 있을까? 아래 Platfor
     if (ip != null) Seq(ip) else Nil
   }
 ```
+
+{% include spark-reco.md %}

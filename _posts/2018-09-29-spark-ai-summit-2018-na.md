@@ -20,3 +20,5 @@ categories: "bigdata"
 - https://databricks.com/session/sparser-faster-parsing-of-unstructured-data-formats-in-apache-spark
 - https://databricks.com/session/sos-optimizing-shuffle-i-o
 - https://databricks.com/session/metrics-driven-tuning-of-apache-spark-at-scale
+
+{% include spark-reco.md %}

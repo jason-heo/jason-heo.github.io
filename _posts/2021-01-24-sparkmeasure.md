@@ -114,3 +114,5 @@ Prometheus를 연동하는 정확한 방법을 찾지는 못했지만, [이 글]
 ### 마무리
 
 SparkMeasure를 최종적으로 Grafana까지 연동해보고 싶었지만 더 진행하지는 않았다. 왜냐하면 Spark 3.0에서는 Prometheus를 지원하기 때문이다. 이에 대해서는 다음 번 블로그 글에 올릴 예정이다.
+
+{% include spark-reco.md %}

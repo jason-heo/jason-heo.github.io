@@ -53,3 +53,5 @@ categories: "bigdata"
 - https://databricks.com/session/smart-join-algorithms-for-fighting-skew-at-scale
 - https://databricks.com/session/apache-arrow-based-unified-data-sharing-and-transferring-format-among-cpu-and-accelerators
 - https://databricks.com/session/in-memory-storage-evolution-in-apache-spark
+
+{% include spark-reco.md %}

@@ -178,3 +178,5 @@ $ spark-shell \
 > If an application needs to interact with other secure Hadoop filesystems, their URIs need to be explicitly provided to Spark at launch time. This is done by listing them in the `spark.kerberos.access.hadoopFileSystems` property
 
 이 글을 읽는 분들은 본인의 설정과 다르기 때문에 이 설정을 필요없을 수도 있다.
+
+{% include spark-reco.md %}

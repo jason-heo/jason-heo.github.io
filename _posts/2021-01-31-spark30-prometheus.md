@@ -120,3 +120,5 @@ Annotations: prometheus.io/path: /metrics/executors/prometheus
              prometheus.io/port: 4040
              prometheus.io/scrape: true
 ```
+
+{% include spark-reco.md %}

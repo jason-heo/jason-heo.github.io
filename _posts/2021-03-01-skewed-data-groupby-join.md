@@ -280,3 +280,5 @@ spark.sql("""
 ## 참고: Spark 3.0
 
 Spark 3.0에서는 Adaptive Query Execution이라는 기능이 추가되었는데 skew join 최적화를 지원한다. 자세한 것은 [이 글](https://medium.com/@jeevan.madhur22/spark-3-0-features-demo-data-skewness-aqe-a5c237d3d5db)을 참고해보자
+
+{% include spark-reco.md %}

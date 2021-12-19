@@ -34,3 +34,5 @@ windowedCountsDF = \
 ```
 
 이제는 `mapGroupsWithState()`를 이용해서 복잡한 로직을 구현하지 않아도 Session Window를 쉽게 사용할 수 있다.
+
+{% include spark-reco.md %}

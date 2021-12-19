@@ -69,3 +69,5 @@ https://engineering.linkedin.com/blog/2019/brooklin-open-source
 Linkedin에서 사용 중인 streaming 입수 시스템이라는데, 하루에 2조 개의 메시지를 처리 중이라고 한다.
 
 다양한 Data Source(Kafka, Kinesis, Oracle, MySQL) Data를 읽을 수 있고, Destination도 다양하다고 하는데, Spark Streaming과의 차이점은 무엇일까?
+
+{% include spark-reco.md %}

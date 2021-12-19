@@ -66,3 +66,5 @@ val ds = spark.
 REPL 같은 걸 이용하면 동적으로 `case class`를 생성할 수 있을 것 같은데 이 부분은 잘 모르겠다.
 
 그 이외에 `StrucType`을 `case class`로 변환하는 더 좋은 방법은 아직 찾지 못하였다.
+
+{% include spark-reco.md %}

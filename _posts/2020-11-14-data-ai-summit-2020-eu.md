@@ -45,3 +45,5 @@ Databricks에서는 Delta Lake를 밀려고하는 것 같다. 컨퍼런스 세�
 - https://databricks.com/session_eu20/spark-sql-join-improvement-at-facebook
 - https://databricks.com/session_eu20/radical-speed-for-your-sql-queries-with-delta-engine
 - https://databricks.com/session_eu20/embedding-insight-through-prediction-driven-logistics
+
+{% include spark-reco.md %}

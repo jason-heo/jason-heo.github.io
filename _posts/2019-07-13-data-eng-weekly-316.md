@@ -68,3 +68,5 @@ Spark 2.3 이전에는 Parquet를 주로 미는 것 같은 느낌이 있었고, 
 Spark 2.4 이상부터는 ORC를 Spark의 기본 파일 포맷으로 하려는 계획이 있다고 한다.
 
 나도 테스트해봐야겠다.
+
+{% include spark-reco.md %}

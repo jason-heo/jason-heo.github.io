@@ -288,3 +288,5 @@ class SparkSession {
 `spark`이 `SparkSession`의 instance이긴 하지만, `implicits`가 object이기 때문에 import가 가능했다.
 
 그리고 자기 자신의 `SQLContext` instance를 `SQLImplicits`의 `_sqlContext` 멤버로 override하고 있다. 그렇다, `SparkSession`의 instance가 필요한 이유는 `DataFrame`을 만들기 위해서 `SparkSession`이 필요했기 때문이다. `object SparkSession` 같은 곳에서는 Spark framework이 활성화(?)된 것이 없으로 Dataframe을 생성할 수가 없다.
+
+{% include spark-reco.md %}
