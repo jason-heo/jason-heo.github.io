@@ -92,3 +92,5 @@ http://www.sqlfiddle.com/#!2/2b46d/1
     2 rows in set (0.00 sec)
 
 앞의 SQL이 최상의 정답이라는 이야기는 아니며 더 좋은 방법이 있을 수도 있으니 참고하기 바란다.
+
+{% include mysql-reco.md %}

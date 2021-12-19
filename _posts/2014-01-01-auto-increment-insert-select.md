@@ -40,3 +40,5 @@ INSERT INTO A (bid, name, address)
 SELECT B.id, C.name, C.address
 FROM sample_table C JOIN other_table B ON B.phoneNumber = C.phoneNumber;
 ```
+
+{% include mysql-reco.md %}

@@ -59,3 +59,5 @@ SELF JOIN을 이용하여 중복되는 친구 관계를 구할 수 있다.
     4 rows in set (0.00 sec)
 
 t1의 from_user_id가 t2의 to_user_id이면서, t1의 to_user_id가 t2의 from_user_id인 레코드를 찾는 SELF JOIN이다.
+
+{% include mysql-reco.md %}

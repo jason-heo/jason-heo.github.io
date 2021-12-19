@@ -14,3 +14,5 @@ WebScaleSQL에 대한 설명을 읽으면서 재미있는 내용을 발견했다
 현재 peer review 중인 code 중 non-blocking mode로 작동하는 MySQL client 라이브러리에 대한 내용인데 이미 페이스북에서는 해당 코드를 production에서 사용 중이라고 한다.
 
 percona에서 발표했던 자료를 [여기](http://www.percona.com/live/mysql-conference-2014/sites/default/files/slides/Percona%20Live%202014.pdf)서 받을 수 있다.
+
+{% include mysql-reco.md %}

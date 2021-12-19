@@ -92,3 +92,5 @@ seed 값이 없는 경우 다음과 같이 SELECT를 할 때마다 RAND()의 결
     +------+---------------------+
     3 rows in set (0.00 sec)
 
+
+{% include mysql-reco.md %}

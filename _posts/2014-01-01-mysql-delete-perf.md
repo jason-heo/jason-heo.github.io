@@ -63,3 +63,5 @@ WHERE measurement_id IN (
 1. DELETE될 레코드가 몇 개인지, 그 대상은 무엇인지 알 수 있다.
 
 와 같다. EXPLAIN SELECT를 통하여 적적할 INDEX를 타고 있는지, Optimizer가 JOIN 순서를 잘 선택했는지 알 수 있다. 또한 DELETE 수행 시간은 최소한 동일 조건의 SELECT보다 클 것이므로 대략적인 DELETE 시간도 예측할 수 있다.
+
+{% include mysql-reco.md %}

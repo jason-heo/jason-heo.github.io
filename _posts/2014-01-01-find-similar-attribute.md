@@ -59,3 +59,5 @@ SNS가 많이 퍼지면서 Stackoverflow에도 친구 목록 얻기 등 SNS에 �
     | jordan |   1 |
     +--------+-----+
     3 rows in set (0.00 sec)
+
+{% include mysql-reco.md %}

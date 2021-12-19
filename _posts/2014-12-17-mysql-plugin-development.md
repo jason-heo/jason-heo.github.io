@@ -60,3 +60,5 @@ Plugin 종류별로 할 수 있는 일이 다른데, 이들의 특성을 파악�
 - 아직 읽어보진 않았지만 이 부분이 재미있을 듯 하다.
 
 [1]: http://www.amazon.com/MySQL-Plugin-Development-Sergei-Golubchik/dp/1849510601
+
+{% include mysql-reco.md %}

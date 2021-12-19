@@ -124,3 +124,5 @@ WHERE NOT EXISTS (
 
 [1]: http://mysqlguru.github.io/mysql/2014/05/22/avoid-mysql-in.html
 [2]: http://mysqlguru.github.io/mysql/2014/05/30/mysql-inner-join-vs-exists.html
+
+{% include mysql-reco.md %}

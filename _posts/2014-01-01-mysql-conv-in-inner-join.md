@@ -42,3 +42,5 @@ WHERE users.referred_by = 500;
 ALTER TABLE users ADD INDEX (referred_by, account_number);
 ALTER TABLE earnings ADD INDEX (account_number);
 ```
+
+{% include mysql-reco.md %}

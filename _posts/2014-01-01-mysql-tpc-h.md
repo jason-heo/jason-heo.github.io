@@ -230,3 +230,5 @@ INDEX는 dss.ri 파일에 저장되어 있다. dss.ri의 INDEX가 MySQL용이 �
      
     SET FOREIGN_KEY_CHECKS = 1;
  
+
+{% include mysql-reco.md %}

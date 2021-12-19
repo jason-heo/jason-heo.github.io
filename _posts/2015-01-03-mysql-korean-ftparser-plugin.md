@@ -8,3 +8,5 @@ categories: MySQL
 200 line 밖에 안 되는 작은 프로그램이고요. MySQL Plugin을 위한 기초 자료구조를 제외하면 핵심은 수십 line 밖에 안 되죠^^;
 
 자세한 내용은 https://github.com/mysqlguru/mysql-ko-ftparser 를 방문하시면 보실 수 있습니다.
+
+{% include mysql-reco.md %}

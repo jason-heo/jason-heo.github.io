@@ -91,3 +91,5 @@ MySQL 5.6에서는 INDEX 통계를 persistent하게 유지할 수 있는 옵션�
 [2]: http://dev.mysql.com/doc/refman/5.6/en/innodb-parameters.html#sysvar_innodb_stats_auto_recalc
 [3]: http://mysqlserverteam.com/some-bits-about-index-statistics-in-innodb/
 [4]: http://dev.mysql.com/doc/refman/5.6/en/innodb-persistent-stats.html
+
+{% include mysql-reco.md %}

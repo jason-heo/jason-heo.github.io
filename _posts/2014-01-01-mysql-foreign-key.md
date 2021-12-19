@@ -155,3 +155,5 @@ CREATE TABLE child
   FOREIGN KEY(parent_id) REFERENCES parent(id)
 ) ENGINE = InnoDB;
 ```
+
+{% include mysql-reco.md %}

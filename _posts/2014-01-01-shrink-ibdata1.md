@@ -59,3 +59,5 @@ innochecksum은 MySQL에 기본으로 포함된 프로그램이다. 이를 외�
 ### innodb_ruby를 이용하기
 
 앞에 설명된 MySQL Performance Blog를 읽어보면 innodb_ruby를 이용할 수도 있다고 한다. 소스 코드는 https://github.com/jeremycole/innodb_ruby에서 구할 수 있다. 관심 있는 독자는 직접설치해서 사용해보도록 하자.
+
+{% include mysql-reco.md %}

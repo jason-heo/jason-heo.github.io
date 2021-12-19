@@ -210,3 +210,5 @@ mysql> SHOW TABLES FROM information_schema;
 +---------------------------------------+
 79 rows in set (0.00 sec)
 ```
+
+{% include mysql-reco.md %}

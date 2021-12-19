@@ -43,3 +43,5 @@ $ cmake ./ -DWITH_BOOST=./boost/ -DDOWNLOAD_BOOST=1 -DCMAKE_INSTALL_PREFIX=path_
 컴파일이 귀찮다면 MySQL Binary 버전을 구해서 사용해도 된다. 그런데 말입니다. Docker를 사용해 보는 것은 어떨까요? 이것 저것 설정하기가 엄청 귀찮네...
 
 [Deview 2013의 Docker 소개](http://deview.kr/2013/detail.nhn?topicSeq=45)
+
+{% include mysql-reco.md %}

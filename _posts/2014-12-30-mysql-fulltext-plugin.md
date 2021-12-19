@@ -198,3 +198,5 @@ mysql> select * from ft_demo where MATCH php AGAINST('$this');
 +-------------------------+
 1 row in set (0.01 sec)
 ```
+
+{% include mysql-reco.md %}

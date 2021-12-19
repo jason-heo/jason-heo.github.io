@@ -60,3 +60,5 @@ ERROR 1055 (42000): 'db_name.P.Name' isn't in GROUP BY
 ```
 
 GROUP BY 이외에도 MySQL은 ANSI 표준을 지키지 않는 경우가 많은데 sql_mode를 조절하여 작동 방식을 사용자가 지정할 수 있다. 자세한 것은http://dev.mysql.com/doc/refman/5.5/en/server-sql-mode.html 를 방문하여 찾아보기 바란다.
+
+{% include mysql-reco.md %}

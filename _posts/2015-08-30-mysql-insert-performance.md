@@ -20,3 +20,5 @@ http://www.slideshare.net/mysqlguru/mysql-insert-performance-test
 1. 뭐니뭐니해도 입수 시간이 제일 빠른 것은 `MULTI INSERT`이다.
  - 예: 다음과 같이 3개의 Record를 1개의 INSERT 구문으로 표현할 수 있다.
  - `INSERT INTO person (name, age) VALUES ('heo', 10), ('lee', 12), ('kim', 13)`
+
+{% include mysql-reco.md %}

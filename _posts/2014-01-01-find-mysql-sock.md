@@ -47,3 +47,5 @@ lsof는 OS에 기본으로 포함된 유틸리티가 아닐 수 있는데, 이 �
     ...... /path2/tmp/mysql.sock
 
 username이나 pid 정보는 알 수 없지만, mysql.sock 파일 위치를 찾는데 부족함은 없다고 생각된다. /proc/net/unix는 Unix 계열 OS에 거의 대부분 존재하는 파일이기 때문에 별도의 프로그램을 설치해야 하는 번거로움도 없다. (단, Mac 계열에서도 /proc/net/unix 파일이 지원되는지는 확실하지 않다.)
+
+{% include mysql-reco.md %}

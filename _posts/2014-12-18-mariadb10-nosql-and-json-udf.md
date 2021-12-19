@@ -98,3 +98,5 @@ mysql> SELECT id, COLUMN_JSON(dynamic_cols) FROM person;
 [1]: https://mariadb.com/blog/sql-or-nosql-both-mariadb-10
 [2]: https://mariadb.com/kb/en/mariadb/documentation/nosql/dynamic-columns/
 [3]: http://blog.ulf-wendel.de/2013/mysql-5-7-sql-functions-for-json-udf/
+
+{% include mysql-reco.md %}

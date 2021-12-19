@@ -95,3 +95,5 @@ http://stackoverflow.com/questions/20214977/how-to-convert-a-pre-formatted-value
 다행이 외부 개발자가 정규 표현식을 사용할 수 있는 UDF를 공개하였다. UDF(User Defined Function)는 MySQL에 부족한 함수를 일반 사용자가 추가할 수 있는 방법이다. UDF는 C 언어를 이용하여 개발되며 공유 라이브러리 (Shared Library) 형태로 컴파일 한 뒤 MySQL에 설치된다.
 
 자세한 것은 https://github.com/mysqludf/lib_mysqludf_preg를 방문하기 바란다.
+
+{% include mysql-reco.md %}

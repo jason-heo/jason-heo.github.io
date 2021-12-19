@@ -38,3 +38,5 @@ WHERE a2.`active_id` IS NULL
 ```
 
 NOT IN은 LEFT JOIN과 IS NULL을 이용하여 sub-query를 제거할 수 있다.
+
+{% include mysql-reco.md %}

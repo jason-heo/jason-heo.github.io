@@ -39,3 +39,5 @@ http://stackoverflow.com/questions/20217452/mysql-fields-definition/20217618
     +------------+-------------+------------------+-----------+-------------+
 
 `ORDINAL_POSITION`은 테이블 내 컬럼이 정의된 순서를 의미한다.
+
+{% include mysql-reco.md %}

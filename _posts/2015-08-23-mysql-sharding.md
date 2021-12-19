@@ -26,3 +26,5 @@ categories: MySQL
  * [To Shard or Not to Shard?, 2015/04, Percona Webinar](https://www.youtube.com/watch?v=kg11mYIAiZg)
  * [Scaling Cassandra and MySQL, 2014/11, Data@Scale](https://www.youtube.com/watch?v=AMGDBi0FDYU)
  * [트위터의 새로운 분산 관리 라이브러리 Gizzard를 소개합니다, 2012/03](http://gywn.net/2012/03/gizzard-a-library-for-creating-distributed-datastores/)
+
+{% include mysql-reco.md %}

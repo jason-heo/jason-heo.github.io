@@ -109,3 +109,5 @@ Query Cache를 사용했을 때보다 단계를 많아졌지만 시간을 누적
  - 무거운 질의는 SQL_NO_CACHE를 붙이지 않고 평소처럼 사용하면 된다.
 
 비슷한 방법으로 `query_cache_type = DEMAND`로 설정한 뒤, 무거운 질의만 `SELECT SQL_CACHE`로 사용할 수도 있으나 이 방법은 `query_cache_type = ON`으로 놓고 SELECT SQL_NO_CACHE로 사용할 때와 다른 점이 있다. 이 내용은 다음에 다시 정리하겠다.
+
+{% include mysql-reco.md %}

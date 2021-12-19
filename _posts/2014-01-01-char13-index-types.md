@@ -52,3 +52,5 @@ SHOW CREATE TABLE의 결과만 본다면 HASH INDEX로 생성이 된 듯 하지�
 참고로 HASH INDEX는 "column = value"처럼 equal 검색을 빠르게 수행할 수 있으나, 대소 비교 및 정렬에서는 사용할 수가 없다. 우리가 일반적으로 사용하는 BTREE는 equal 연산은 HASH INDEX보단 약간 느리지만 대소 비교 및 정렬에서도 인덱스를 활용할 수 있다.
 
 Clustered INDEX는 BTREE, HASH같은 자료 구조에 대한 이야기는 아니며, INDEX로 찾은 레코드의 데이터를 어떻게 찾아갈지에 대한 주제이다. 궁금한 독자는 http://xster.tistory.com/135 를 방문해보기 바란다. 참고로 InnoDB에서 PRIMARY KEY는 Clustered INDEX이다.
+
+{% include mysql-reco.md %}

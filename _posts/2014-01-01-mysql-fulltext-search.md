@@ -76,3 +76,5 @@ MATCH AGAINT는 MySQL 5.5 이하에서는 MyISAM에서만 사용할 수 있으�
 ## 기타 전문 검색 방법
 
 최근엔 검색 엔진과 MySQL을 연동하기도 쉬워졌다. MySQL과 연동할 수 있는 검색 엔진으로 ElasticSearch, Sphinx, Solr과 같은 것들이 있다. 필자가 직접 사용해 보지는 않았지만, Sphinx와 MySQL을 연동하는 튜토리얼을 읽어보니 매우 좋은 기능 같았다. 한글도 무리 없이 검색할 수 있었고, 검색 속도 또한 빨랐다.
+
+{% include mysql-reco.md %}

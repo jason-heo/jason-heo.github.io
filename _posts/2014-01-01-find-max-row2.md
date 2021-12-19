@@ -142,3 +142,5 @@ SELECT 절이 핵심이다. @prev 변수는 초기에 0의 값이 할당되었�
 
 user variable을 이용하여 선언적 언어인 SQL에 약간의 절차적인 느낌을 줄 수 있다. 앞으로도 user variable을 이용한 재미있는 SQL이 예가 몇 번 더 보게 될 것이다.
 
+
+{% include mysql-reco.md %}

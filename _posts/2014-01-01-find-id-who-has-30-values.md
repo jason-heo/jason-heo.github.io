@@ -61,3 +61,5 @@ skill_id의 개수가 적다면 SELF JOIN으로 풀어도 될 문제이지만, �
     2 rows in set (0.00 sec)
 
 
+
+{% include mysql-reco.md %}

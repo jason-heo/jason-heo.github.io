@@ -57,3 +57,5 @@ MySQL에서는 테이블을 UPDATE할 때 WHERE 절에 사용된 sub-query에 �
     SET @score = (SELECT score FROM tbl WHERE id = 1);
     UPDATE tbl SET score = score - 1 WHERE score > @score;
 
+
+{% include mysql-reco.md %}

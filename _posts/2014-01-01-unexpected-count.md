@@ -42,3 +42,5 @@ FROM movie INNER JOIN actor_role ON movie.movie_id = actor_role.movie_id
 GROUP BY actor_role.actor_id
 ORDER BY COUNT cnt;
 ```
+
+{% include mysql-reco.md %}

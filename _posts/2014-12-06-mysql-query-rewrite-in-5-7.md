@@ -30,3 +30,5 @@ pre query rewrite는 Query 문자열을 char*로 입력받은 후 새로운 Quer
 
 [Write Yourself a Query Rewrite Plugin: Part 1](http://mysqlserverteam.com/write-yourself-a-query-rewrite-plugin-part-1/)
 [Write Yourself a Query Rewrite Plugin: Part 2](http://mysqlserverteam.com/write-yourself-a-query-rewrite-plugin-part-2/)
+
+{% include mysql-reco.md %}

@@ -107,3 +107,5 @@ if(mysql_num_rows($sr)>=1)
 인터넷 자료를 보면 막연하게 "JOIN은 느리다", "차라리 SELECT를 여러 번 실행하는 것이 좋다", "JOIN은 성능이 안 좋으니 반정규화를 하는 것이 좋다"라는 글을 보게 된다. 일부 맞는 말이기도 하지만, 100% 맞는 말은 아니다. JOIN이 발생하는 이유는 정규화가 잘 되었다는 이야기이며 설계가 잘된 DB라고 볼 수 있다. 대용량인 경우 성능을 위해 어쩔 수 없이 반정규화를 할 수 있지만, 반정규화는 마지막보루로 삼아야 한다.
 
 MySQL에서 correlated sub-query의 성능은 좋지 못하기 때문에 correlated sub-query를 JOIN으로 변경할 수 있는 경우 JOIN으로 변경하는 것이 좋다. sub-query가 느린 것이 아니라 correlated sub-query가 느리다는 이야기이니 오해 없기 바란다. correlated sub-query는 SQL 수행 시 매 row마다 correlated sub-query가 1번씩 수행되기 때문에 JOIN보다 빠를 수 없다.
+
+{% include mysql-reco.md %}

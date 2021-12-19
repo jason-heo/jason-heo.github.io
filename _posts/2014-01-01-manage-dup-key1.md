@@ -60,3 +60,5 @@ MySQL의 에러 중 1062는 UNIQUE 혹은 PRIMARY KEY에 중복된 값이 발생
 프로그램 내에서 if-else를 사용할 필요가 없어서 편한 방법이다. 이 방법도 단점이 있긴 한데 중복 에러가 발생했는지 정상이었는지 사용자는 알 수 없다는 점이 단점이다. INSERT 후에 중복 여부를판단해야 하는지, 중복 여부는 중요하지 않는지 필요에 따라서 필자의 방법이나 INSERT IGNORE를 선택하기 바란다.
 
 중복 키 관리과 관련하여 `INSERT IGNORE INTO` 이외에  `INSERT INTO ON DUPLICATE UPDATE`와 `REPLACE INTO`를 사용할 수도 있다. 3가지 방법 마다 약간의 차이가 있는데 다음에다시 알아보도록 한다.
+
+{% include mysql-reco.md %}

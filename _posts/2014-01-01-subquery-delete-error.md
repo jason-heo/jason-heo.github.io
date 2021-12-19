@@ -71,3 +71,5 @@ WHERE t2.cntid = t1.cntid
 ```
 
 질문자의 경우 위와 같이 변경하여 DELETE문은 수행되었지만 삭제될 레코드가 수백만 건이라서 DELETE하는데 시간이 많이 걸린다고 하였다. 이 경우 DELETE를 SELECT로 변경한 뒤 EXPLAIN SELECT를 이용하여 INDEX는 잘 생성되어 있는지, Optimizer가 JOIN 순서는 잘 결정했는지 확인해 보는 것이 좋다.
+
+{% include mysql-reco.md %}

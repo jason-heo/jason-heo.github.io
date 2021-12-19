@@ -124,3 +124,5 @@ FROM customer WHERE EXISTS (
 
 [1]: http://mysqlguru.github.io/mysql/2014/05/22/avoid-mysql-in.html
 [2]: http://mysqlguru.github.io/mysql/2014/05/28/mysql-in-vs-exists-vs-inner-join.html
+
+{% include mysql-reco.md %}

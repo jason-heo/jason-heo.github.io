@@ -40,3 +40,5 @@ FROM psverify_interaction_numeric_ip_address a
 INNER JOIN Xwalk_GeoLiteCity_Blocks b
   ON b.startIpNum <= a.numeric_ip_address AND b.endIpNum >= a.numeric_ip_address
 ```
+
+{% include mysql-reco.md %}

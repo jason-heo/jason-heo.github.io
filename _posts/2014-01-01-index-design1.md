@@ -45,3 +45,5 @@ FROM insuranceproviders AS a
     INNER JOIN  insurancevotes AS c ON b.id = c.insTypeId
 ```
 
+
+{% include mysql-reco.md %}

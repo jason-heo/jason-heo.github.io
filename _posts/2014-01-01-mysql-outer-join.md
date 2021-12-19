@@ -117,3 +117,5 @@ LEFT JOIN은 LEFT OUTER JOIN의 줄임말이다. NESTED LOOP JOIN과 LEFT JOIN�
 ![relational algebra](/images/posts/mysql/relational-algebra.PNG)
 
 각 결과를 잘 생각해 보면 "keyword_id = 781"이 ON 절에 와야 하는 이유를 알 수 있을 것이다. 참고로 `FULL JOIN`은 MySQL에서 지원하지 않으며 `LEFT JOIN`과 `RIGHT JOIN`을 `UNIONq하여 이용하여 `FULL JOIN`을 흉내 낼 수 있다.
+
+{% include mysql-reco.md %}

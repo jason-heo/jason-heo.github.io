@@ -86,3 +86,5 @@ mysql> SELECT user.email, user.name, user.score
 ```
 
 단, 가정이 있는데 동일 그룹 내에서 서로 다른 `name`은 서로 다른 `score` 값을 가진다는 가정을 만족해야 한다. 그렇지 않은 경우 `MAX(score)`의 값이 중복된 개수만큼 출력이 된다.
+
+{% include mysql-reco.md %}

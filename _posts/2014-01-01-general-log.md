@@ -41,3 +41,5 @@ Query OK, 0 rows affected (0.00 sec)
 ```
 
 로그가 저장되는 위치는 /path/to/log이며 "SET GLOBAL general_log_file = '/tmp/query.log'" 식으로 위치를 변경할 수 있다. 윈도 사용자의 경우 'C:/some_folder/log_filename'처럼 드라이브 명을 지정해야 하며 디렉터리 구분은 역슬래시가 아닌 슬래시(/)이다.
+
+{% include mysql-reco.md %}

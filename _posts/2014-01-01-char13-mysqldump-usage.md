@@ -53,3 +53,5 @@ a, b, c는 모두 DB명을 의미한다. 복수 개의 DB를 dump 받기 때문�
     $ mysqldump --all-databases a b c
 
 위와 같은 사용은 mysqldump에서 오류를 출력한다. --all-databases 옵션은 MySQL에 존재하는 DB를 dump받겠다는 것을 의미하므로 옵션 뒤에 DB명이나 테이블 명이 나열될 수 없다.
+
+{% include mysql-reco.md %}

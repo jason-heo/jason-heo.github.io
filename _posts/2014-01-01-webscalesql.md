@@ -13,3 +13,5 @@ Google, Twitter, Facebook, LinkedIn 같은 회사들은 MySQL 코드를 직접 �
 
 시작된지 얼마 안 된 프로젝트라서 WebScaleSQL의 특징, 성능 비교 자료는 찾기가 어렵다. WebScaleSQL에 contribution을 좀 하게 되면 Google, Twitter, Facebook, LinkedIn 회사들에 취업이 좀 쉬워질까...
 
+
+{% include mysql-reco.md %}

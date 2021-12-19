@@ -60,3 +60,5 @@ WHERE t.id = v.tbl_id
 ```
 
 즉, 24개의 값을 저장하는 경우 24개의 컬럼을 만드는 것이 아니라 24개의 값을 저장할 테이블 (위의 경우 value_tbl)에 저장하는 것이다.
+
+{% include mysql-reco.md %}

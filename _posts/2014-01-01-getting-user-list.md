@@ -39,3 +39,5 @@ FROM User u LEFT JOIN Site_B USING(username)
   LEFT JOIN Site_B USING(username)
 WHERE Site_B.username IS NULL
 ```
+
+{% include mysql-reco.md %}

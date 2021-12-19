@@ -101,3 +101,5 @@ HANDLER는 열기(OPEN), 읽기(READ), 닫기(CLOSE) 단계로 수행된다. 최
 
     mysql> HANDLER p CLOSE;
     Query OK, 0 rows affected (0.00 sec)
+
+{% include mysql-reco.md %}

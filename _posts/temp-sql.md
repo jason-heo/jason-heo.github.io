@@ -15,3 +15,5 @@ categories: mysql
 
 ## 답변
 
+
+{% include mysql-reco.md %}

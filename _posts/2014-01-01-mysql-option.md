@@ -105,3 +105,5 @@ categories: mysql
     |  9 | f             |
     | 11 | f             |
     +----+---------------+
+
+{% include mysql-reco.md %}

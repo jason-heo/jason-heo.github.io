@@ -60,3 +60,5 @@ InnoDB Buffer pool hit ratio가 낮으면 Disk에서 InnoDB Buffer pool로 올�
 
 MySQL 5.5 기준으로 출력된 결과이기 때문이며 MySQL의 다른 버전 혹은  Percona 및 MariaDB에서는 값이 약간 다를 수 있지만 계산 식은 위에 나온 것과 동일하다.
 
+
+{% include mysql-reco.md %}

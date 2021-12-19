@@ -26,3 +26,5 @@ mysqldump로 dump 받은 파일의 크기가 40GB이다. 이 파일 안에는 in
 `grep`과 `egrep`의 `-v` 옵션은 invert의 약자로서 해당 문자열을 포함하지 않는 line만 출력하라는 옵션이다. egrep은 grep을 확장시킨 명령으로서 정규 표현식을 패턴으로 지정할 수 있다. 정규 표현식 `(A|B|C)`는 `A 혹은 B 혹은  C`를 의미한다.
 
 앞의 예에서는 3개의 테이블을 지정했지만, 실제로는 information_schema DB에 존재하는 모든 테이블을 나열해야 한다. MySQL 5.5 기준으로 information_schema에는 40개의 테이블이 존재한다.
+
+{% include mysql-reco.md %}

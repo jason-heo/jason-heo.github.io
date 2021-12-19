@@ -40,3 +40,5 @@ FROM bookings
 WHERE member_id = 1;
 ```
 
+
+{% include mysql-reco.md %}

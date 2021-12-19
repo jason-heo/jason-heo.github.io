@@ -42,3 +42,5 @@ MySQL에서는 InnoDB를 사용하는 경우 Barrcuda Format을 사용하여 DB�
 KEY_BLOCK_SIZE를 4로 줄이면 압축률이 약 75%이기 때문에 파일 크기를 더 줄일 수 있지만 이 경우 INSERT, UPDATE, DELETE의 속도가 크게 줄어든다. 필자가 테스트한 결과 KEY_BLOCK_SIZE를8로 설정하는 것이 용량도 50% 줄일 수 있으면서 WRITE 성능도 16일 때와 거의 비슷하게 나왔었다.
 
 단, 이는 Disk에 저장되는 InnoDB의 Data와 Index 파일만 줄어들게 된다. Data와 Index가 InnoDB Buffer Pool로 로딩될 때는 압축이 풀려서 저장된다. 압축하고 푸는 비용이 있지만 `KEY_BLOCK_SIZE`를 8로 설정(즉, 50% 압축)시에는 압축 전과 큰 성능 차이가 발생하지 않았다.
+
+{% include mysql-reco.md %}

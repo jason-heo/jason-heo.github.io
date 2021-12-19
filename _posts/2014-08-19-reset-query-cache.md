@@ -91,3 +91,5 @@ mysql> SHOW GLOBAL STATUS LIKE 'Qc%';
 
 [1]: http://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html#sysvar_query_cache_size
 [2]: http://mysqlguru.github.io/mysql/2014/05/20/mysql-query-cache2.html
+
+{% include mysql-reco.md %}

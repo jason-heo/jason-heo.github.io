@@ -44,3 +44,5 @@ LEFT JOIN을 이용하면 쉽게 찾을 수 있다. 우선 질문자가 테이�
     FROM child
     WHERE NOT EXISTS (SELECT 1 FROM parent WHERE parent.parent_id = child.parent_id);
 
+
+{% include mysql-reco.md %}

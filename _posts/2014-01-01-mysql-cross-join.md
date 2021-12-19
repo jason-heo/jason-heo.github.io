@@ -89,3 +89,5 @@ http://sqlfiddle.com/#!2/9264d7/2/0
     16 rows in set (0.00 sec)
  
 x, y, z, a 같은 inlinew view 1개마다 각 컬럼의 UNIQUE한 값을 추출한 뒤에 모든 테이블을 CROSS JOIN 하면 질문자가 원한 결과를 얻을 수 있다.
+
+{% include mysql-reco.md %}

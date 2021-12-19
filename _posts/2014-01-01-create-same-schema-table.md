@@ -114,3 +114,5 @@ information_schema를 이용하여 TableTemplate에 존재하는 모든 테이�
     +---------+---------+
 
 
+
+{% include mysql-reco.md %}

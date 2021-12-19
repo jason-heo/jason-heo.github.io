@@ -275,3 +275,5 @@ INSERT INTO person VALUES (NULL, 'James', 'Incheon')
 ```
 
 따라서 `address`의 값이 UPDATE되지 않는다.
+
+{% include mysql-reco.md %}

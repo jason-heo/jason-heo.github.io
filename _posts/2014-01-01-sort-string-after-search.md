@@ -81,3 +81,5 @@ SQL을 풀어서 설명하면 다음과 같다.
 - `(LENGTH(...) - LENGTH(REPLACE(...)) / LENGTH('M')` : 'M'을 포함한 횟수
 
 2개 이상의 문자로 검색할 것을 대비하여 LENGTH('M')로 나누기를 하였다.
+
+{% include mysql-reco.md %}
