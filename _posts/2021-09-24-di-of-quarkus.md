@@ -656,7 +656,7 @@ public class MyResource {
 
 Quarkus에서는 [REST-assured](https://rest-assured.io/)를 이용하여 Rest endpoint를 쉽게 Test할 수 있다. (그냥 `쉽게`도 아니고 매우 쉽고 가독성 좋게 테스트 가능하다)
 
-`src/test/java/io/github/jasonheo/MyResourceTest.java`에 기본으로 생성된 TC가 있는데 이 내용을 다음과 같이 수정해보자.
+[`src/test/java/io/github/jasonheo/MyResourceTest.java`](https://github.com/jason-heo/quarkus-dependency-injection/blob/main/src/test/java/io/github/jasonheo/MyResourceTest.java)에 기본으로 생성된 TC가 있는데 이 내용을 다음과 같이 수정해보자.
 
 ```java
 package io.github.jasonheo;
