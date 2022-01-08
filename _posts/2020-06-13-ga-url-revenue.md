@@ -17,7 +17,7 @@ categories: "life"
 
 ## 0. 요약
 
-1. URL 등록하기: 애드센스 메뉴 "광고 -> URL 채널 -> 새 URL 채널"에서 URL 등록
+1. URL 등록하기: 애드센스 메뉴 "보고서 -> '설정' -> URL 채널"
 2. URL별 수익 확인하기: 에드센스 메뉴 "보고서 -> URL 채널" 클릭
 3. URL을 편하게 등록하는 방법
     - Google SearchConsole에서 URL 다운로드
