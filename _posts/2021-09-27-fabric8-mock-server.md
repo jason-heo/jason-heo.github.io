@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mocking kubernetes api server using fabric8"
+title: "fabric8 kubernetes test 사용법 (mocking Kubernetes API Server)"
 categories: "programming"
 ---
 
