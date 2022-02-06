@@ -4,6 +4,8 @@ title: "바르는 발톱무좀약 1년 후기 (무조날S, 바르지오)"
 categories: "life"
 ---
 
+{% include toenail-fungus.md %}
+
 ### 개요
 
 - 치료 기간: 약 12개월 (2021년 1월말 ~ 2022년 2월초)
