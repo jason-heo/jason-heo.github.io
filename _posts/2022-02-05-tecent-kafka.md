@@ -8,7 +8,7 @@ categories: "bigdata"
 
 [How Tencent PCG Uses Apache Kafka to Handle 10 Trillion+ Messages Per Day](https://www.confluent.io/blog/tencent-kafka-process-10-trillion-messages-per-day/)라는 글을 읽어봤다. 주내용은 multiple kafka cluster를 논리적으로 1개의 cluster처럼보여주는 federated kafka를 만들었다는 것 같다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/sgF9BWs.png" />
+<img style="width: 100%; max-width: 800px;" src="https://i.imgur.com/sgF9BWs.png" />
 
 이를 통해 kafka의 몇 가지 제약을 해결했다고 해서 읽어봤는데 잘 이해가 안 된다.
 
