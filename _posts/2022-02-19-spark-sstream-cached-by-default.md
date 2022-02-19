@@ -14,7 +14,7 @@ Spark에서 action이 발생하는 순간 data를 읽어간다. 이미 한번 �
 
 ## 기초: Batch processing에서는 action이 발생할 때마다 re-read한다
 
-본 내용은 많은 사람들이 이미 알고 있지만 streaming 처리로 넘어가기 전에 action 시 어떤 일이 발생하는지 리뷰를 해보자.
+우선 batch 처리에서  action 실행 re-read 현상부터 확인해보자. (이미 많은 개발자들이 알고 있는 내용이다)
 
 아래와 같은 코드를 작성후 실행한다.
 
