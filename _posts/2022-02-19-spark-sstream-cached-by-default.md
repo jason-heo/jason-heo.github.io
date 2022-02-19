@@ -10,7 +10,7 @@ Spark에서 action이 발생하는 순간 data를 읽어간다. 이미 한번 �
 
 본 글은 Spark Data Source API v2를 이용하여 custom data source를 만든 후 data 유실 관련 실험 중 발견된 내용을 정리한 글이다.
 
-## Batch processing에서는 action이 발생할 때마다 re-read한다
+## 기초: Batch processing에서는 action이 발생할 때마다 re-read한다
 
 본 내용은 많은 사람들이 이미 알고 있지만 streaming 처리로 넘어가기 전에 action 시 어떤 일이 발생하는지 리뷰를 해보자.
 
@@ -130,7 +130,7 @@ def printDf(df: DataFrame, batchId: Long): Unit = {
     22/02/19 14:50:23 INFO Executor: Finished task 1.0 in stage 21.0 (TID 16). 2879 bytes result sent to driver
     ```
 
-내가 명시적으로 `df.cache`를 하지도 않았는데, kafka로부터 읽어온 data를 cache하는 것으로 보인다.
+첫 번째 action에서는 "Block rdd_55_1 store"라고 나오고, 두 번째 action에서는 "Found block rdd_55_1"가 출력되었다. 그렇다. 처음 data를 읽은 후 이를 cache하고 두 번째에는 cache된 데이터를 읽은 것이다. 즉, 내가 명시적으로 `df.cache`를 하지도 않았는데, kafka로부터 읽어온 data를 cache하고 있다.
 
 Spark manual 중 [ForeachBatch](https://spark.apache.org/docs/3.2.0/structured-streaming-programming-guide.html#foreachbatch)를 보면 다음과 같은 내용이 나온다.
 
