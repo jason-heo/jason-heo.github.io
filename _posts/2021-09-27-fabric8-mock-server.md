@@ -378,3 +378,5 @@ List<String> items = from(response).getList("items");
 
 assertEquals(2, items.size());
 ```
+
+{% include test-for-data-engineer.md %}

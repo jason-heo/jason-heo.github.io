@@ -151,3 +151,5 @@ mock-maker-inline
 ## 3. 마무리
 
 (부끄럽지만) 본인은 Mockito라는 걸 최근에 와서야 알게 되었다. 이제라도 Mockito를 Unit Test에 적용하기 위해 몇 가지 테스트한 내용을 정리해봤는데 Scala에서 mocking을 도입하려는 분에게 도움이 되면 좋겠다.
+
+{% include test-for-data-engineer.md %}

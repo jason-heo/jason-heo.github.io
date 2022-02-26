@@ -914,3 +914,5 @@ Mockito의 `thenAnswer()`를 이용하여, `getName()`의 argument value를 retu
 ## 4. 마무리
 
 올해 6월경인가, Spark Operator를 알아보다가 Quarkus를 알게 되면서 그동안 잘 알지 못했던 기술 및 라이브러리들을 알게 되었다. 이후 9월부터 본격적으로 Quarkus에 대해 공부를 하게 되었다. Quarkus 관련된 내용이 워낙 방대한데 그 중에서 Quarkus의 DI를 중심으로 글을 적어봤다. Quarkus에 처음 접하는 분에게 도움이 되면 좋겠다. 그리고 업무를 마치고 저녁 늦게, 주말에 틈틈히 시간내서 공부한 내용을 정리했는데, 도움이 안 되더라도 내 스스로에게는 뿌듯함이 남는 작업이었다.
+
+{% include test-for-data-engineer.md %}

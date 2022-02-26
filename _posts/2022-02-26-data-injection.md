@@ -105,3 +105,5 @@ df2.count should be(2)
 즉, `dev pvPerUrl()` 내에서 DataFrame을 생성하지 않고 외부에서 DataFrame을 inject하였다.
 
 이를 Data Injection이라고 불렀다. 또한 Dependency Injection과 비슷하게 "Don't produce me, I will produce myself"라는 라임을 넣어봤다.
+
+{% include test-for-data-engineer.md %}

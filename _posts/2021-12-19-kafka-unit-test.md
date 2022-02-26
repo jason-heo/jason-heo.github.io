@@ -193,3 +193,5 @@ class EmbeddedKafkaTest extends FlatSpec with Matchers with EmbeddedKafka {
 ```
 
 {% include spark-reco.md %}
+
+{% include test-for-data-engineer.md %}

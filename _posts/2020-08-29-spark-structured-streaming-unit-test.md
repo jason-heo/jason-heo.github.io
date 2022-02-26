@@ -298,3 +298,5 @@ Batch 1
 최종 Unit Test code는 https://github.com/jason-heo/spark-sstream-unit-test 에서 볼 수 있다.
 
 {% include spark-reco.md %}
+
+{% include test-for-data-engineer.md %}
