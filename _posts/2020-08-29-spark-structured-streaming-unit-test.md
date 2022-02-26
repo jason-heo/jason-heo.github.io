@@ -4,7 +4,15 @@ title: "Spark Structured Streaming에서의 Unit Test"
 categories: "bigdata"
 ---
 
-Test에 사용된 Spark Version: 2.4.2
+아래 글에 사용된 Spark Version: 2.4.2
+
+(2022.02.26 내용 추가)
+
+Spark 3.x에서는 몇 가지 interface가 변경되었다.
+
+자세한 것은 [`StreamingQueryManager.scala`](https://github.com/apache/spark/blob/a4b37757d444182006369d2e4a0b7faaf1d38917/sql/core/src/main/scala/org/apache/spark/sql/streaming/StreamingQueryManager.scala#L230-L241)를 참고해보자.
+
+또한 `MemorySinkV2`가 없어졌고 `MemorySink`를 사용하면 된다.
 
 ### 목차
 
