@@ -246,14 +246,14 @@ val memorySink = new MemorySinkV2
 val streamQuery = transformedDf.sparkSession
   .streams
   .startQuery(
-	userSpecifiedName = Some("structured-streaming-unit-test"),
-	userSpecifiedCheckpointLocation = Some("/tmp/checkpoint-dir"),
-	df = transformedDf,
-	extraOptions = Map[String, String](),
-	sink = memorySink,
-	outputMode = OutputMode.Update,
-	recoverFromCheckpointLocation = false,
-	triggerClock = customClock
+    userSpecifiedName = Some("structured-streaming-unit-test"),
+    userSpecifiedCheckpointLocation = Some("/tmp/checkpoint-dir"),
+    df = transformedDf,
+    extraOptions = Map[String, String](),
+    sink = memorySink,
+    outputMode = OutputMode.Update,
+    recoverFromCheckpointLocation = false,
+    triggerClock = customClock
   )
   .asInstanceOf[StreamingQueryWrapper]
   .streamingQuery

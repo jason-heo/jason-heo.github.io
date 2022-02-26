@@ -125,7 +125,7 @@ spark.sql("""
         COUNT(*) AS cnt
     FROM order
     GROUP BY prod_id, rnd
-	ORDER BY prod_id
+    ORDER BY prod_id
 
 +-------+---+---+
 |prod_id|rnd|cnt|
@@ -202,7 +202,7 @@ spark.sql("""
 
 ```scala
 spark.sql("""
-	-- 무의미한 SELECT문
+    -- 무의미한 SELECT문
     SELECT prod_id,
         price,
         FLOOR(RAND()*2) AS rnd

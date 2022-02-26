@@ -166,7 +166,7 @@ ret = api_client.list_namespaced_pod("namespace 입력", watch=False)
 print("Listing pods with their IPs:")
 
 for i in ret.items:
-	print(f"{i.status.pod_ip}\t{i.metadata.name}")
+    print(f"{i.status.pod_ip}\t{i.metadata.name}")
 ```
 
 pod의 IP 주소와 이름이 출력된다.

@@ -56,8 +56,8 @@ class RandomIntStreamProvider extends DataSourceV2
 
 - `MicroBatchReader`는 micro batch가 trigger 될 때 data를 읽어오기 시작한다. 따라서 데이터를 읽어오는데 지연이 약간 발생하게 된다. groupBy 질의를 수행할 수 있다
 - `ContinuousReader`는 `MicroBatchReader`의 지연을 없애는 reader이다. trigger와 상관없이 executor의 worker가 thread가 background로 계속해서 data를 읽어서 buffer에 저장한다
-	- trigger가 발생하면 executor는 buffer에 쌓인 데이터를 소비한다
-	- 따라서 `MicroBatchReader`에서 발생할 수 있는 지연이 없다
+    - trigger가 발생하면 executor는 buffer에 쌓인 데이터를 소비한다
+    - 따라서 `MicroBatchReader`에서 발생할 수 있는 지연이 없다
     - 하지만 groupBy 질의가 되지 않는다
 
 ### `MicroBatchReader` 구현
@@ -65,7 +65,7 @@ class RandomIntStreamProvider extends DataSourceV2
 `MicroBatchReader`를 구현하기 위해서는 아래 3개 class를 상속 후 구현해야한다
 
 - `MicroBatchReader`
-	- `override def setOffsetRange(_start: Optional[Offset], _end: Optional[Offset]): Unit`
+    - `override def setOffsetRange(_start: Optional[Offset], _end: Optional[Offset]): Unit`
         -  이 함수를 이해하기가 힘들었다
         - micro batch마다 두 번씩 호출되는데 `_start`는 직전 end offset이라서 어렵지 않지만
         - `_end`가 어렵다

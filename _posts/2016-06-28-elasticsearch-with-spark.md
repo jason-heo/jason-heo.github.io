@@ -47,8 +47,8 @@ categories: "elasticsearch"
 
 ```sh
 $ spark-shell \
-	--master=local[2] \
-	--packages="org.elasticsearch:elasticsearch-spark-20_2.11:6.6.2"
+    --master=local[2] \
+    --packages="org.elasticsearch:elasticsearch-spark-20_2.11:6.6.2"
 ```
 
 ## 2. Sample Data 로딩하기
@@ -331,14 +331,14 @@ val df = spark.
 df.createOrReplaceTempView("es_tab") 
 
 val csv_df = spark.read.format("csv").
-	option("header", "true").
-	option("inferSchema", "true").
-	load("file:///tmp/name.csv")
+    option("header", "true").
+    option("inferSchema", "true").
+    load("file:///tmp/name.csv")
 
 csv_df.createOrReplaceTempView("csv_tab")
 
 spark.sql("""
-	SELECT t1.firstname, t2.lastname
+    SELECT t1.firstname, t2.lastname
     FROM es_tab AS t1 INNER JOIN csv_tab AS t2
         ON t1.firstname = t2.firstname AND t1.lastname = t2.lastname
 """).show()

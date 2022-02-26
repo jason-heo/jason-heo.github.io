@@ -96,8 +96,8 @@ Cache별 활성 여부 및 default size
 ```
 
 - enabling caching per request
-	- disabled되었더라도 `_search?request_cache=true`처럼 질의하면 cache된다.
-	- 반대로 enabled되었더라도 `_search?request_cache=false`를 주면 cache되지 않는다. 
+    - disabled되었더라도 `_search?request_cache=true`처럼 질의하면 cache된다.
+    - 반대로 enabled되었더라도 `_search?request_cache=false`를 주면 cache되지 않는다. 
 
 Cache 사용량 모니터링
 --------------------

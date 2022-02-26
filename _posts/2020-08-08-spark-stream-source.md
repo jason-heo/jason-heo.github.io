@@ -72,11 +72,11 @@ https://spark.apache.org/docs/2.4.0/streaming-custom-receivers.html
     - class 선언부는 다음과 같이 생겼다
         ```scala
 
-		class RateStreamProvider extends DataSourceV2
-		  with MicroBatchReadSupport with ContinuousReadSupport with DataSourceRegister {
-		...
-		}
-		```
+        class RateStreamProvider extends DataSourceV2
+          with MicroBatchReadSupport with ContinuousReadSupport with DataSourceRegister {
+        ...
+        }
+        ```
     - 즉, `MicroBatchReadSupport`와 `ContinuousReadSupport`과 마찬자지로 명시적으로 batch read와 continuous read용 API가 나뉘어 있다
     - batch read를 지원할 때는 `MicroBatchReadSupport`만 구현하면 되고, continuous read를 지원할 때는 `ContinuousReadSupport`를 구현하면 된다. 원한다면 둘 다 구현하면 된다
     - `ContinuousReadSupport`를 이용하면 지연없이 데이터를 빠르게 읽어올 수 있다
@@ -99,25 +99,25 @@ https://spark.apache.org/docs/2.4.0/streaming-custom-receivers.html
     - class 선언부만 확인해보자
         - Spark 2.2
             ```scala
-			private[kafka010] class KafkaSourceProvider extends DataSourceRegister
-				with StreamSourceProvider // <==== 요 부분이 읽는 것과 관련
-				with StreamSinkProvider
-				with RelationProvider
-				with CreatableRelationProvider
-				with Logging {
-			```
-		- Spark 2.4
-			```scala
-			private[kafka010] class KafkaSourceProvider extends DataSourceRegister
-				with StreamSourceProvider
-				with StreamSinkProvider
-				with RelationProvider
-				with CreatableRelationProvider
-				with StreamWriteSupport
-				with ContinuousReadSupport
-				with MicroBatchReadSupport // <=== 요 부분이 읽는 것과 관련
-				with Logging {
-			```
+            private[kafka010] class KafkaSourceProvider extends DataSourceRegister
+                with StreamSourceProvider // <==== 요 부분이 읽는 것과 관련
+                with StreamSinkProvider
+                with RelationProvider
+                with CreatableRelationProvider
+                with Logging {
+            ```
+        - Spark 2.4
+            ```scala
+            private[kafka010] class KafkaSourceProvider extends DataSourceRegister
+                with StreamSourceProvider
+                with StreamSinkProvider
+                with RelationProvider
+                with CreatableRelationProvider
+                with StreamWriteSupport
+                with ContinuousReadSupport
+                with MicroBatchReadSupport // <=== 요 부분이 읽는 것과 관련
+                with Logging {
+            ```
     - 그렇다, Spark 2.4로 가면서 앞에서 이야기했던 `MicroBatchReadSupport`를 구현 중이다
     - 그렇다면, 이걸 잘 분석해보면 내가 궁금해하는 `MicroBatchReader`에서의 읽기 병렬성이 해도될 듯 하다
     - 코드를 읽어보면 kafka topic partition 마다 `KafkaMicroBatchInputPartitionReader` instance를 만들고, 그 안에서 kafka consumer를 만든다

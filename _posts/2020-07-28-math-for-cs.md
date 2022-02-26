@@ -127,15 +127,15 @@ Text book: https://cs121.boazbarak.org/LehmanLeighton.pdf
 - Turing's code v2
     - decryption: multiplicative inverse를 이용한다(라고 강의를 이해했다)
         - `m = m'*k^-1 rem p`
-		- 강의 들을 때는 이해한 것 같았는데 정리하려니 무슨 말인지 또 모르겠다
+        - 강의 들을 때는 이해한 것 같았는데 정리하려니 무슨 말인지 또 모르겠다
     - 문제는 `k^-1`을 빠르게 알아오는 방법이 있어야 한다
         - 이건 페르마의 소정이를 이용한다
     - 비밀키 k를 알아오는 방법: 이것도 페르마의 소정리를 이용한다
-		```
-		m*(p^−2) ≡ m^(p-2)*mk (mod p)
-				 ≡ m^(p-1)*k (mod p)
-				 ≡ k (mod p)
-		```
+        ```
+        m*(p^−2) ≡ m^(p-2)*mk (mod p)
+                 ≡ m^(p-1)*k (mod p)
+                 ≡ k (mod p)
+        ```
 ### 6강: Graph Theory 1
 
 최초 목표는 일주일에 두 개 강의 시청이었다가, 5강부터 일주일에 1개로 줄었다.

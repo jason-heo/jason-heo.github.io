@@ -67,7 +67,7 @@ class EsTest extends FlatSpec with Matchers {
 
     val httpClient = new OkHttpClient
 
-	// "GET /"을 요청한다
+    // "GET /"을 요청한다
     val request = new Request.Builder()
       .url("http://" + container.getHttpHostAddress)
       .build
@@ -76,7 +76,7 @@ class EsTest extends FlatSpec with Matchers {
 
     val response = call.execute()
 
-	// "GET /" 결과에 test에 사용한 버전인 7.16.2가 포함되었는지 테스트
+    // "GET /" 결과에 test에 사용한 버전인 7.16.2가 포함되었는지 테스트
     response.body.string().contains("7.16.2") should be(true)
 
     container.close()
@@ -122,3 +122,5 @@ CONTAINER ID        IMAGE                                                  COMMA
 뭔가 이상한 듯 하면 container의 log를 확인해보자.
 
 test가 종료되면 container가 자동으로 종료된다.
+
+{% include test-for-data-engineer.md %}

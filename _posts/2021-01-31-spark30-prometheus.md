@@ -38,7 +38,7 @@ $ spark-submit \
     --conf spark.kubernetes.driver.annotation.prometheus.io/scrape=true \
     --conf spark.kubernetes.driver.annotation.prometheus.io/path=/metrics/executors/prometheus \
     --conf spark.kubernetes.driver.annotation.prometheus.io/port=4040 \
-	...
+    ...
 ```
 
 `spark.ui.prometheus.enabled`는 Prometheus metric을 활성화하겠다는 설정이다. Spark 3.0이 Prometheus를 지원하긴 하지만 이 옵션을 지정해야만 활성화된다. 다른 metric system과 충돌이 발생할 수 있어서 default로는 disable된 것 같다.

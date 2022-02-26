@@ -348,15 +348,15 @@ function set_options()
         case "$1" in
             -X | --request)
                 request_method=$2
-				shift 2
+                shift 2
                 ;;
             -v | --verbose)
                 verbose_mode="true"
-				shift
+                shift
                 ;;
             --)
-				shift
-				break
+                shift
+                break
                 ;;
             *)
                 usage

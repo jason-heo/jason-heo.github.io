@@ -73,12 +73,12 @@ private def getConfigFromURL(config: URL): MyConfig = {
 위 테스트에서는 다음과 같이 두 개의 파일을 사용하였다.
 
 - `app1.conf`
-	```conf
-	{
-	  name = my-program
-	  include classpath("include/inc.conf")
-	}
-	```
+    ```conf
+    {
+      name = my-program
+      include classpath("include/inc.conf")
+    }
+    ```
 - `include/inc.conf`
     ```conf
     {

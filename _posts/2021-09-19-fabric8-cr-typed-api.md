@@ -202,15 +202,15 @@ class SparkApplication extends CustomResource<SparkApplicationSpec, SparkApplica
 }
 
 MixedOperation<SparkApplication, KubernetesResourceList<SparkApplication>, Resource<SparkApplication>> sparkAppClient =
-		kubernetesClient.resources(SparkApplication.class);
+        kubernetesClient.resources(SparkApplication.class);
 
 KubernetesResourceList<SparkApplication> sparkAppList = sparkAppClient.inNamespace(kubernetesClient.getNamespace()).list();
 
 sparkAppList.getItems().forEach(app -> {
-	logger.info(String.format("%s,%s,%d,%d",
-			app.getMetadata().getName(),
-			app.getSpec().driver.getMemory(),
-			app.getSpec().executor.instances,
-			app.getStatus().executionAttempts));
+    logger.info(String.format("%s,%s,%d,%d",
+            app.getMetadata().getName(),
+            app.getSpec().driver.getMemory(),
+            app.getSpec().executor.instances,
+            app.getStatus().executionAttempts));
 });
 ```
