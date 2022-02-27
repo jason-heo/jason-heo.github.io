@@ -6,23 +6,23 @@ categories: "programming"
 
 테스트에 사용된 코드는 github repository에 올려두었다 [바로가기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch)
 
-개발 언어는 Scala이다.
+본문에 사용된 언어는 Scala이다.
 
 ## 개요
 
-Elasticsearch(이하 es)가 매우매우 좋은 제품인 것은 분명하다. 그런데 es 사용 중에 어려움이 있는데 간혹 가다 429 에러와 timeout이 발생한다는 점이고 es client program들은 이를 잘 대응해야한다.
+Elasticsearch(이하 es)가 매우매우 좋은 제품인 것은 분명하다. 그런데 es 사용 중에 어려움이 있는데 간혹 가다 429 에러와 timeout이 발생한다는 점이다. es client program을 작성할 때 이런 비정상 상황을 잘 대응해야하고, 대응된 코드가 잘 작동하는지 test할 수 있어야 한다.
 
-es 호출 제어권이 우리에게 있는 경우는 retry code를 넣고 이를 테스트하기가 쉽다. 그런데 본인의 경우 Spark에서 es hadoop을 이용하여 데이터를 저장하고 있는데 처리 흐름이 Spark에 있다보니 테스트가 쉽지 않다.
+es 호출 제어권이 우리에게 있는 경우는 retry code를 넣고 이를 테스트하기가 쉽다. 본인의 경우 Spark에서 es hadoop을 이용하여 데이터를 저장하고 있는데 처리 흐름이 Spark에 있다보니 테스트가 쉽지 않았다.
 
-es가 비정상적인 상황인 상황을 쉽게 만들 수 있다면 그나마 test가 쉬울 듯 한데, 강제로 429 에러를 발생시키거나 timeout을 만들어내기가 어렵다.
+es가 비정상적인 상황인 상황을 쉽게 만들 수 있다면 그나마 test가 쉬울 듯 한데, 강제로 429 에러를 발생시키거나 timeout을 만들어내기가 어렵다. (그나마 할 수 있는 것이 config에 잘못된 hostname/port를 넣는다거나 basic auth를 일부러 잘못 지정하는 정도)
 
 그래서 생각한 것이 okHttp3 [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver)를 이용하여 아주 간단하게 es를 흉내내는 것이었다.
 
-MockWebServer의 문서를 보면 다음과 같이 나와있다.
+MockWebServer의 문서를 보면 다음과 같은 내용이 적혀있다.
 
 > test that your code survives in awkward-to-reproduce situations like 500 errors or slow-loading responses
 
-즉 test 시에 에러 상황을 쉽게 재현할 수 있다는 장점이있다.
+즉 MockWebServer를 사용하면 test 시에 에러 상황을 쉽게 재현할 수 있다는 장점이있다.
 
 정상적인 기능 테스트라면 es docker를 이용하는 것이 좋은 선택이지만, 비정상적인 상황에서의 기능 테스트를 위해선 MockWebServer가 좋은 해법이라 생각한다.
 
@@ -62,10 +62,8 @@ MockWebServer에서는 두 가지 mode를 제공한다.
 
 ```java
 final Dispatcher dispatcher = new Dispatcher() {
-
     @Override
     public MockResponse dispatch (RecordedRequest request) throws InterruptedException {
-
         switch (request.getPath()) {
             case "/v1/login/auth/":
                 return new MockResponse().setResponseCode(200);
@@ -96,7 +94,7 @@ MockWebServer의 좋은 점은 서두에 말한 것처럼 장애 상황을 쉽�
 
 ## queue mode
 
-우선 queue mode이다. 전체 소스 코드는 [여기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch/blob/main/src/test/scala/io/github/jasonheo/QueueTest.scala)에서 볼 수 있다.
+우선 queue mode부터 보자. 전체 소스 코드는 [여기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch/blob/main/src/test/scala/io/github/jasonheo/QueueTest.scala)에서 볼 수 있다.
 
 우선 다음과 같이 `beforeAll()`을 이용하여 test가 시작할 때 3개의 response를 queue에 저장하였다.
 
@@ -116,7 +114,7 @@ MockWebServer의 좋은 점은 서두에 말한 것처럼 장애 상황을 쉽�
 
 세 번째 response는 `SocketPolicy.NO_RESPNSE`로 설정하였으므로 client에서는 `SocketTimeoutException`가 발생한다.
 
-그리고 다음과 같이 `getResponse()`라는 utility 함수를 만들었다. (http client library로는 okHttp3를 사용하였다)
+아래 코드는 편의를 위하여 만든 utility 함수이다. (http client library로는 okHttp3를 사용하였다)
 
 ```scala
   private def getResponse(path: String): String = {
@@ -140,7 +138,7 @@ MockWebServer의 좋은 점은 서두에 말한 것처럼 장애 상황을 쉽�
 
 ```java
   "mockServer" must "return response in a queue" in {
-    getResponse("/foo") should be("Hi")
+    getResponse("/foo") should be("Hi") // queue에 담긴 첫 번째 응답이 반환된다
     getResponse("/bar") should be("Hello")
 
     intercept[SocketTimeoutException] { // intercept는 exception을 잡는 scala test 함수이다
@@ -153,7 +151,7 @@ queue에 등록된 것과 같이 처음 두개의 요청에 대해선 "Hi", "Hel
 
 ## Dispatcher mode
 
-아래에 설명된 전체 코드는 [여기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch/blob/main/src/test/scala/io/github/jasonheo/EsDispatcherTest.scala)에서 볼 수 있다.
+이번엔 dispatcher mode를 보자.  아래에 설명된 전체 코드는 [여기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch/blob/main/src/test/scala/io/github/jasonheo/EsDispatcherTest.scala)에서 볼 수 있다.
 
 dispatcher mode의 예제 코드는 좀 더 복잡하다.
 
