@@ -1,14 +1,32 @@
 ---
 layout: post
-title: "누네안과 후기, 이용팁"
+title: "서울 누네안과 후기, 이용팁"
 categories: "life"
 ---
+
+## 2022.03.02 내용 추가
+
+서울 누네안과가 이전하였습니다. 2호선 선릉역 1번 출구 바로 앞에 있어서 찾아가기가 매우 쉽습니다.
+
+<a href="https://imgur.com/6Tm4Jb9"><img src="https://i.imgur.com/6Tm4Jb.png" title="source: imgur.com" /></a>
+
+[서울 누네안과 오시는 길](https://www.noon.co.kr/guide/seoul_directions) 참고
+
+진료 및 접수 시간이 변경되었습니다
+
+- 진료 시간: 09시 00분 ~ 17시 30분
+  - 단, 토요일은 09시 00분 ~ 13시 00분
+- 접수 시작: 08시 00분
+
+[진료 시간 변경 공지](https://www.noon.co.kr/board/notice_view/1/2808) 참고
+
+## 들어가며
 
 블로그에 광고성 글을 올리지 않지만, 누네안과 덕분에 눈 건강을 찾은 고마움에 포스팅을 해본다.
 
 참고로 [상공막염, 포도막염, 망막열공 치료후기](http://jason-heo.github.io/life/2020/07/25/eye.html)글에서 내 눈을 제대로 진단하고 치료한 병원이 누네안과였다.
 
-## 병원 찾아가는 법
+## 병원 찾아가는 법 (2021 이전 위치입니다)
 
 <a href="https://imgur.com/pLr9r2J"><img src="https://i.imgur.com/pLr9r2Jl.png" title="source: imgur.com" /></a>
 
