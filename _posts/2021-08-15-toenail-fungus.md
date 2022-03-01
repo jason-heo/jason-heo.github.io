@@ -102,3 +102,4 @@ categories: "life"
 
 개인마다 상태가 다를 수 있으니 참고만 해주기 바란다.
 
+{% include toenail-fungus.md %}

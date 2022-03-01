@@ -43,3 +43,5 @@ categories: "life"
 사실 엄지 발톱 말고 새끼 발톱에도 무좀이 있다. 새끼는 엄지보다 치료가 잘된 편이다.
 
 <img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/cdzg85t.png" />
+
+{% include toenail-fungus.md %}
