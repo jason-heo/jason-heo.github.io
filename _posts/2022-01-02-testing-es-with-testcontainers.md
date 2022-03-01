@@ -4,6 +4,8 @@ title: "Elasticsearch Test 환경 만들기 (부제: testContainers를 이용한
 categories: "bigdata"
 ---
 
+{% include test-for-data-engineer.md %}
+
 ### 개요
 
 "Unit Test에서 Elasticsearch를 편하게 연동하는 방법"을 찾다가 [testContainers](https://www.testcontainers.org/)라는 것에 대해 알게 되었다.

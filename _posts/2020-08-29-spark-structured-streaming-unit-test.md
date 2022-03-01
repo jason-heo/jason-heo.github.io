@@ -4,6 +4,10 @@ title: "Spark Structured Streaming에서의 Unit Test"
 categories: "bigdata"
 ---
 
+{% include test-for-data-engineer.md %}
+
+## 안내
+
 아래 글에 사용된 Spark Version: 2.4.2
 
 (2022.02.26 내용 추가)

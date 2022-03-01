@@ -4,6 +4,10 @@ title: "Data Injection: Don't produce me, I will produce myself"
 categories: "bigdata"
 ---
 
+{% include test-for-data-engineer.md %}
+
+## 들어가며
+
 Software Engineering에 있어서 가장 중요한 것 1개를 꼽으라고 한다면 나는 주저없이 Dependency Injection을 꼽을 것이다.
 
 Data Engineering에서도 이와 비슷한 개념이 있는데 이것을 나는 오늘부터 Data Injection이라고 부를 것이다. 구글링해봐도 아직은 검색 결과가 없는 내가 최초로 정립한 기법일 수 있겠다.

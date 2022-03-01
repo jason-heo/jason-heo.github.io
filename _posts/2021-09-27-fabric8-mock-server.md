@@ -4,6 +4,8 @@ title: "fabric8 kubernetes test 사용법 (mocking Kubernetes API Server)"
 categories: "programming"
 ---
 
+{% include test-for-data-engineer.md %}
+
 ## 개요
 
 최근 Quarkus라는 것을 공부 중인데, quarkus에서 제공하는 기능 중에 kubernetes-client 기능이 있다.

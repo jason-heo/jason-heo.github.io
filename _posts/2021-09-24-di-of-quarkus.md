@@ -4,6 +4,10 @@ title: "Quarkus에서의 Dependency Injection"
 categories: "programming"
 ---
 
+{% include test-for-data-engineer.md %}
+
+## 안내
+
 테스트에 사용된 코드는 github에 올려두었습니다. [github 바로가기](https://github.com/jason-heo/quarkus-dependency-injection)
 
 ## 목차

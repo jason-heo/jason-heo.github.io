@@ -4,6 +4,10 @@ title: "Scala에서 Mockito 사용하기 with mockito-scala"
 categories: "programming"
 ---
 
+{% include test-for-data-engineer.md %}
+
+## 안내
+
 테스트에 사용된 버전
 
 - Scala: 2.12.12

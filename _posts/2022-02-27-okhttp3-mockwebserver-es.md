@@ -4,6 +4,10 @@ title: "okHttp3 MockWebServer를 이용한 Mock Elasticsearch"
 categories: "programming"
 ---
 
+{% include test-for-data-engineer.md %}
+
+## 안내
+
 테스트에 사용된 코드는 github repository에 올려두었다 [바로가기](https://github.com/jason-heo/okhttp3-mockwebserver-elastisearch)
 
 본문에 사용된 언어는 Scala이다.

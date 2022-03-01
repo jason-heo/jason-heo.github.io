@@ -4,6 +4,10 @@ title: "Kafka Unit Test with EmbeddedKafka"
 categories: "bigdata"
 ---
 
+{% include test-for-data-engineer.md %}
+
+### 들어가며
+
 그동안 Kafka AdminClient API를 사용하면서 Unit Test를 작성하지 않았었다. 지금이라도 Unit Test를 적용하고 싶어서 찾아본 내용을 정리한다.
 
 ### 목차
