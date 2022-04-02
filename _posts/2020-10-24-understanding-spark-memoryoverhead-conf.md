@@ -4,6 +4,10 @@ title: "spark memoryOverhead 설정에 대한 이해"
 categories: "bigdata"
 ---
 
+### 2022.04.02 추가
+
+[spark memoryOverhead 설정에 대한 이해 (2)](/bigdata/2022/04/02/spark-memoryoverhead.html)가 등록되었습니다.
+
 ### 목차
 
 - [Spark 버전에 따른 설정명](#spark-버전에-따른-설정명)
