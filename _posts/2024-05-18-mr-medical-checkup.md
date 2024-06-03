@@ -36,7 +36,7 @@ categories: "life"
 
 아래 사진은 위 블로그에서 퍼온 사진이다.
 
-<img src="https://i.imgur.com/zGPCBFc"/>
+<img src="https://i.imgur.com/zGPCBFc.png" />
 
 별도 주차장에 주차하는 경우 영수증을 보내면 주차비를 입금받을 수 있다. 자세한 것은 위 블로그를 방문해서 읽어보면 된다.
 
@@ -52,5 +52,5 @@ categories: "life"
 - 남들보다 조금이라도 빠르게 접수를 하고 싶다면 1층 엘리베이터 문 앞쪽에 서는 게 좋다. 이렇게 되면 9층에 내리자 마자 바로 접수를 할 수 있다
 - 종이로된 검진표를 작성했다면 9층 접수대에 바로 제출하면 된다
 - 검진표를 온라인으로 작성한 경우 다음과 같은 접수표를 작성해야한다. email과 주소 중 1개만 입력하면 된다
-  - <img src='https://i.imgur.com/RcFhYrf'/>
+  - <img src='https://i.imgur.com/RcFhYrf.png'/>
   - 남들보다 빠르게 작성을 해야 검사도 먼저 받을 수 있다
