@@ -38,7 +38,7 @@ categories: "life"
 
 <img src="https://i.imgur.com/zGPCBFc.png" />
 
-별도 주차장에 주차하는 경우 영수증을 보내면 주차비를 입금받을 수 있다. 자세한 것은 위 블로그를 방문해서 읽어보면 된다.
+별도 주차장에 주차하는 경우 영수증을 보내면 주차비를 입금받을 수 있다. 자세한 것은 [출처 블로그](https://pa3819.tistory.com/entry/%EB%AF%B8%EB%9E%98%EC%9D%98%EB%A3%8C%EC%9E%AC%EB%8B%A8-%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84%EA%B3%BC-%EC%A3%BC%EC%B0%A8-%ED%9B%84%EA%B8%B0)를 방문해서 읽어보면 된다.
 
 ### 총평
 
