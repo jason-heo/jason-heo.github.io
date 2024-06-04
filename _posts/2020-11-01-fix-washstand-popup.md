@@ -8,7 +8,7 @@ categories: "life"
 
 어느날 갑자기 팝업이 작동하지 않았다
 
-<a href="https://imgur.com/21qiNaQ"><img src="https://i.imgur.com/21qiNaQ.gif" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/21qiNaQ.gif" />
 
 <BR> <BR> <BR> <BR>
 
@@ -16,29 +16,29 @@ categories: "life"
 
 우선 나사를 덥고 있는 덮개를 열어야한다. 검색을 해보면 일자 드라이버를 넣으면 된다고 하는데 틈이 없어서 쉽지 않다. 커터 칼을 사용하라는 이야기도 있어서 넣어봤는데 날이 얇아서 금방 부러졌다. **나는 최종적으로로 과도를 이용해서 열었다**
 
-<a href="https://imgur.com/JOinkvW"><img src="https://i.imgur.com/JOinkvWh.png" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/JOinkvWh.png" />
 
 <BR> <BR> <BR> <BR>
 
 덮개를 열고 나면 십자 드라이버를 이용해서 나사를 쉽게 풀 수 있다
 
-<a href="https://imgur.com/NlCe6Iw"><img src="https://i.imgur.com/NlCe6Iwh.png" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/NlCe6Iwh.png" />
 
 <BR> <BR> <BR> <BR>
 
 하부 커버를 열었더니 부품 두개가 불이되어 있었다
 
-<a href="https://imgur.com/djh0Bqr"><img src="https://i.imgur.com/djh0Bqr.gif" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/djh0Bqr.gif" />
 
 {% include adsense-content.md %}
 
 원래 어떻게 연결되었던 건지 모르겠다, 다행히 다른 입주민이 찍어둔 사진이 있어서 이걸 참고하여 연결했다
 
-<a href="https://imgur.com/o1u61M2"><img src="https://i.imgur.com/o1u61M2h.png" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/o1u61M2h.png" />
 
 
 <BR> <BR> <BR> <BR>
 이제 잘 작동한다. 야호~
 
-<a href="https://imgur.com/vORkhOc"><img src="https://i.imgur.com/vORkhOc.gif" title="source: imgur.com" /></a>
+<img src="/images/posts/life/popup/vORkhOc.gif" />
 
