@@ -4,6 +4,8 @@ title: "발톱무좀 레이저 실손보험 후기 (레이저 비용 포함)"
 categories: "life"
 ---
 
+{% include toenail-fungus.md %}
+
 본인 지인의 사례입니다. 실손보험은 종류가 여러 개이고 개인 무좀 상황에 따라 다를 수 있습니다.
 
 ### 요약
@@ -25,7 +27,7 @@ categories: "life"
   - 이런 경우 레이저 치료도 실손보험이 적용된다
 - 지인의 경우 다음과 같은 소견서를 발급받아서 보험사에 제출하였다
   - (다만 이게 필수 서류인지 확실치 않다)
-  - <img src="/images/posts/toenail-fungus/sogyeonsoe.png" />
+  - <img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/sogyeonsoe.png" />
 - 보험청구서와 함께 소견서를 제출했는데 보험사로부터 전화가 왔다
   - 발톱 사진을 찍어서 보내달라는 연락이었다
   - 아무래도 보험사 적자가 심해서 깐깐하게 확인하는 듯 하다
@@ -36,4 +38,6 @@ categories: "life"
 
 2023년 말 기준 비용이며 비급여이다. 병원마다 비용이 다를 수 있다.
 
-<img src="/images/posts/toenail-fungus/details.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/details.png" />
+
+{% include toenail-fungus.md %}

@@ -16,13 +16,13 @@ categories: "life"
 
 요즘 바르는 발톱 무좀약은 "갈아낼 필요없다"라고 광고를 한다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/gklurEY.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/gklurEY.png" />
 
 그런데 1년을 사용해본 결과, 갈아내는 것이 확실히 효과가 있었다. 이 팁을 약사 선생님이 3번째 구매시에 알려줬다.
 
 갈아내는 방법을 몰라서 고민을 했는데, 손톱깍이 속에 있는 칼 같은 걸로 힘을 줘서 긁으면 갈아진다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/s55yE4D.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/s55yE4D.png" />
 
 혹은 줄이 있다면 줄로 갈아내면 편하다. 그런데 줄은 구석진 분위를 갈아내진 못한다.
 
@@ -34,9 +34,9 @@ categories: "life"
 
 발톱을 갈아낸 직후에는 발톱이 지저분해보여서 발톱이 망가진 것처럼 보인다. 그런데 갈아낸 만큼 곰팡이 균이 많이 제거된 것 같아. 발톱 두께도 정상으로 돌아오고, 발톱의 햐얀 부분도 더 빠른 속도로 올라온다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/57ZmPmQ.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/57ZmPmQ.png" />
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/twkDnbo.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/twkDnbo.png" />
 
 
 ### Tip 2. 무좀약은 씻은 후 바로 바르는 것이 좋다

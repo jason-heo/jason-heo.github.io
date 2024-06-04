@@ -36,7 +36,7 @@ categories: "life"
 
 아래 사진은 위 블로그에서 퍼온 사진이다.
 
-<img src="https://i.imgur.com/zGPCBFc.png" />
+<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/zGPCBFc.png" />
 
 별도 주차장에 주차하는 경우 영수증을 보내면 주차비를 입금받을 수 있다. 자세한 것은 [출처 블로그](https://pa3819.tistory.com/entry/%EB%AF%B8%EB%9E%98%EC%9D%98%EB%A3%8C%EC%9E%AC%EB%8B%A8-%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84%EA%B3%BC-%EC%A3%BC%EC%B0%A8-%ED%9B%84%EA%B8%B0)를 방문해서 읽어보면 된다.
 
@@ -54,5 +54,5 @@ categories: "life"
   - 이 부분은 좀 아쉬운 면이다
   - 남들보다 먼저 도착했는데 이걸 적느라 다른 사람보다 검사를 늦게 시작해야할 수도 있다
 - 검진표를 온라인으로 작성한 경우 다음과 같은 접수표를 작성해야한다. email과 주소 중 1개만 입력하면 된다
-  - <img src='https://i.imgur.com/RcFhYrf.png'/>
+  - <img style="width: 100%; max-width: 549px;" src='https://i.imgur.com/RcFhYrf.png'/>
   - 남들보다 빠르게 작성을 해야 검사도 먼저 받을 수 있다

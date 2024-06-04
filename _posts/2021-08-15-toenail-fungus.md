@@ -30,13 +30,13 @@ categories: "life"
 
 우선 본인의 '무좀 걸린 발톱'과 '정상 발톱'을 사진으로 비교해보자.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/6YcN4Q4.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/6YcN4Q4.png" />
 
 사진을 찍는 환경이 달라서 발톱 색상 비교가 잘 안 된다. 그런데 두께는 확연한 차이가 있다.
 
 표가 잘 안나서 빨간색으로 표시를 해봤다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/Tom72x6.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/Tom72x6.png" />
 
 ----------
 
@@ -54,7 +54,7 @@ categories: "life"
 외국에서 만든 원조 약이 있고, 이를 국내에서 카피한 것이 있는데 성분은 모두 동일하지만 가격에 차이가 있다. 외국에서 만든 약 (이름은 까먹었다)이 상대적으로 비싸고 국내 약이 저렴하다. 또한 국내 약들 간에도 약값에 차이가 있다. 하지만 약 성분은 모두 동일하다.
 
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/6jj0OUb.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/6jj0OUb.png" />
 
 나는 별다른 고민없이 무조날S와 바르지오를 구매했다. (약국 두군데를 방문했는데 각각의 약국에서 판매하는 상품이었다. 바르는 무좀약 상품이 여러 개이지만 약국에서는 1개의 상품만 취급하는 것 같았다)
 
