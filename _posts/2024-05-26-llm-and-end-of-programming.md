@@ -6,7 +6,7 @@ categories: "llm"
 
 ### 요약
 
-LLM이 프로그래밍하는 법을 바꿨다. 나도 CoPilot 류의 도구를 잘 사용해야겠다.
+LLM이 프로그래밍하는 법을 바꿨다. 나도 Copilot 류의 도구를 잘 사용해야겠다.
 
 - 영상 출처: https://www.youtube.com/watch?v=JhCl-GeT4jw
   - 발표일: 2023년 10월
