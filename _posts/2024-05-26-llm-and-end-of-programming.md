@@ -10,8 +10,7 @@ LLM이 프로그래밍하는 법을 바꿨다. 나도 Copilot 류의 도구를 �
 
 - 영상 출처: https://www.youtube.com/watch?v=JhCl-GeT4jw
   - 발표일: 2023년 10월
-- 발표 자료: https://t.ly/esLaI
-  - slideshare로 링크된다
+- 발표 자료: https://t.ly/esLaI (slideshare로 링크된다)
   - 정확히는 위 발표와 동일 자료는 아니다
   - 같은 발표자가 2024년 3월에 다른 컨퍼런스에서 발표한 영상의 슬라이드이다
 - LLM을 사용하지 않는 건 구석기 시대나 마찬가지다
