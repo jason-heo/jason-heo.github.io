@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "TIL - 2023.09.02 - code 생성용 LLM들"
-categories: "til"
+title: "(2023.09 기준)  code 생성용 LLM들"
+categories: "llm"
 ---
 
 바야흐로 code 생성용 LLM의 전성 시대다.
