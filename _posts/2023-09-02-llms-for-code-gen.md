@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(2023.09 기준)  code 생성용 LLM들"
+title: "(2023.09 기준) code 생성용 LLM들"
 categories: "llm"
 ---
 
