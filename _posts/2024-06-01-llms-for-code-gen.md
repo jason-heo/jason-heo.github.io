@@ -26,7 +26,7 @@ code 생성 전용 모델이 아님에도 점수가 꽤나 높다. 심지어 GPT
 
 Llama 3 70B는 code 생성 전용 모델이 아니었지만 Codestral은 code를 많이 학습한 모델이다. 그래서 그런지 size가 22B임에도 Llama 3 70B Instruct보다 점수가 높다 (Codestral 개발사에서 측정한 점수라는 걸 감안하자)
 
-<img style="width: 100%; max-width: 500px;" src="/images/2024/06/01/codestral.png" />
+<img style="width: 100%; max-width: 700px;" src="/images/2024/06/01/codestral.png" />
 
 (출처: https://mistral.ai/news/codestral/)
 
@@ -72,7 +72,7 @@ model size: 7B
 
 size가 7B 밖에 안되는데 HumanEval+ 점수는 AutoCoder 33B보다 점수가 높다. (다만, `+`가 안 붙은 그냥 HumanEval에서는 AutoCoder 33B가 더 높다)
 
-<img style="width: 100%; max-width: 500px;" src="/images/2024/06/01/code-qwen-15.png" />
+<img style="width: 100%; max-width: 600px;" src="/images/2024/06/01/code-qwen-15.png" />
 
 reddit 댓글 https://www.reddit.com/r/LocalLLaMA/comments/1d3qx5q 를 읽어보면 CodeQwen의 평가가 극과 극을 달리는 듯 하다.
 
