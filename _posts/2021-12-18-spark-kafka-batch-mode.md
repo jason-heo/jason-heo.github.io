@@ -164,6 +164,6 @@ Spark에서 batch 방식으로 Kafka 데이터를 읽을 수 있다면 여러 �
 
 이 글을 적으면서 몇 가지 구현을 하다보니 Unit Test용 Kafka Broker가 있다면 좋겠다는 생각이 들었다. 시간되면 이에 대해 조사후 포스팅 해봐야겠다.
 
-(내용 추가: Test 관련된 것은 [Kafka Unit Test with EmbeddedKafka](http://jason-heo.github.io/bigdata/2021/12/19/kafka-unit-test.html)에 작성해두었다)
+(내용 추가: Test 관련된 것은 [Kafka Unit Test with EmbeddedKafka](https://jason-heo.github.io/bigdata/2021/12/19/kafka-unit-test.html)에 작성해두었다)
 
 {% include spark-reco.md %}

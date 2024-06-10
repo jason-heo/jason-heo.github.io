@@ -15,7 +15,7 @@ categories: "bigdata"
 
 ## 2020.08.17. 내용 추가
 
-`MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 [Spark Custom Stream Source 만들기 (MicroBatchReader, ContinuousReader)](http://jason-heo.github.io/bigdata/2020/08/17/spark-stream-source-v2.html) 에서 추가해두었다.
+`MicroBatchReader`, `ContinuousReader`에 대한 작동 방식 및 예제 프로그램은 [Spark Custom Stream Source 만들기 (MicroBatchReader, ContinuousReader)](https://jason-heo.github.io/bigdata/2020/08/17/spark-stream-source-v2.html) 에서 추가해두었다.
 
 ## 개요
 
@@ -25,9 +25,9 @@ Spark은 data processing 엔진일 뿐 data storage가 아니다. Spark에서 da
 
 만약 내가 Spark에서 처리하고 싶은 Data가 있는데, Spark에서 이를 지원하지 않는다면 직접 Data Source API를 이용하여 구현해야한다.
 
-2017년 말 경에 Data Source를 붙여본 경험이 있었고 이때 읽은 자료는 [Spark에 Custom Data source 붙이기](http://jason-heo.github.io/bigdata/2018/01/06/spark-data-source-api-v1.html)에 정리해두었다.
+2017년 말 경에 Data Source를 붙여본 경험이 있었고 이때 읽은 자료는 [Spark에 Custom Data source 붙이기](https://jason-heo.github.io/bigdata/2018/01/06/spark-data-source-api-v1.html)에 정리해두었다.
 
-위의 문서는 Data Source API v1에 대한 예이고, Spark 2.3부터는 Spark 2.3부터는 Data Source API v2를 제공하고 있다. v1의 한계점과 v2 기능에 대한 소개는 [Spark Data Source API V2 소개](http://jason-heo.github.io/bigdata/2018/01/08/spark-data-source-api-v2.html)에 정리해두었다.
+위의 문서는 Data Source API v1에 대한 예이고, Spark 2.3부터는 Spark 2.3부터는 Data Source API v2를 제공하고 있다. v1의 한계점과 v2 기능에 대한 소개는 [Spark Data Source API V2 소개](https://jason-heo.github.io/bigdata/2018/01/08/spark-data-source-api-v2.html)에 정리해두었다.
 
 ## DStreaming 용 Data Source 구현하기
 

@@ -143,7 +143,7 @@ val spark = SparkSession.builder().withExtentions(f).getOrCreate()
 
 ### 4-1) Microsoft Hyperspace
 
-[본 블로그에서도 한번 소개](http://jason-heo.github.io/bigdata/2020/12/06/spark-hyperspace.html)했던 Hyperspace도 SPARK-18127을 사용 중이었다.
+[본 블로그에서도 한번 소개](https://jason-heo.github.io/bigdata/2020/12/06/spark-hyperspace.html)했던 Hyperspace도 SPARK-18127을 사용 중이었다.
 
 index 생성 여부에 따라  SQL의 실행 계획을 변경하는데 이때 SPARK-18127이 사용된다.
 

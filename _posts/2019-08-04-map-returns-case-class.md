@@ -65,7 +65,7 @@ Shared Cars Locations는 필드 개수가 많지 않으며 data type도 적절�
 
 ```scala
 
-// 성능 측정용 함수: http://jason-heo.github.io/programming/2019/04/13/elapsed-time.html
+// 성능 측정용 함수: https://jason-heo.github.io/programming/2019/04/13/elapsed-time.html
 def elapsedTime[R](block: => R): R = {
     val s = System.currentTimeMillis
     val result = block    // call-by-name
