@@ -20,28 +20,28 @@ categories: "life"
 
 ### 8~12개월차 변화
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/phoiVgs.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/phoiVgs.png" />
 
 <BR>
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/2e7nC5k.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/2e7nC5k.png" />
 
 ### 8~12개월차 상태 설명
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/DxiQ2sY.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/DxiQ2sY.png" />
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/iGmxL8R.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/iGmxL8R.png" />
 
 ### 엄지 발톱 두께 변화
 
 발톱 무좀이 생기면 발톱이 많이 두꺼워진다. 치료 이후에 발톱이 많이 얇아졌다. 그런데 이건 무좀약의 효과라기보다는 내가 발톱을 열심히 갈았기 때문이다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/3Z0CuMb.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/3Z0CuMb.png" />
 
 ### 새끼 발톱 변화
 
 사실 엄지 발톱 말고 새끼 발톱에도 무좀이 있다. 새끼는 엄지보다 치료가 잘된 편이다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/cdzg85t.png" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/toenail-fungus/cdzg85t.png" />
 
 {% include toenail-fungus.md %}

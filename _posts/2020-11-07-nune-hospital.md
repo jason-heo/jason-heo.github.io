@@ -8,7 +8,7 @@ categories: "life"
 
 서울 누네안과가 이전하였습니다. 2호선 선릉역 1번 출구 바로 앞에 있어서 찾아가기가 매우 쉽습니다.
 
-<a href="https://imgur.com/6Tm4Jb9"><img src="https://i.imgur.com/6Tm4Jb.png" title="source: imgur.com" /></a>
+<img src="/images/posts/life/6Tm4Jb.png" />
 
 [서울 누네안과 오시는 길](https://www.noon.co.kr/guide/seoul_directions) 참고
 
@@ -24,15 +24,7 @@ categories: "life"
 
 블로그에 광고성 글을 올리지 않지만, 누네안과 덕분에 눈 건강을 찾은 고마움에 포스팅을 해본다.
 
-참고로 [상공막염, 포도막염, 망막열공 치료후기](http://jason-heo.github.io/life/2020/07/25/eye.html)글에서 내 눈을 제대로 진단하고 치료한 병원이 누네안과였다.
-
-## 병원 찾아가는 법 (2021 이전 위치입니다)
-
-<a href="https://imgur.com/pLr9r2J"><img src="https://i.imgur.com/pLr9r2Jl.png" title="source: imgur.com" /></a>
-
-2호선, 분당선 선릉역 2번 출구에서 걸어갈만한 거리이다. 분당선 한티역에서 내리면 선릉역보다 120미터 정도 더 걸어야하지만 중간에 버스를 타고 한 정거장 이동할 수 있어서 실제 걷는 거리는 얼마 안 된다.
-
-선릉역에서는 버스 방향이 병원과 반대쪽이기도 하고 정류장 위치가 에매모호해서 버스는 비추이다.
+참고로 [상공막염, 포도막염, 망막열공 치료후기](https://jason-heo.github.io/life/2020/07/25/eye.html)글에서 내 눈을 제대로 진단하고 치료한 병원이 누네안과였다.
 
 ## 예약하기 및 참고
 

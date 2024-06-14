@@ -34,7 +34,7 @@ categories: "life"
 
 아래 그림은 회원 가입 완료 화면이다. 어떤 정보를 입력하는지 알려주기 위해 캡쳐해보았다. 아직은 셀프 개통 전이다.
 
-<img style="width: 100%; max-width: 549px;" src="https://i.imgur.com/0YVOrro.jpg" />
+<img style="width: 100%; max-width: 549px;" src="/images/posts/life/0YVOrro.jpg" />
 
 ### 가입 및 이용 후기
 

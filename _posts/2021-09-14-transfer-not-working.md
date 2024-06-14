@@ -32,7 +32,7 @@ LG엔솔에 청약하는 분들에게 모두 좋은 결과가 있으면 좋겠�
 ### 오류1: "은행 계좌 -> 신한증권 계좌"로 이체 시 오류 메시지
 
 - "[전자금융공동망응답] 타행이체거래 불가 계좌입니다. 해당은행에 문의하세요"
-- <img style="width: 100%; max-width: 449px;" src="https://i.imgur.com/rfH0bH9.png" />
+- <img style="width: 100%; max-width: 449px;" src="/images/posts/life/rfH0bH9.png" />
 - 더 짜증나는 것은 이체의 가장 마지막 단계, OTP를 입력하고 나서야 위의 에러 메시지가 나온다는 점이다
 - 뭐가 문제인지 몰라서 여러 번 시도했는데, 시도할 때마다 한참 뒤에서야 오류가 발생하므로 번거롭다
 
@@ -41,7 +41,7 @@ LG엔솔에 청약하는 분들에게 모두 좋은 결과가 있으면 좋겠�
 ### 오류2: "신한증권 계좌 -> 은행 계좌"로 이체할 때 오류 메시지
 
 - "해당 은행제휴계좌의 경우 은행 앱을 이용해주시길 바랍니다"
-- <img style="width: 100%; max-width: 449px;" src="https://i.imgur.com/bxaEWny.png" />
+- <img style="width: 100%; max-width: 449px;" src="/images/posts/life/bxaEWny.png" />
 - 다행히 이건 좀 양반이다. 오류 메시지가 그나마 바로 나오는 편이다
 
 ## 2. 해결 방법
@@ -54,7 +54,7 @@ LG엔솔에 청약하는 분들에게 모두 좋은 결과가 있으면 좋겠�
 
 본인의 경우 "연계 은행 계좌"는 FNA 계좌라고 표시되었다. (FNA는 Financial Network Account의 약자라고 한다)
 
-<img style="width: 100%; max-width: 449px;" src="https://i.imgur.com/j2sGh9Q.png" />
+<img style="width: 100%; max-width: 449px;" src="/images/posts/life/j2sGh9Q.png" />
 
 (이미지 출처: https://blog.naver.com/sum7788/221702374308)
 

@@ -53,4 +53,4 @@ TV 화질도 만족스럽다. DCS 방식이기 때문에 인터넷 회선으로 
 
 "30% 할인 홈결합"은 "홈결합"에서 30%가 할인된 금액이며 대신 사은품이 적다. 그냥 "홈결합"은 사은품이 많은 대신 월 요금이 비싸다.
 
-<a href="https://i.imgur.com/dbJK3Dv.png"><img src="https://i.imgur.com/dbJK3Dv.png"></a>
+<img src="/images/posts/life/dbJK3Dv.png" />

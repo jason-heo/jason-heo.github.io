@@ -31,7 +31,7 @@ categories: "life"
 
 (사진을 클릭하면 크게 볼 수 있다.)
 
-<a href="https://i.imgur.com/0iw2K56.jpg"><img src="https://i.imgur.com/0iw2K56h.jpg" title="source: imgur.com" /></a>
+<img src="/images/posts/life/0iw2K56h.jpg" />
 
 ## (1) 왼쪽으로 누워야한다
 
@@ -47,7 +47,7 @@ categories: "life"
 
 아래는 대장의 해부학적 구조이다.
 
-<a href="https://i.imgur.com/5Hni8Y9.png"><img src="https://i.imgur.com/5Hni8Y9h.png" title="source: imgur.com" /></a>
+<img src="/images/posts/life/5Hni8Y9h.png" />
 
 (출처: [질병관리본부](http://health.cdc.go.kr/health/HealthInfoArea/HealthInfo/View.do?idx=4850))
 

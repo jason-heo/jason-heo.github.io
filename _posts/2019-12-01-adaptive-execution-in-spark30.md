@@ -4,7 +4,7 @@ title: "Adaptive Execution in Apache Spark 3.0"
 categories: "bigdata"
 ---
 
-어제 [Apache Spark 3.0의 기능](http://jason-heo.github.io/bigdata/2019/11/30/spark-30-preview.html)에 대해 조사하면서 "Adaptive Execution" 기능이 들어간다는 걸 알게 되었다.
+어제 [Apache Spark 3.0의 기능](https://jason-heo.github.io/bigdata/2019/11/30/spark-30-preview.html)에 대해 조사하면서 "Adaptive Execution" 기능이 들어간다는 걸 알게 되었다.
 
 이게 왜 대단한 건지를 알려면 SQL이 수행되는 방식에 대해서 고민을 해봐야한다.
 
