@@ -36,7 +36,7 @@ class 및 function의 definition이 편집 중인 파일에 있을 수도 있고
   - github blog 글, 2023-05-17
   - 많은 ML 연구자들이 연구를 했다고 한다
   - 간단히 요약하면 다음 그림과 같다고 한다
-  - <img style="width: 100%; max-width: 686;" src="/images/2024/06/29/copilot-01.png" />
+  - <img style="width: 100%; max-width: 686px;" src="/images/2024/06/29/copilot-01.png" />
 - [Inside GitHub: Working with the LLMs behind GitHub Copilot](https://github.blog/2023-05-17-inside-github-working-with-the-llms-behind-github-copilot/)
   - github blog 글, 2023-05-17 (Copilot 관련 글을 하루에 두건이라 발행했다)
 - [Copilot Internals](https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html)
