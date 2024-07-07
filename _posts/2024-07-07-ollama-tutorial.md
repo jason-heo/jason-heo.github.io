@@ -8,6 +8,25 @@ This is a quick review of Ollama.
 
 tested with Macbook Pro M3 36GB memory
 
+## Table of Contents
+
+- [1. installation](#1-installation)
+- [2. run ollama server](#2-run-ollama-server)
+- [3. `ollama` cli](#3-ollama-cli)
+  - [3-1) list models](#3-1-list-models)
+  - [3-2) load models](#3-2-load-models)
+  - [3-3) `ollama` options](#3-3-ollama-options)
+  - [3-4) `/set` option](#3-4-set-option)
+  - [3-4) multi-line string](#3-4-multi-line-string)
+- [4. ollama server options](#4-ollama-server-options)
+- [5. REST API](#5-rest-api)
+  - [5-1) Ollama own API](#5-1-ollama-own-api)
+  - [5-2) OpenAI compatible API](#5-2-openai-compatible-api)
+- [6. Python library](#6-python-library)
+  - [6-1) Ollama library](#6-1-ollama-library)
+  - [6-2) OpenAI Library](#6-2-openai-library)
+- [7. Web UI](#7-web-ui)
+
 ## 1. installation
 
 - Linux: https://ollama.com/download/linux
