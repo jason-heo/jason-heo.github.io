@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use python and hdfs programmtically - PyArrow"
+title: "Using Python to Interact with HDFS Programmatically via PyArrow"
 categories: "programming"
 ---
 
